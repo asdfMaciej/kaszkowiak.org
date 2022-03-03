@@ -1,0 +1,31 @@
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $srcUrl := .Get "src" | safeURL }}
+{{ $src := .Page.Resources.GetMatch (printf "%s" $srcUrl) }}
+
+{{ $tinyw := default "500x" }}
+{{ $largew := default "1500x" }}
+
+{{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+{{ .Scratch.Set "large" ($src.Resize $largew) }}
+
+{{ $tiny := .Scratch.Get "tiny" }}
+{{ $large := .Scratch.Get "large" }}
+
+{{ if .Get "src" }}
+<figure>
+	<div>
+  <a href='{{ if ge $src.Width "1500" }}
+    {{ $large.RelPermalink }}
+  {{ else }}
+	{{ $src.RelPermalink }}
+  {{ end }}' class="glightbox" data-description='{{.Get "alt" }}'>
+    <img src='{{ $tiny.RelPermalink }}' loading="lazy" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} >
+
+</a>
+
+    {{ if .Get "alt" }}
+      <figcaption>{{ .Get "alt" }}</figcaption>
+    {{ end }}
+    </div>
+</figure>
+{{ end }}

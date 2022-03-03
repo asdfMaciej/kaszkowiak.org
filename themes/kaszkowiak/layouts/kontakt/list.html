@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ partial "breadcrumbs.html" . }}
+<section class="contact">
+  <h1>
+    Zapraszam do kontaktu!
+  </h1>
+  <h2>
+    Odpisuję w ciągu 24 godzin, 7 dni w tygodniu.
+  </h2>
+  {{ .Content }}
+  {{ partial "contact-form.html" . }}
+  
+</section>
+
+{{ end }}

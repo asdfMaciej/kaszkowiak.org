@@ -1,0 +1,69 @@
+{{ define "head" }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{- $title := "" -}}
+{{- if .IsHome -}}
+	{{- $title = "Maciej Kaszkowiak - strony WWW i aplikacje internetowe." -}}
+{{- else if (and (eq .Section "blog") (.IsPage)) -}}
+	{{- $title = .Title -}}
+{{- else if (and (eq .Section "projekty") (.IsPage)) -}}
+	{{- $title = printf "%s - %s" .Title .Params.Subtitle -}}
+{{- else if (eq .Section "oferta") -}}
+	{{- $title = .Title -}}
+{{- else if (and (eq .Section "tags") (ne .Title "Lista tagów")) -}}
+	{{- $title = printf "Blog programistyczny - #%s - Maciej Kaszkowiak" .Title -}}
+{{- else -}}
+	{{- $title = printf "%s - Maciej Kaszkowiak" .Title -}}
+{{- end -}}
+
+<title>{{ $title }}</title>
+<meta name="title" content="{{ $title }}">
+<meta property="og:title" content="{{ $title }}">
+<meta name="twitter:title" content="{{ $title }}">
+
+{{- $desc := "" -}}
+{{- if (isset .Params "desc") -}}
+	{{- $desc = .Params.desc -}}
+{{- else -}}
+	{{- $desc = (substr (.Summary | plainify) 0 150) -}}
+{{- end -}}
+
+<meta name="description" content="{{ $desc }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta name="twitter:description" content="{{ $desc }}">
+
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="url" content="{{ .Permalink }}" >
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:url" content="{{ .Permalink }}">
+
+<meta property="og:locale" content="{{ .Site.Params.locale }}">
+<meta property="og:site_name" content="{{ .Site.Params.sitename }}">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+{{ $stylemain := resources.Get "scss/main.scss" | toCSS | postCSS (dict "use" "autoprefixer") | minify | fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $stylemain.RelPermalink }}" integrity="{{ $stylemain.Data.Integrity }}">
+<link rel="stylesheet" href="/css/glightbox.css" >
+<script language="javascript" type="text/javascript" src="/js/glightbox.min.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KR0JWKVK6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KR0JWKVK6');
+</script>
+{{ end }}

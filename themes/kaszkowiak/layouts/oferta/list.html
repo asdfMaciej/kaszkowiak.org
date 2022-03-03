@@ -1,0 +1,20 @@
+{{ define "main"}}
+
+<section class="offer-list">
+	{{ partial "breadcrumbs.html" . }}
+	
+	{{ with .Site.GetPage "/oferta/oferta-www" }}
+		{{ partial "offer-tile-big.html" . }}
+	{{ end }}
+
+	{{ with .Site.GetPage "/oferta/oferta-grafika" }}
+		{{ partial "offer-tile-big.html" . }}
+	{{ end }}
+
+	{{ with .Site.GetPage "/oferta/oferta-system" }}
+		{{ partial "offer-tile-big.html" . }}
+	{{ end }}
+</section>
+
+
+{{ end }}

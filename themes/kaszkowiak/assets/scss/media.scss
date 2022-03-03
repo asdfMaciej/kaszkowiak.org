@@ -1,0 +1,158 @@
+@media only screen and (max-width: 1200px) {
+	body {
+		font-size: 1.6rem;
+	}
+	body.home-page section:not(.contact-front) > .wrapper > h2,
+	body.home-page section > .wrapper > h1 {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.contact-front > .wrapper {
+		padding: 24px;
+	}
+
+	.project__gallery img {
+		max-width: 200px;
+	}
+
+	body:not(.home-page) .main-content {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.projects > .wrapper > p,
+	.blog > .wrapper > p {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 1.5rem;
+	}
+	.contact-form {
+		grid-template-areas: "namelabel" "name" "emaillabel" "email" "msglabel" "message" "submit";
+		grid-template-columns: 1fr;
+	}
+	
+	.offer {
+		padding: 0;
+	}
+	.offer__box {
+		margin: 6px;
+	}
+
+	.blog-view {
+		grid-template-areas: "posts" "tags";
+		grid-template-columns: 1fr;
+	}
+	.navbar {
+		font-size: 0.9em;
+	}
+
+}
+
+@media only screen and (max-width: 550px) {
+	.posts-list__post .blog-thumbnail {
+		float: none;
+	}
+
+	.project__wrapper {
+		grid-template-areas: "text" "gallery" "buttons";
+		grid-template-columns: 1fr;
+	}
+	.project__gallery {
+		justify-content: flex-start;
+	}
+	.project__buttons {
+		margin-top: 24px;
+		display: flex;
+	}
+	.offer__box {
+		flex: 1 1 100%;
+	}
+
+	.footer .wrapper {
+		grid-template-areas: "left" "right" "bottom";
+		grid-template-columns: 1fr;
+		grid-gap: 12px;
+	}
+
+	.navbar__navigation {
+		position: fixed;
+		top: 50px;
+		left: 0;
+		width: 100vw;
+		background: #0c0c0c2b;
+		flex-direction: column;
+
+		transition: height 300ms linear, background 300ms linear;
+		height: 240px;
+		overflow: hidden;
+
+		a {
+			border-top: 1px solid #ffffff2e;
+			padding: 12px;
+		}
+	}
+
+	.navbar__navigation:not(.navbar__navigation--shown) {
+		height: 0;
+	}
+
+	.navbar--active .navbar__navigation {
+		background: $navbar-color;
+
+		a {
+			border-top: 1px solid #000;
+		}
+	}
+
+	a.navbar__hamburger {
+		display: block;
+		flex: 1 1;
+		text-align: right;
+		font-size: 2em;
+		line-height: 20px;
+		padding: 0;
+		font-weight: 600;
+	}
+
+	.navbar a.navbar__logo {
+		flex: 0 1 auto;
+	}
+
+	.link-button {
+		padding: 8px;
+	}
+	.link-button--outline {
+		padding: 6px 8px;
+	}
+	.landing {
+		font-size: 0.7em;
+	}
+	.offer__header {
+		font-size: 1.7em;
+	}
+	.projects h2 {
+		font-size: 1.7em;
+		margin-bottom: 0;
+	}
+	section.blog > h2 {
+		margin: 8px 0;
+		font-size: 1.7em;
+	}
+	.offer__box-top {
+		padding-bottom: 12px;
+	}
+	.contact-front {
+		padding: 0;
+	}
+
+	figure img {
+		padding: 4px;
+	}
+
+}

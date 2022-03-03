@@ -1,0 +1,33 @@
+{{ if isset .Params "github" -}}
+<a href="{{.Params.github}}" class="project-mini" target="_blank" rel="noopener">{{.Title}}</a>
+{{- else -}}
+<article class="project">
+  <div class="project__wrapper {{ with .Params.thumbnail -}}
+  {{- else -}}
+  project__wrapper--noimg
+  {{- end -}}">
+    <div class="project__text">
+      <h3>{{ .Title }}</h3>
+      <hr>
+      {{ .Summary }}
+    </div>
+
+    {{ with .Params.thumbnail }}
+      <div class="project__gallery">
+        {{ partial "thumbnail.html" $ }}
+      </div>
+    {{ end }}
+
+    <div class="project__buttons">
+      {{ with .Params.github -}}
+      <a class="link-button link-button--outline" href="{{ . }}" target="_blank" rel="noopener">Otwórz Githuba</a>
+      {{- else -}}
+      <a class="link-button" href="{{ .Permalink }}">Poznaj szczegóły</a>
+      {{- end -}}
+    	{{ with .Params.link -}}
+      <a class="link-button link-button--outline" href="{{ . }}" target="_blank" rel="noopener">Odwiedź stronę</a>
+      {{- end }}
+    </div>
+  </div>
+</article>
+{{- end }}

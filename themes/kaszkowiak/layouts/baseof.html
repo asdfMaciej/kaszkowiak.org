@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <!-- homepage -->
+  <head>
+    {{ block "head" .}}
+    {{ end }}
+  </head>
+  <body class="home-page">
+  	{{ block "header" . }}
+  	{{ end }}
+    <main class="main-content">
+    {{ block "main" . }}
+    {{ end }}
+    </main>
+    {{ block "footer" . }}
+    {{ end }}
+  </body>
+  <script defer language="javascript" type="text/javascript"  src="{{ "/js/navbar.js" | urlize | relURL }}"></script>
+</html>

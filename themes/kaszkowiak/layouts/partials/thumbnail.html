@@ -1,0 +1,8 @@
+{{ with .Params.thumbnail }}
+	{{ $srcUrl := . | safeURL }}
+	{{ $src := $.Resources.GetMatch (printf "%s" $srcUrl) }}
+	{{ $tinyw := default "500x" }}
+	{{ $.Scratch.Set "tiny" ($src.Resize $tinyw) }}
+	{{ $tiny := $.Scratch.Get "tiny" }}
+	    <img src='{{ $tiny.RelPermalink }}' loading="lazy" class="blog-thumbnail" alt="Miniaturka">
+{{ end }}

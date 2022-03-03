@@ -1,0 +1,16 @@
+<a href="/oferta/#{{.Params.slug}}" class="offer__box">
+	<div class="offer__box-top">
+		{{ with .Resources.GetMatch (printf "%s" .Params.icon) }}
+			<img src="{{ .RelPermalink }}" alt="" class="offer__box-icon">
+		{{ end }}
+		<h2 class="offer__box-title">
+			{{ .Title }}
+		</h2>
+	</div>
+	<p class="offer__box-description">
+		{{ .Summary | plainify }}
+	</p>
+	<span class="link-button">
+		Dowiedz się więcej
+	</span>
+</a>

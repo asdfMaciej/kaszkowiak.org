@@ -1,0 +1,18 @@
+<article class="posts-list__post">
+    {{ partial "thumbnail.html" . }}
+    <h2>
+        <a href="{{ .Permalink }}">
+            {{ .Title }}
+        </a>
+    </h2>
+    <time class="posts-list__date" datetime="{{ .Date }}">
+        {{ dateFormat "02" .Date }}
+        {{ index $.Site.Data.months (printf "%d" .Date.Month) }}
+        {{ dateFormat "2006" .Date }}
+    </time>
+    {{ partial "post-tags.html" . }}
+    <p>
+        {{ .Summary }}
+    </p>
+    <div class="clear"></div>
+</article>

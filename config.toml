@@ -1,0 +1,14 @@
+baseURL = "https://kaszkowiak.org/"
+languageCode = "pl-PL"
+
+title = "Maciej Kaszkowiak"
+theme = "kaszkowiak"
+
+[params]
+author = "Maciej Kaszkowiak"
+description = "Portfolio Macieja Kaszkowiaka"
+locale = "pl_PL"
+sitename = "kaszkowiak.org"
+
+[taxonomies]
+  tag = "tags"

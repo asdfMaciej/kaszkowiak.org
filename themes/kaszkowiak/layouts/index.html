@@ -1,0 +1,96 @@
+{{ define "main" }}
+    
+      <section class="landing" id="navbar-transparent">
+        <div class="landing__container">
+          <div class="landing__content">
+            <h2>Cześć!</h2>
+            <h3>Nazywam się Maciej Kaszkowiak.</h3>
+            <p>Tworzę strony WWW i aplikacje internetowe.</p>
+          </div>
+        </div> 
+      </section>
+
+      <section class="about-me-front">
+          <div class="wrapper">
+            <h2>
+              Kilka słów o mnie
+            </h2>
+            <img src="/img/programming.svg" alt="">
+            <p>
+              Programuję od najmłodszych lat. Od kilku lat specjalizuję się w tworzeniu stron i serwisów internetowych.
+              Stale się rozwijam poprzez dokształcanie się i poszerzanie swojej wiedzy.
+            </p>
+            <p>
+              Mieszkam od urodzenia we Wronkach. 
+              Ukończyłem w tym roku technikum z tytułami najlepszego absolwenta technikum oraz najlepszego technika informatyka.
+              Podążanie za wiedzą pozwoliło mi zdobyć tytuł laureata II Olimpiady Cyfrowej. 
+            </p>
+            <p>
+              Uwielbiam sport. Jazda na szosie i treningi siłowe to moje główne odskocznie od komputera :)
+              W wolnych chwilach również gram w szachy oraz tworzę projekty open-source.
+            </p>
+            <a href="/o-mnie/">Przeczytaj całość!</a>
+          </div>
+
+        </section>
+
+        <section class="offer">
+          <div class="wrapper">
+            <h2 class="offer__header">
+              Moja oferta
+            </h2>
+          </div>
+          {{ partial "offer-tiles.html" . }}
+        </section>
+
+        <section class="projects">
+          <div class="wrapper">
+            <h2>
+              Wybrane projekty z opisem realizacji
+            </h2>
+            {{ range ( where .Site.RegularPages "Type" "projekty") }}
+              {{- if not (isset .Params "github") -}}
+              {{ partial "project-tile.html" . }}
+              {{- end -}}
+            {{ end }}
+            <h2>Moje projekty open-source</h2>
+            <p>
+              Praktyczne projekty miniaturki, stworzone czysto hobbystycznie. 
+              <br>Naciśnij na projekt, aby przejść do kodu źródłowego na <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">Githubie</a>.
+            </p>
+            <nav class="project-mini__container">
+            {{ range (where .Site.RegularPages "Type" "projekty") }}
+              {{ if isset .Params "github" -}}
+              {{ partial "project-tile.html" . }}
+              {{- end -}}
+            {{ end }}
+            </nav>
+          </div>
+        </section>
+
+        <section class="blog">
+          <div class="wrapper">
+            <h2>Ostatnie posty na blogu</h2>
+            <p>Piszę o projektach, technologii i programowaniu - <a href="/blog/">zobacz wszystkie posty</a>.</p>
+            {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
+                {{ partial "blog-tile.html" . }}
+            {{ end }}
+          </div>
+        </section>
+
+        <section class="contact-front">
+          <div class="wrapper">
+            <h2>Skontaktuj się</h2>
+            <p>
+              Zapraszam do kontaktu - odpisuję codziennie w ciągu doby :)<br>
+              Jestem także dostępny na <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">Githubie</a>
+              oraz na
+              <a href="https://www.facebook.com/kaszkowiak.maciej/" target="_blank" rel="noopener">Facebooku</a>.
+              Mieszkam we Wronkach.
+            </p> 
+            {{ partial "contact-form.html" . }}
+          </div>
+          
+        </section>
+      
+{{ end }}

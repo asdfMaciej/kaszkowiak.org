@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+
+{{ partial "breadcrumbs.html" . }}
+
+<article class="blog-post">
+	<header class="blog-post__header">
+		<h1>{{ .Title }}</h1>
+		<time class="blog-post__date" datetime="{{ .Date }}">
+			{{ dateFormat "02" .Date }}
+			{{ index $.Site.Data.months (printf "%d" .Date.Month) }}
+			{{ dateFormat "2006" .Date }}
+		</time>
+
+		{{ partial "post-tags.html" . }}
+		<p class="blog-post__summary"> {{.Summary}} </p>
+
+	</header>
+    <section class="blog-post__content">
+    	{{ partial "thumbnail-lightbox.html" . }}
+		{{ .Content }}
+    </section>
+</article>
+
+{{ end }}

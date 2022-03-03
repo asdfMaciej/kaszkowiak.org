@@ -1,0 +1,20 @@
+<nav class="breadcrumbs" id="breadcrumbs">
+    <a href="/">Strona główna</a>
+    {{if or (eq .Section "blog") (eq .Section "projekty")  }}
+
+	    {{ range first 2 (split .RelPermalink "/") }}
+	        {{ if gt (len . ) 0 }}
+	            / <a href="/{{ . }}">{{ humanize . }}</a>
+	        {{ end }}
+	    {{ end }}
+	    {{ if .IsPage }}
+	    	/ <a href="{{ $.Permalink }}">{{ .Title }}</a>
+	    {{ end }}
+	{{else}}
+		{{ range (split .RelPermalink "/") }}
+	        {{ if gt (len . ) 0 }}
+	            / <a href="/{{ . }}">{{ humanize . }}</a>
+	        {{ end }}
+	    {{ end }}
+	{{ end }}
+</nav>
