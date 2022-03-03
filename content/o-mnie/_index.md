@@ -8,9 +8,9 @@ Uwielbiam sport. Jazda na szosie i treningi siłowe to moje główne odskocznie 
 
 ## Doświadczenie jako web-developer
 
-Mieszkam od urodzenia we Wronkach. Ukończyłem w 2021 technikum informatyczne z tytułami najlepszego absolwenta technikum oraz najlepszego technika informatyka. Jestem również laureatem II Olimpiady Cyfrowej. Od października 2021 studiuję Informatykę na Politechnice Poznańskiej w trybie stacjonarnym.
+Mieszkam w Poznaniu oraz we Wronkach. Ukończyłem w 2021 technikum informatyczne z tytułami najlepszego absolwenta technikum oraz najlepszego technika informatyka. Jestem również laureatem II Olimpiady Cyfrowej. Od października 2021 studiuję Informatykę na Politechnice Poznańskiej w trybie stacjonarnym.
 
-Odbyłem staż w firmach Komputerpartner (czerwiec 2020) i w Trol Intermedia (maj, lipiec 2019), gdzie zajmowałem się tworzeniem stron internetowych. Aktualnie współpracuję z firmą Trol Intermedia, w głównej mierze pełniąc rolę back-end developera. Od 2018 regularnie zajmuję się utrzymaniem i rozwojem systemów firmy BRAMY-SERWIS.
+Odbyłem staż w firmach Komputerpartner (czerwiec 2020) i w Trol Intermedia (maj, lipiec 2019), gdzie zajmowałem się tworzeniem stron internetowych. Od 2018 regularnie zajmuję się utrzymaniem i rozwojem systemów firmy BRAMY-SERWIS. Aktualnie współpracuję z firmą Trol Intermedia, w głównej mierze pełniąc rolę back-end developera. 
 
 Zachęcam do spojrzenia na efekty mojej dotychczasowej pracy. Udostępniłem [wybrane projekty](/projekty/) wraz ze zdjęciami i opisem realizacji.
 
