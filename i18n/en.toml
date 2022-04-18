@@ -1,0 +1,53 @@
+[frontHi]
+	other = 'Hey'
+[myNameIs]
+	other = 'My name is'
+[wwwAndApps]
+	other = 'I create websites and web applications'
+[socialMedia]
+	other = 'Social media'
+[fewWords]
+	other = 'A few words about me'
+[myOffer]
+	other = 'What I bring to the table'
+[selectedProjects]
+	other = 'Highlighted projects with in-depth descriptions'
+[openSourceProjects]
+	other = 'My open-source projects'
+[miniProjects]
+	other = 'Practical hobby projects, developed purely for fun.'
+[miniProjectsDesc]
+	other = 'Click on a project to preview its source code on'
+[githubD]
+	other = 'Github'
+[facebookD]
+	other = 'Facebook'
+[recentBlogPosts]
+	other = 'Recent blog posts'
+[blogTheme]
+	other = 'I write about creating projects, technology and programming'
+[seePosts]
+	other = 'see all posts'
+[contactHeader]
+	other = 'Contact me'
+[header1]
+	other = 'Feel free to contact me - I typically respond within a day :)'
+[header2]
+	other = "I'm also available on"
+[header3]
+	other = 'Currently, I live in Poznań.'
+[andOn]
+	other = 'and on'
+[readAll]
+	other = 'Read the full article'
+
+[menuOffer]
+	other = 'Offer'
+[menuAboutMe]
+	other = 'About me'
+[menuProjects]
+	other = 'Projects'
+[menuBlog]
+	other = 'Blog'
+[menuContact]
+	other = 'Contact'

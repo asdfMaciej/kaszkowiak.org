@@ -1,14 +1,28 @@
 baseURL = "https://kaszkowiak.org/"
-languageCode = "pl-PL"
 
-title = "Maciej Kaszkowiak"
 theme = "kaszkowiak"
+title = "Maciej Kaszkowiak"
+defaultContentLanguage = "pl"
+
+[languages]
+	[languages.pl]
+		languageCode = "pl-PL"
+		languageName = "Polski"
+		weight = 1
+		[languages.pl.params]
+			description = "Portfolio Macieja Kaszkowiaka"
+			locale = "pl_PL"
+	[languages.en]
+		languageCode = "en"
+		languageName = "English"
+		weight = 2 
+		[languages.en.params]
+			description = "Maciej Kaszkowiak's portfolio"
+			locale = "en"
 
 [params]
-author = "Maciej Kaszkowiak"
-description = "Portfolio Macieja Kaszkowiaka"
-locale = "pl_PL"
-sitename = "kaszkowiak.org"
+	author = "Maciej Kaszkowiak"
+	sitename = "kaszkowiak.org"
 
 [taxonomies]
-  tag = "tags"
+	tag = "tags"

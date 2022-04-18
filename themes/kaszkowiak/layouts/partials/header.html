@@ -10,21 +10,35 @@
 		</a>
 
 		<nav class="navbar__navigation">
-			<a href="/oferta/" title="Oferta">
-				Oferta
+			{{ with .Site.GetPage "/oferta/" }}      
+			<a href="{{ .Permalink }}" title='{{ i18n "menuOffer" }}'>
+				{{ i18n "menuOffer" }}
 			</a>
-			<a href="/o-mnie/" title="O mnie">
-				O mnie
+            {{ end }}
+
+            {{ with .Site.GetPage "/o-mnie/" }}      
+			<a href="{{ .Permalink }}" title='{{ i18n "menuAboutMe" }}'>
+				{{ i18n "menuAboutMe" }}
 			</a>
-			<a href="/projekty/" title="Projekty">
-				Projekty
+            {{ end }}
+
+            {{ with .Site.GetPage "/projekty/" }}      
+			<a href="{{ .Permalink }}" title='{{ i18n "menuProjects" }}'>
+				{{ i18n "menuProjects" }}
 			</a>
-			<a href="/blog/" title="Blog">
-				Blog
+            {{ end }}
+
+            {{ with .Site.GetPage "/blog/" }}      
+			<a href="{{ .Permalink }}" title='{{ i18n "menuBlog" }}'>
+				{{ i18n "menuBlog" }}
 			</a>
-			<a href="/kontakt/" title="Kontakt">
-				Kontakt
+            {{ end }}
+
+            {{ with .Site.GetPage "/kontakt/" }}      
+			<a href="{{ .Permalink }}" title='{{ i18n "menuContact" }}'>
+				{{ i18n "menuContact" }}
 			</a>
+            {{ end }}
 		</nav>
 	</div>
 </header>

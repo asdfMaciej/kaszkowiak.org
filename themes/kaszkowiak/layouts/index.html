@@ -3,9 +3,9 @@
       <section class="landing" id="navbar-transparent">
         <div class="landing__container">
           <div class="landing__content">
-            <h2>Cześć!</h2>
-            <h3>Nazywam się Maciej Kaszkowiak.</h3>
-            <p>Tworzę strony WWW i aplikacje internetowe.</p>
+            <h2>{{ i18n "frontHi" }}!</h2>
+            <h3>{{ i18n "myNameIs" }} Maciej Kaszkowiak.</h3>
+            <p>{{ i18n "wwwAndApps" }}.</p>
           </div>
         </div> 
       </section>
@@ -13,24 +13,13 @@
       <section class="about-me-front">
           <div class="wrapper">
             <h2>
-              Kilka słów o mnie
+              {{ i18n "fewWords" }}
             </h2>
             <img src="/img/programming.svg" alt="">
-            <p>
-              Programuję od najmłodszych lat. Specjalizuję się w tworzeniu stron, serwisów oraz aplikacji internetowych.
-              Stale się rozwijam poprzez dokształcanie się i poszerzanie swojej wiedzy.
-            </p>
-            <p>
-              Mieszkam w Poznaniu oraz we Wronkach. 
-              Ukończyłem technikum z tytułami najlepszego absolwenta oraz najlepszego technika informatyka.
-              Jestem również laureatem II Olimpiady Cyfrowej. 
-              Od 2021 roku studiuję Informatykę na Politechnice Poznańskiej w trybie stacjonarnym.
-            </p>
-            <p>
-              Uwielbiam sport. Jazda na szosie i treningi siłowe to moje główne odskocznie od komputera :)
-              W wolnych chwilach również gram w szachy oraz tworzę projekty open-source.
-            </p>
-            <a href="/o-mnie/">Przeczytaj całość!</a>
+            {{ with .Site.GetPage "/o-mnie" }}
+              {{ .Summary }}
+              <a href="{{ .Permalink }}">{{ i18n "readAll" }}!</a>
+            {{ end }}
           </div>
 
         </section>
@@ -38,7 +27,7 @@
         <section class="offer">
           <div class="wrapper">
             <h2 class="offer__header">
-              Moja oferta
+              {{ i18n "myOffer" }}
             </h2>
           </div>
           {{ partial "offer-tiles.html" . }}
@@ -47,17 +36,20 @@
         <section class="projects">
           <div class="wrapper">
             <h2>
-              Wybrane projekty z opisem realizacji
+              {{ i18n "selectedProjects" }}
             </h2>
             {{ range ( where .Site.RegularPages "Type" "projekty") }}
               {{- if not (isset .Params "github") -}}
               {{ partial "project-tile.html" . }}
               {{- end -}}
             {{ end }}
-            <h2>Moje projekty open-source</h2>
+            <h2>
+              {{ i18n "openSourceProjects" }}
+            </h2>
             <p>
-              Praktyczne projekty miniaturki, stworzone czysto hobbystycznie. 
-              <br>Naciśnij na projekt, aby przejść do kodu źródłowego na <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">Githubie</a>.
+              {{ i18n "miniProjects" }} 
+              <br>
+              {{ i18n "miniProjectsDesc" }} <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">{{ i18n "githubD" }}</a>.
             </p>
             <nav class="project-mini__container">
             {{ range (where .Site.RegularPages "Type" "projekty") }}
@@ -71,8 +63,8 @@
 
         <section class="blog">
           <div class="wrapper">
-            <h2>Ostatnie posty na blogu</h2>
-            <p>Piszę o projektach, technologii i programowaniu - <a href="/blog/">zobacz wszystkie posty</a>.</p>
+            <h2>{{ i18n "recentBlogPosts" }}</h2>
+            <p>{{ i18n "blogTheme" }} - <a href="/blog/">{{i18n "seePosts"}}</a>.</p>
             {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
                 {{ partial "blog-tile.html" . }}
             {{ end }}
@@ -81,13 +73,13 @@
 
         <section class="contact-front">
           <div class="wrapper">
-            <h2>Skontaktuj się</h2>
+            <h2>{{ i18n "contactHeader" }}</h2>
             <p>
-              Zapraszam do kontaktu - odpisuję codziennie w ciągu doby :)<br>
-              Jestem także dostępny na <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">Githubie</a>
-              oraz na
-              <a href="https://www.facebook.com/kaszkowiak.maciej/" target="_blank" rel="noopener">Facebooku</a>.
-              Mieszkam w Poznaniu oraz we Wronkach.
+              {{ i18n "header1" }}<br>{{ i18n "header2" }}
+               <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">{{ i18n "githubD" }}</a>
+              {{ i18n "andOn" }}
+              <a href="https://www.facebook.com/kaszkowiak.maciej/" target="_blank" rel="noopener">{{ i18n "facebookD" }}</a>.
+              {{ i18n "header3" }}
             </p> 
           </div>
           

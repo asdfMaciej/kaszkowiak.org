@@ -1,0 +1,53 @@
+[frontHi]
+	other = 'Cześć'
+[myNameIs]
+	other = 'Nazywam się'
+[wwwAndApps]
+	other = 'Tworzę strony WWW i aplikacje internetowe'
+[socialMedia]
+	other = 'Media społecznościowe'
+[fewWords]
+	other = 'Kilka słów o mnie'
+[myOffer]
+	other = 'Moja oferta'
+[selectedProjects]
+	other = 'Wybrane projekty z opisem realizacji'
+[openSourceProjects]
+	other = 'Moje projekty open-source'
+[miniProjects]
+	other = 'Praktyczne projekty miniaturki, stworzone czysto hobbystycznie.'
+[miniProjectsDesc]
+	other = 'Naciśnij na projekt, aby przejść do kodu źródłowego na'
+[githubD]
+	other = 'Githubie'
+[facebookD]
+	other = 'Facebooku'
+[recentBlogPosts]
+	other = 'Ostatnie posty na blogu'
+[blogTheme]
+	other = 'Piszę o projektach, technologii i programowaniu'
+[seePosts]
+	other = 'zobacz wszystkie posty'
+[contactHeader]
+	other = 'Skontaktuj się'
+[header1]
+	other = 'Zapraszam do kontaktu - przeważnie odpisuję w ciągu doby :)'
+[header2]
+	other = 'Jestem także dostępny na'
+[header3]
+	other = 'Aktualnie mieszkam w Poznaniu.'
+[andOn]
+	other = 'oraz na'
+[readAll]
+	other = 'Przeczytaj całość'
+
+[menuOffer]
+	other = 'Oferta'
+[menuAboutMe]
+	other = 'O mnie'
+[menuProjects]
+	other = 'Projekty'
+[menuBlog]
+	other = 'Blog'
+[menuContact]
+	other = 'Kontakt'
