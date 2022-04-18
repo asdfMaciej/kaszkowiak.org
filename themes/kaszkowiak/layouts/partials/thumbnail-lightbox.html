@@ -1,3 +1,4 @@
+{{- if not (isset .Params "hidethumbnail") -}}
 {{ with .Params.thumbnail }}
 	{{ $srcUrl := . | safeURL }}
 	{{ $src := $.Resources.GetMatch (printf "%s" $srcUrl) }}
@@ -8,3 +9,4 @@
 	    <img src='{{ $tiny.RelPermalink }}' loading="lazy" class="blog-thumbnail" alt="Miniaturka">
 	</a>
 {{ end }}
+{{- end -}}

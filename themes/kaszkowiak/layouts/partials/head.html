@@ -39,6 +39,9 @@
 
 <meta property="og:locale" content="{{ .Site.Params.locale }}">
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}">
+{{ if .Params.thumbnail }}
+<meta property="og:image" content="{{ .Permalink }}{{ .Params.thumbnail }}">
+{{ end }}
 
 <meta name="twitter:card" content="summary_large_image">
 
