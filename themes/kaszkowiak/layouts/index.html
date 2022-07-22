@@ -64,7 +64,12 @@
         <section class="blog">
           <div class="wrapper">
             <h2>{{ i18n "recentBlogPosts" }}</h2>
-            <p>{{ i18n "blogTheme" }} - <a href="/blog/">{{i18n "seePosts"}}</a>.</p>
+            <p>{{ i18n "blogTheme" }} - 
+              {{ with .Site.GetPage "/blog" }}
+              <a href="{{ .Permalink }}">
+              {{ end }}
+                {{i18n "seePosts"}}</a>.
+            </p>
             {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
                 {{ partial "blog-tile.html" . }}
             {{ end }}
