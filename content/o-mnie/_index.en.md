@@ -1,51 +1,47 @@
 ---
-title: "O mnie - doświadczenie, umiejętności"
+title: "A few words about me"
+url: "about-me"
 ---
 
-Programuję od najmłodszych lat. Od kilku lat specjalizuję się w tworzeniu stron i serwisów internetowych. Stale się rozwijam poprzez dokształcanie się i poszerzanie swojej wiedzy.
+I have been programming since I was a child. During the past few years I have specialized in creating websites and internet services. I constantly improve by learning and extending my knowledge.
 
-Mieszkam w Poznaniu oraz we Wronkach. Ukończyłem technikum z tytułami najlepszego absolwenta oraz najlepszego technika informatyka. Jestem również laureatem II Olimpiady Cyfrowej. Od 2021 studiuję Informatykę na Politechnice Poznańskiej w trybie stacjonarnym.
+I live in Poznań and Wronki. I have graduated from technical school with the title of best graduate. I am also a laureate of the 2nd Digital Olympiad. Since 2021, I am studying Computer Science at the Poznań University of Technology.
 
-Uwielbiam sport. Jazda na szosie i treningi siłowe to moje główne odskocznie od komputera :) W wolnych chwilach również gram w szachy oraz tworzę projekty open-source.
+I love sport, especially road cycling and weight training :) During my free time I also play chess and create open-source projects.
 <!--more-->
 
-## Doświadczenie jako web-developer
+## My experience as a web-developer
 
-Odbyłem staż w firmach Komputerpartner (czerwiec 2020) i w Trol Intermedia (maj, lipiec 2019), gdzie zajmowałem się tworzeniem stron internetowych. Od 2018 regularnie zajmuję się utrzymaniem i rozwojem systemów firmy BRAMY-SERWIS. Aktualnie współpracuję z firmą Trol Intermedia, w głównej mierze pełniąc rolę back-end developera. 
+I did an internship at Komputerpartner (June 2020) and Trol Intermedia (May, July 2019). Since 2018 I have been regularly involved in the maintenance and development of the systems of BRAMY-SERWIS. I am currently working with Trol Intermedia, primarily in the role of back-end developer. 
 
-Zachęcam do spojrzenia na efekty mojej dotychczasowej pracy. Udostępniłem [wybrane projekty](/projekty/) wraz ze zdjęciami i opisem realizacji.
+## What do I bring to the table?
 
-## Co potrafię zaoferować?
+I use well-known and proven technologies which reduce website maintenance costs and guarantee good performance. On request, I create websites based on CMS, allowing the client to edit the content easily and on their own.
 
-Korzystam ze znanych i sprawdzonych technologii, które pozwalają zmniejszyć koszty utrzymania strony i gwarantują dobrą wydajność. Na życzenie tworzę strony w oparciu o CMS, umożliwiając Klientowi prostą w działaniu, samodzielną edycję treści.
+I can bring a project to life and adapt it for devices of any size - mobile phones, laptops, desktop computers. I am fluent in Photoshop and Figma. I can undertake photo editing and simple graphic design without a hitch.
 
-Potrafię wdrożyć projekt w życie i dostosować go pod urządzenia każdego rozmiaru - komórki, laptopy, komputery stacjonarne. Sprawnie posługuję się Photoshopem i Figmą. Bez problemu podejmę się obróbki zdjęć i wykonania prostego projektu graficznego.
+A fast, polished website increases visitor interest and search engine ranking. I optimise each page for performance and search results. Essentials include: speeding up page loading, ensuring SSL works, refining the page preview in Google and on social media. 
 
-Optymalizuję każdą stronę pod kątem wydajności i wyników wyszukiwania. Korzystam z nabytej wiedzy - przyspieszam ładowanie strony, dodaję kłódkę w pasku, dopracowuję podgląd strony w Google i na mediach społecznościowych. Szybka, dopracowana strona zwiększa zainteresowanie odwiedzających i pozycję w wyszukiwarkach internetowych.
+Implementing an advanced project from scratch isn't an issue for me. I use frameworks and proper design patterns - it speeds up the development process and ensures simpler maintenance. I can map the domain model of a company, organization, or a given task - and then create a database that fulfills its role.
 
-Potrafię wdrożyć również bardziej zaawansowany projekt od podstaw. Korzystam z frameworków i wzorców projektowych - przyspiesza to tworzenie witryny oraz zapewnia jej prostszą rozbudowę i utrzymanie. Potrafię odwzorować model struktury firmy, organizacji, danego zadania - a następnie utworzyć relacyjną bazę danych spełniającą swoją rolę.
+## Beyond web development
 
-## Poza stronami również umiem:
+My Linux server administration knowledge is enough to install required services, configure them, and keep the server secure. I can collaborate with other developers using a version control system. I am also familiar with a range of other technologies (apart from websites). From the top of my head, I can create simple applications for Android. I know Python well, so I can automate various repetitive tasks. I am willing to enter even new, unknown areas.
 
-Potrafię współpracować z innymi programistami za pomocą systemu kontroli wersji. Znam podstawy administracji serwerów. Umiem wdrożyć stosowne zabezpieczenie oraz skonfigurować wymagane usługi - bazy danych, intepretery kodu, monitorowanie zasobów.
+## Languages, libraries, knowledge
 
-Znam również szereg innych technologii (poza stronami internetowymi). Umiem tworzyć proste aplikacje na Androida. Dobrze znam Pythona, przez co potrafię zautomatyzować różne powtarzalne czynności. Z chęcią wkroczę nawet na nowe, nieznane rejony.
-
-## Języki, technologie, wiedza
-Wersja dla programisty :)
-
-**Średnio-zaawansowana znajomość:**  
+**Upper intermediate knowledge:**  
 - PHP7, Python 3, Javascript (ES6), HTML5, CSS3, SCSS  
 - FPDF, Requests  
 - BEM, Flexbox, CSS Grid, JSON-LD, REST API  
 
-**Dobra znajomość:**   
+**Intermediate knowledge:**   
 - SQL (dialekty: MySQL, MSSQL, SQLite)  
 - Symfony, vue.js, CakePHP, jQuery, Selenium, BeautifulSoup, moment.js, Axios  
 - Photoshop, git, bash, cmd  
-- wzorce projektowe, projektowanie i normalizacja baz, optymalizacja zapytań SQL, profilowanie kodu
+- design patterns, design and normalisation of databases, SQL query optimization, code profiling 
 
-**Podstawowa znajomość:**   
+**Basic knowledge:**   
 - Java, Rust, C++, R   
 - node.js, Django, Flask  
 - Figma, Android Studio  

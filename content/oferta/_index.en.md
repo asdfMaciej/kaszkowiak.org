@@ -1,6 +1,6 @@
 ---
-title: "Tworzenie stron i witryn internetowych - Wronki, Szamotuły"
-desc: "Zaprojektuję i wykonam stronę WWW od podstaw - szybką i dostosowaną do komórek."
-url: /en/offer
+title: "Web development services - Maciej Kaszkowiak"
+desc: "I will design and develop a website from scratch - fast and responsive."
+url: /en/services
 ---
 hej

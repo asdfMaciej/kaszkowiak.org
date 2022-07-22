@@ -1,24 +1,26 @@
 {{define "header"}}
 <header class="navbar">
 	<div class="wrapper wrapper--navbar">
-		<a class="navbar__logo" href="/">
+		{{ with .Site.GetPage "/" }}
+		<a class="navbar__logo" href="{{ .Permalink }}">
 			Maciej Kaszkowiak
 		</a>
+		{{ end }}
 
 		<a class="navbar__hamburger" id="nav-hamburger" href="#">
 			☰
 		</a>
 
 		<nav class="navbar__navigation">
-			{{ with .Site.GetPage "/oferta/" }}      
-			<a href="{{ .Permalink }}" title='{{ i18n "menuOffer" }}'>
-				{{ i18n "menuOffer" }}
+			{{ with .Site.GetPage "/o-mnie/" }}      
+			<a href="{{ .Permalink }}" title='{{ i18n "menuAboutMe" }}'>
+				{{ i18n "menuAboutMe" }}
 			</a>
             {{ end }}
 
-            {{ with .Site.GetPage "/o-mnie/" }}      
-			<a href="{{ .Permalink }}" title='{{ i18n "menuAboutMe" }}'>
-				{{ i18n "menuAboutMe" }}
+			{{ with .Site.GetPage "/oferta/" }}      
+			<a href="{{ .Permalink }}" title='{{ i18n "menuOffer" }}'>
+				{{ i18n "menuOffer" }}
 			</a>
             {{ end }}
 

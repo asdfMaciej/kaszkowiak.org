@@ -40,6 +40,8 @@
 	other = 'oraz na'
 [readAll]
 	other = 'Przeczytaj całość'
+[learnMore]
+	other = 'Dowiedz się więcej'
 
 [menuOffer]
 	other = 'Oferta'

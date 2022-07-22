@@ -1,4 +1,4 @@
-<a href="/oferta/#{{.Params.slug}}" class="offer__box">
+<a href="{{ with .Site.GetPage "/oferta" }}{{ .Permalink}}{{end}}#{{.Params.slug}}" class="offer__box">
 	<div class="offer__box-top">
 		{{ with .Resources.GetMatch (printf "%s" .Params.icon) }}
 			<img src="{{ .RelPermalink }}" alt="" class="offer__box-icon">
@@ -8,9 +8,9 @@
 		</h2>
 	</div>
 	<p class="offer__box-description">
-		{{ .Summary | plainify }}
+		{{ .Summary | plainify | htmlUnescape }}
 	</p>
 	<span class="link-button">
-		Dowiedz się więcej
+		{{ i18n "learnMore" }}
 	</span>
 </a>

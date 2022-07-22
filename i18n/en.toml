@@ -15,7 +15,7 @@
 [openSourceProjects]
 	other = 'My open-source projects'
 [miniProjects]
-	other = 'Practical hobby projects, developed purely for fun.'
+	other = 'Practical hobby projects, developed mostly for fun.'
 [miniProjectsDesc]
 	other = 'Click on a project to preview its source code on'
 [githubD]
@@ -40,9 +40,11 @@
 	other = 'and on'
 [readAll]
 	other = 'Read the full article'
+[learnMore]
+	other = 'Learn more'
 
 [menuOffer]
-	other = 'Offer'
+	other = 'Services'
 [menuAboutMe]
 	other = 'About me'
 [menuProjects]
