@@ -6,7 +6,7 @@ link: "https://hermes.kaszkowiak.org"
 weight: 2
 ---
 
-Zapełniłem niszę w rynku - stworzyłem wygodny dziennik treningowy i platformę do dzielenia się wynikami. Hobbystyczny projekt open-source.
+Stworzyłem wygodny dziennik treningowy i platformę do dzielenia się wynikami. Hobbystyczny projekt open-source.
 <!--more-->
 Kod źródłowy jest dostępny na [moim Githubie](https://github.com/asdfMaciej/hermes).
 

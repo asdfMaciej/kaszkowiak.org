@@ -42,6 +42,21 @@
 			</a>
             {{ end }}
 		</nav>
+		{{ if .IsTranslated }}
+    {{ range .Translations }}
+      {{ if eq .Site.Language.Lang "en" }}
+    <a title="English" href="{{ .RelPermalink }}"><img src="/img/gb.svg" width="30"></a>
+      {{ else }}
+    <a title="Polish" href="{{ .RelPermalink }}"><img src="/img/pl.svg" width="30"></a>
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    {{ if eq .Site.Language.Lang "pl" }}
+    <a title="English" href="/en/"><img src="/img/gb.svg" width="30"></a>
+    {{ else }}
+    <a title="Polish" href="/"><img src="/img/pl.svg" width="30"></a>
+    {{ end }}
+  {{ end }}
 	</div>
 </header>
 {{end}}

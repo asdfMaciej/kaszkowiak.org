@@ -1,20 +1,16 @@
 {{ define "main" }}
 {{ partial "breadcrumbs.html" . }}
 <section class="projects">
-	<h1>Projekty stron i serwisów internetowych</h1>
-	<p>
-		Zestawiłem wybrane zrealizowane projekty wraz ze zdjęciami i opisem realizacji.
-		<br>Kliknij na projekt, aby go lepiej poznać.
-	</p>
+	{{ .Content }}
 	{{ range .Pages }}
 		{{ if not (isset .Params "github") -}}
 		{{ partial "project-tile.html" . }}
 		{{ end }}
 	{{ end }}
-	<h2>Stworzyłem wiele projektów open-source</h2>
+	<h2>{{ i18n "openSourceProjects" }}</h2>
 	<p>
-		Projekty sięgają do kilku lat wstecz - programowanie to moja długoletnia pasja.
-		<br>Naciśnij na projekt, aby przejść do kodu źródłowego na <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">Githubie</a>.
+		{{ i18n "miniProjects" }}
+		<br>{{ i18n "miniProjectsDesc" }} <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">{{ i18n "githubD" }}</a>.
 	</p>
 	<nav class="project-mini__container">
 	{{ range .Pages }}

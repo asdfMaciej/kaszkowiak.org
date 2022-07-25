@@ -20,12 +20,12 @@
 
     <div class="project__buttons">
       {{ with .Params.github -}}
-      <a class="link-button link-button--outline" href="{{ . }}" target="_blank" rel="noopener">Otwórz Githuba</a>
+      <a class="link-button link-button--outline" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "visitGithub" }}</a>
       {{- else -}}
-      <a class="link-button" href="{{ .Permalink }}">Poznaj szczegóły</a>
+      <a class="link-button" href="{{ .Permalink }}">{{ i18n "learnDetails" }}</a>
       {{- end -}}
     	{{ with .Params.link -}}
-      <a class="link-button link-button--outline" href="{{ . }}" target="_blank" rel="noopener">Odwiedź stronę</a>
+      <a class="link-button link-button--outline" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "visitWebsite" }}</a>
       {{- end }}
     </div>
   </div>
