@@ -20,7 +20,7 @@ Deployment również jest prosty, szczególnie na platformach typu Github, Gitla
 
 ## Dlaczego akurat Hugo?
 
-Przede wszystkim: **łatwość wprowadzania zmian**. Dodawanie nowych podstron, modyfikowanie struktury strony i wprowadzanie zmian nie stanowi żadnego problemu. Do edycji potrzebuję jedynie edytora tekstu. Nie muszę korzystać z CMSa, co osobiście bardzo cenię.
+Przede wszystkim: **łatwość wprowadzania zmian**. Dodawanie nowych podstron, modyfikowanie struktury strony i wprowadzanie zmian nie stanowi żadnego problemu. Do edycji potrzebny jest wyłącznie edytor tekstu, dzięki czemu nie ma potrzeby korzystania z CMSa.
 
 Kolejne atuty to **szybkość** i **niewielkie wykorzystanie zasobów**. Na chwilę pisania tego tekstu Hugo wykorzystuje u mnie zaledwie 60 MB pamięci, pełniąc dodatkowo rolę serwera. Prędkość generowania stron sprawia, że tuż po naciśnięciu CTRL+S widzę zmiany w przeglądarce. Patrząc z perspektywy hostingowej, strona wygenerowana przez Hugo może stać niemal wszędzie. Nie potrzebujemy dostępu do bazy danych ani interpretera PHP do zwrócenia strony, przez co otwiera się szeroka gama darmowych rozwiązań hostingowych - Github Pages, Netlify, itd. 
 
@@ -37,14 +37,3 @@ Kompilacja SCSS wymaga pobrania wersji Hugo Extended. Zaczynając przygodę z Hu
 Hugo nie posiada wbudowanego domyślnego motywu. Po uruchomieniu komendy "hugo new site" otrzymujemy jedynie pustą strukturę katalogów. W poradniku startowym autorzy zalecają pobranie motywu Ananke za pomocą gita. Uważam to za znaczącą przeszkodę dla osób początkujących - polecany motyw jest dość rozbudowany i ciężko jest zacząć go modyfikować bez dostatecznej wiedzy. Znacznie lepszym rozwiązaniem na start byłby zwykły Hello World: z dwoma podstronami, komentarzami w kodzie do czego służy plik i podstawowym podziałem na header / treść / footer.
 
 Im częściej korzystamy z templatowania w Hugo, tym więcej pustych linii znajdziemy w wygenerowanym kodzie HTML. Rozwiązanie jest proste - otaczając \{\{ zmienne \}\} w klamrach z \{\{- dodatkowym myślnikiem -\}\}, Hugo usunie niepotrzebny whitespace wokół klamr. To również było ciężko znaleźć w Google - szukając pod hasłem "hugo remove extra new lines" nie znajdziemy nic w oficjalnej dokumentacji. Drobnostka, ale warto wspomnieć.
-<!--
-Przeszkody:
-- umieszczanie obrazkow zacielo
-- headless bundles, szukanie w podstronie
-- leaf bundle fallbackuje do \_default https://github.com/gohugoio/hugo/issues/5714
-- wysylanie maili przez formularz
-- wyszukiwanie na stronie
-- duzo pustych linii w kodzie html [ale uwaga: dash w parenthesis usuwa ]
-
-
-Wordpress to wielka kobyła zjadająca zasoby. Wygenerowanie strony głównej wymaga kilkudziesięciu zapytań do bazy danych a do szybkiego działania potrzebujemy mocnego hostingu lub sprawnego cache. Przy Wordpressie należy również dbać o bezpieczeństwo - regularne aktualizacje systemu i pluginów - gdzie strona statyczna zapewnia to z założenia.-->

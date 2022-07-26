@@ -36,7 +36,7 @@ Układ wymaga kilku istotnych komentarzy. Wprowadzenie ESP-01 w tryb programowan
 
 Uziemiłem również stałym połączeniem pin RESET w Arduino. Umożliwia to bezpośrednią komunikację pomiędzy komputerem oraz ESP8266. 
 
-{{< img src="circuit-esp.png" alt="Edytowanie kodu HTML">}}
+{{< img src="circuit-esp.png" alt="Układ do zaprogramowania ESP8266">}}
 
 Po skonstruowaniu układu możemy zaprogramować moduł ESP-01 za pomocą aplikacji Arduino. W tym celu musimy wejść w ustawienia oraz wkleić [następujący URL](http://arduino.esp8266.com/stable/package_esp8266com_index.json) w pole "Dodatkowe adresy URL do menadżera płytek". Po zrestartowaniu aplikacji wchodzimy w menu Narzędzia > Płytka > Menadżer płytek oraz instalujemy "esp8266" w wersji 2.5.0. Nowsze wersje posiadają mniej czytelne komunikaty błędów oraz powodują problemy z wgrywaniem kodu wg. [dyskusji na GitHubie](https://github.com/espressif/esptool/issues/432). Na końcu należy wybrać "Generic ESP8266 Module" w menu Narzędzia > Płytka oraz ustawić wartość Builtin Led na "1".
 
@@ -64,8 +64,8 @@ W tym przypadku Arduino przetwarza input z podłączonego keypada 4x4, przesyła
 
 Po zaprogramowaniu Arduino możemy przejść do połączenia wszystkich komponentów.
 
-## Schemat elektryczny projektu
-{{< img src="circuit-full.png" alt="Schemat elektryczny projektu">}}
+## Schemat kompletnego projektu
+{{< img src="circuit-full.png" alt="Schemat kompletnego projektu">}}
 
 Warto zwrócić uwage na drobne różnice w stosunku do układu programującego ESP-01. Przede wszystkim - usunąłem przycisk RESET, aby przypadkowo nie wyczyścić wgranego programu. Odłączyłem również uziemienie pinu RESET w Arduino oraz pinu GPIO0 w ESP-01. Piny TX/RX są skrzyżowane, przez co output (TX) Arduino trafia na input (RX) ESP-01.   
 
@@ -74,6 +74,8 @@ Po zasileniu układu momentalnie powinien zapalić się czerwony LED, a po kilku
 ## Przetwarzanie zapytania na serwerze
 ### Kod źródłowy - PHP
 Rola skryptu PHP przetwarzającego zapytanie to wyłącznie autoryzacja na podstawie wbudowanego hasła oraz przekazanie wybranej sceny do skryptu tuyalights. Scena może przyjąć jedynie wartość numeryczną, aby w prosty sposób zapobiec RCE.
+
+Kod działa poprawnie, jednak należy zauważyć, że typ żądania GET jest niewłaściwie użyty - POST z reguły zadziałałby lepiej. W tym konkretnym przypadku nie powinno to wyrządzić żadnej szkody, ale jako przykład - przeglądarki mogą samoistnie duplikować lub preloadować żądania GET (Safari z tego słynie). Nie chcielibyśmy, aby nasze światła zmieniały się losowo, prawda? ;)   
 
 {{< unsafe >}}
 <div style="height: 500px; max-height: 50vh; overflow: scroll;">

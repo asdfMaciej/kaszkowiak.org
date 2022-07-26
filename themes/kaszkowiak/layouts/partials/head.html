@@ -11,7 +11,7 @@
 {{- else if (eq .Section "oferta") -}}
 	{{- $title = .Title -}}
 {{- else if (and (eq .Section "tags") (ne .Title "Lista tagów")) -}}
-	{{- $title = printf "Blog programistyczny - #%s - Maciej Kaszkowiak" .Title -}}
+	{{- $title = printf "Blog - #%s - Maciej Kaszkowiak" .Title -}}
 {{- else -}}
 	{{- $title = printf "%s - Maciej Kaszkowiak" .Title -}}
 {{- end -}}
