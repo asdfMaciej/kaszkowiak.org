@@ -1,10 +1,10 @@
 ---
 title: "Contact me"
+url: "/en/contact"
 ---
 
+# Contact me 
 
-Zapraszam do [kontaktu mailowego](mailto:maciej@kaszkowiak.org). Z chęcią odpowiem na wszystkie pytania, pomogę ustalić szczegóły oraz wycenię projekt.  
-Przeważnie odpisuję w ciągu doby od otrzymania wiadomości.  
+You can reach me under [maciej@kaszkowiak.org](mailto:maciej@kaszkowiak.org). Typically I respond within a day. I am happy to answer your questions!
 
-Jeśli wolicie Państwo rozmowę telefoniczną bądź spotkanie, proszę napisać - odezwę się :)  
-Jestem także dostępny na [Githubie](https://github.com/asdfMaciej/) oraz na [Facebooku](https://www.facebook.com/kaszkowiak.maciej/). 
+If you prefer a meeting or a call, please e-mail me and I'll get back to you. I'm also available on [Github](https://github.com/asdfMaciej/) and [Facebook](https://www.facebook.com/kaszkowiak.maciej/).

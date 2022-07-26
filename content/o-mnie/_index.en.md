@@ -36,7 +36,7 @@ My Linux server administration knowledge is enough to install required services,
 - BEM, Flexbox, CSS Grid, JSON-LD, REST API  
 
 **Intermediate knowledge:**   
-- SQL (dialekty: MySQL, MSSQL, SQLite)  
+- SQL (dialects: MySQL, MSSQL, SQLite)  
 - Symfony, vue.js, CakePHP, jQuery, Selenium, BeautifulSoup, moment.js, Axios  
 - Photoshop, git, bash, cmd  
 - design patterns, design and normalisation of databases, SQL query optimization, code profiling 

@@ -48,6 +48,8 @@
 	other = 'Odwiedź stronę'
 [visitGithub]
 	other = 'Otwórz Githuba'
+[tagsList]
+	other = 'Lista tagów'
 
 [menuOffer]
 	other = 'Oferta'

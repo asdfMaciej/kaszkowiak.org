@@ -2,6 +2,7 @@
 title: "Kontakt"
 ---
 
+# Kontakt
 
 Zapraszam do [kontaktu mailowego](mailto:maciej@kaszkowiak.org). Z chęcią odpowiem na wszystkie pytania, pomogę ustalić szczegóły oraz wycenię projekt.  
 Przeważnie odpisuję w ciągu doby od otrzymania wiadomości.  

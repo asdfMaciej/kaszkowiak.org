@@ -48,6 +48,8 @@
 	other = 'View website'
 [visitGithub]
 	other = 'Open Github'
+[tagsList]
+	other = 'Tags list'
 
 [menuOffer]
 	other = 'Services'

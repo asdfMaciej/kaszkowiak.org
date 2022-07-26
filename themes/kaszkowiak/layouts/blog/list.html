@@ -1,7 +1,7 @@
 {{ define "main" }}
 	{{ partial "breadcrumbs.html" . }}
 
-	<h1>Najnowsze posty na blogu</h1>
+	<h1>{{ i18n "recentBlogPosts" }}</h1>
     <div class="blog-view">
 		<section class="posts-list">
 	    	
@@ -12,7 +12,7 @@
 	    </section>
 
 	    <aside class="tags-list">
-	    	<h2>Lista tagów</h2>
+	    	<h2>{{ i18n "tagsList" }}</h2>
 	    	{{ partial "tags-cloud.html" . }}
 	    </aside>
 	</div>

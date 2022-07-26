@@ -1,4 +1,5 @@
 <nav class="breadcrumbs" id="breadcrumbs">
+{{ if eq .Site.Language.Lang "pl" }}
     <a href="/">Strona główna</a>
     {{if or (eq .Section "blog") (eq .Section "projekty")  }}
 
@@ -17,4 +18,27 @@
 	        {{ end }}
 	    {{ end }}
 	{{ end }}
+
+{{ else }}
+    
+    <a href="/en/">Homepage</a>
+    {{if or (eq .Section "blog") (eq .Section "projekty")  }}
+
+	    {{ range first 3 (split .RelPermalink "/") }}
+	        {{ if and (not (eq . "en")) (gt (len . ) 0) }}
+	            / <a href="/{{ . }}">{{ humanize . }}</a>
+	        {{ end }}
+	    {{ end }}
+	    {{ if .IsPage }}
+	    	/ <a href="{{ $.Permalink }}">{{ .Title }}</a>
+	    {{ end }}
+	{{else}}
+		{{ range (split .RelPermalink "/") }}
+	        {{ if and (not (eq . "en")) (gt (len . ) 0) }}
+	            / <a href="/{{ . }}">{{ humanize . }}</a>
+	        {{ end }}
+	    {{ end }}
+	{{ end }}
+{{ end }}
 </nav>
+
