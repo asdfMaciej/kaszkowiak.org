@@ -1,6 +1,6 @@
 {{ if isset .Params "github" -}}
 <a href="{{.Params.github}}" class="project-mini" target="_blank" rel="noopener">{{.Title}}</a>
-{{- else -}}
+{{- else }}
 <article class="project">
   <div class="project__wrapper {{ with .Params.thumbnail -}}
   {{- else -}}
@@ -12,11 +12,11 @@
       {{ .Summary }}
     </div>
 
-    {{ with .Params.thumbnail }}
+    {{- with .Params.thumbnail }}
       <div class="project__gallery">
         {{ partial "thumbnail.html" $ }}
       </div>
-    {{ end }}
+    {{ end -}}
 
     <div class="project__buttons">
       {{ with .Params.github -}}

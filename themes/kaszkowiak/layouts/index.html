@@ -52,8 +52,8 @@
               {{ i18n "miniProjectsDesc" }} <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">{{ i18n "githubD" }}</a>.
             </p>
             <nav class="project-mini__container">
-            {{ range (where .Site.RegularPages "Type" "projekty") }}
-              {{ if isset .Params "github" -}}
+            {{- range (where .Site.RegularPages "Type" "projekty") }}
+              {{- if isset .Params "github" }}
               {{ partial "project-tile.html" . }}
               {{- end -}}
             {{ end }}

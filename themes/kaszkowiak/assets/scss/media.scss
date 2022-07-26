@@ -54,7 +54,7 @@
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
 	.posts-list__post .blog-thumbnail {
 		float: none;
 	}
@@ -89,7 +89,7 @@
 		flex-direction: column;
 
 		transition: height 300ms linear, background 300ms linear;
-		height: 240px;
+		height: auto;
 		overflow: hidden;
 
 		a {

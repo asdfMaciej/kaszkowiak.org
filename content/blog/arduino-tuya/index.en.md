@@ -1,7 +1,7 @@
 ---
 title: "Controlling Tuya lights with Arduino and ESP8266"
 date: 2022-03-15T18:33:06+02:00
-summary: "I've created a physical controller for the cheapest RGB lighting available in Poland. I've wrote a summary so you can do it yourself - code and circuit designs included!"
+summary: "I've created a physical controller for the cheapest RGB lighting available in Poland. Do it yourself - code and circuit designs included!"
 thumbnail: "arduino.jpg"
 tags: ["arduino", "esp8266", "iot"]
 hidethumbnail: 1

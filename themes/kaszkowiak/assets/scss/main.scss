@@ -152,6 +152,11 @@ figcaption {
 		}
 	}
 
+	&__lang {
+		width: 20px;
+		margin-bottom: -2px;
+	}
+
 	&__hamburger {
 		display: none;
 	}
@@ -715,6 +720,7 @@ section.blog {
 	background: white;
 	box-shadow: $tile-shadow;
 	padding: 24px;
+	min-width: 250px;
 
 	h2 {
 		margin: 0;
