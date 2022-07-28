@@ -3,17 +3,57 @@
 <section class="offer-list">
 	{{ partial "breadcrumbs.html" . }}
 	
-	{{ with .Site.GetPage "/oferta/oferta-www" }}
-		{{ partial "offer-tile-big.html" . }}
-	{{ end }}
+	<aside class="offer-list__headers">
+		<div class="offer-list__headers-wrapper">
+			<h1>{{ i18n "learnOffer" }}</h1>
+			{{ with .Site.GetPage "/oferta/oferta-www" }}
+				<a href="#{{.Params.slug}}">
+					<h2 class="offer-expanded__title offer-expanded__title--active" id="title-{{.Params.slug}}">
+						{{ .Title }}
+					</h2>
+				</a>
+			{{ end }}
 
-	{{ with .Site.GetPage "/oferta/oferta-grafika" }}
-		{{ partial "offer-tile-big.html" . }}
-	{{ end }}
+			{{ with .Site.GetPage "/oferta/oferta-grafika" }}
+				<a href="#{{.Params.slug}}">
+					<h2 class="offer-expanded__title" id="title-{{.Params.slug}}">
+						{{ .Title }}
+					</h2>
+				</a>
+			{{ end }}
 
-	{{ with .Site.GetPage "/oferta/oferta-system" }}
-		{{ partial "offer-tile-big.html" . }}
-	{{ end }}
+			{{ with .Site.GetPage "/oferta/oferta-system" }}
+				<a href="#{{.Params.slug}}">
+					<h2 class="offer-expanded__title" id="title-{{.Params.slug}}">
+						{{ .Title }}
+					</h2>
+				</a>
+			{{ end }}
+		</div>
+	</aside>
+
+	<div class="offer-list__articles">
+		{{ with .Site.GetPage "/oferta/oferta-www" }}
+			<article class="offer-expanded">
+				<div class="offer-expanded__scrollpoint" id="{{.Params.slug}}"></div>
+				{{ .Content }}
+			</article>
+		{{ end }}
+
+		{{ with .Site.GetPage "/oferta/oferta-grafika" }}
+			<article class="offer-expanded">
+				<div class="offer-expanded__scrollpoint" id="{{.Params.slug}}"></div>
+				{{ .Content }}
+			</article>
+		{{ end }}
+
+		{{ with .Site.GetPage "/oferta/oferta-system" }}
+			<article class="offer-expanded">
+				<div class="offer-expanded__scrollpoint" id="{{.Params.slug}}"></div>
+				{{ .Content }}
+			</article>
+		{{ end }}
+	</div>
 </section>
 
 

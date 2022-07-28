@@ -3,20 +3,20 @@ title: "A few words about me"
 url: "about-me"
 ---
 
-I have been programming since I was a child. During the past few years I have specialized in creating websites and internet services. I constantly improve by learning and extending my knowledge.
+I have been programming since I was a child. For the past few years I have been specializing in web development. I constantly try to improve by learning and extending my knowledge.
 
-I live in Poznań and Wronki. I have graduated from technical school with the title of best graduate. I am also a laureate of the 2nd Digital Olympiad. Since 2021, I am studying Computer Science at the Poznań University of Technology.
+I live in Poznań and Wronki. I have graduated from technical school with a title of the best graduate. I am also a laureate of the 2nd Digital Olympiad. Currently I am studying Computer Science at the Poznań University of Technology.
 
 I love sport, especially road cycling and weight training :) During my free time I also play chess and create open-source projects.
 <!--more-->
 
 ## My experience as a web-developer
 
-I did an internship at Komputerpartner (June 2020) and Trol Intermedia (May, July 2019). Since 2018 I have been regularly involved in the maintenance and development of the systems of BRAMY-SERWIS. I am currently working with Trol Intermedia, primarily in the role of back-end developer. 
+I am currently freelancing and working with Trol Intermedia, primarily in the role of a back-end developer. Since 2018 I have been regularly involved in the maintenance and development of the systems of BRAMY-SERWIS. I did an internship at Komputerpartner (June 2020) and Trol Intermedia (May, July 2019). 
 
 ## What do I bring to the table?
 
-I use well-known and proven technologies which reduce website maintenance costs and guarantee good performance. On request, I create websites based on CMS, allowing the client to edit the content easily and on their own.
+I use well-known and proven technologies which reduce website maintenance costs and guarantee good performance. On request, I create websites based on a CMS, allowing the client to edit the content easily and on their own.
 
 I can bring a project to life and adapt it for devices of any size - mobile phones, laptops, desktop computers. I am fluent in Photoshop and Figma. I can undertake photo editing and simple graphic design without a hitch.
 

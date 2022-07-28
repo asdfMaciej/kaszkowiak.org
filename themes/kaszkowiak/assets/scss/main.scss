@@ -387,16 +387,65 @@ background-image: url("/img/ryjec.jpg");
 }
 
 .offer-list {
-	@include wrapper;
+	display: grid;
+	grid-template-areas: "breadcrumbs breadcrumbs" "headers articles";
+	grid-template-columns: auto 768px;
+	grid-gap: 16px 60px;
+	&__headers {
+		grid-area: headers;
+		text-align: right;
+		&-wrapper {
+			position: sticky;
+			top: calc(50vh - 78px - 32px);
+
+			h1 {
+				font-size: 1.3em;
+				font-weight: 600;
+				margin-top: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	&__articles {
+		grid-area: articles;
+	}
+	#breadcrumbs {
+		grid-area: breadcrumbs;
+		margin: 0;
+	}
 }
 .offer-expanded {
+	padding-bottom: 50px;
+	border-top: 1px solid $navbar-color;
+    padding-top: 20px;
+    position: relative;
+
+    &__scrollpoint {
+    	position: absolute;
+    	top: -64px;
+    }
+	&:first-child {
+		border: none;
+		margin-top: -20px; /* not using padding so scrollpoint works */
+	}
 	&__title {
 		margin: 0;
-		background: $red-hex;
-		color: $navbar-color-darker;
-		padding: 24px;
+		font-weight: 400;
+	    font-size: 1em;
+	    line-height: 1em;
+	    margin: 1.5rem 0;
+	    text-transform: lowercase;
+	    transition: all 0.3s ease;
+
+	    &--active {
+	    	font-weight: 500;
+	    	color: black;
+	    	cursor: default;
+	    }
 	}
-	margin-bottom: 48px;
 
 }
 .offer {

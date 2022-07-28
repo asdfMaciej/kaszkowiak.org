@@ -3,13 +3,13 @@ title: "Web development from scratch"
 headless: true
 slug: "web-development"
 icon: "globe.svg"
+summary: "I will design and create a website from scratch - fast and mobile friendly. I can help with the domain, hosting, and email setup. I will also provide a SSL padlock on the bar and improve the site's Google position."
 url: /en/services/web-development
 ---
 
-I will design and create a website from scratch - fast and mobile friendly. I can help with the domain, hosting, and email setup. I will also provide a SSL padlock on the bar and improve the site's Google position. 
-<!--more-->
+# I will create a tailored website at a favourable price.
 
-## I will create a tailored website at a favourable price.
+I will design and create a website from scratch - fast and mobile friendly. I can help with the domain, hosting, and email setup. I will also provide a SSL padlock on the bar and improve the site's Google position.
 
 Potential customers are almost always looking for information about your business on Google.     
 It is only up to you whether they find the information on your website or whether they give up and go to your competitors. 

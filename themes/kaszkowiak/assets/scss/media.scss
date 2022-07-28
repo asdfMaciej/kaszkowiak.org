@@ -26,6 +26,19 @@
 		padding-left: 12px;
 		padding-right: 12px;
 	}
+
+	.offer-list {
+		display: grid;
+		grid-template-areas: "breadcrumbs" "headers" "articles";
+		grid-template-columns: auto;
+		grid-gap: 16px 60px;
+
+		&__headers {
+			text-align: left;
+			border-bottom: 1px solid $navbar-color;
+			padding-bottom: 20px;
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {

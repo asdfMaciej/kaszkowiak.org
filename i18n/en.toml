@@ -50,6 +50,9 @@
 	other = 'Open Github'
 [tagsList]
 	other = 'Tags list'
+[learnOffer]
+	other = 'Provided services'
+
 
 [menuOffer]
 	other = 'Services'

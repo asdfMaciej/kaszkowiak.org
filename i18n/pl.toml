@@ -50,6 +50,8 @@
 	other = 'Otwórz Githuba'
 [tagsList]
 	other = 'Lista tagów'
+[learnOffer]
+	other = 'Poznaj ofertę'
 
 [menuOffer]
 	other = 'Oferta'

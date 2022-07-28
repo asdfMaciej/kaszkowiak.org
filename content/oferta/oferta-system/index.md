@@ -2,11 +2,11 @@
 title: "Utrzymanie istniejącego systemu"
 headless: true
 slug: "utrzymanie-systemu"
+summary: "Zaktualizuję, naprawię bądź ulepszę istniejący serwis internetowy."
 icon: "web-service.svg"
 ---
 
-Zaktualizuję, naprawię bądź ulepszę istniejący serwis internetowy.
-<!--more-->
+# Zaktualizuję, naprawię bądź ulepszę istniejący serwis internetowy.
 Zajmę się utrzymaniem bądź rozbudową Państwa strony internetowej. Na życzenie wykonam takie czynności jak:
 - rozbudowa strony, poszerzenie funkcjonalności
 - dostosowanie strony pod komórki

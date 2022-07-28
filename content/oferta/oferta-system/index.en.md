@@ -3,11 +3,12 @@ title: "Maintaining an existing website"
 headless: true
 slug: "maintenance"
 icon: "web-service.svg"
+summary: "I will update, repair or improve an existing website."
 url: /en/services/maintenance
 ---
 
-I will update, repair or improve an existing website.
-<!--more-->
+# I will update, repair or improve an existing website.
+
 I will take care of the maintenance or development of your website. I can perform such tasks as:
 - extend the website's functionality
 - readjust the design for mobile phones

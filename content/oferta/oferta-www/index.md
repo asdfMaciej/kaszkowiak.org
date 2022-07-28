@@ -2,13 +2,13 @@
 title: "Kompletna strona WWW"
 headless: true
 slug: "strona-www"
+summary: "Zaprojektuję i wykonam stronę od podstaw - szybką i dostosowaną dla urządzeń mobilnych. Skonfiguruję pocztę email oraz pomogę z doborem domeny i oferty hostingowej. Zapewnię również kłódkę na pasku i zadbam o pozycję strony w Google. "
 icon: "globe.svg"
 ---
 
-Zaprojektuję i wykonam stronę od podstaw - szybką i dostosowaną dla urządzeń mobilnych. Skonfiguruję pocztę email oraz pomogę z doborem domeny i oferty hostingowej. Zapewnię również kłódkę na pasku i zadbam o pozycję strony w Google. 
-<!--more-->
+# Stworzę dopasowaną stronę w korzystnej cenie.
 
-## Stworzę dopasowaną stronę w korzystnej cenie.
+Zaprojektuję i wykonam stronę od podstaw - szybką i dostosowaną dla urządzeń mobilnych. Skonfiguruję pocztę email oraz pomogę z doborem domeny i oferty hostingowej. Zapewnię również kłódkę na pasku i zadbam o pozycję strony w Google.
 
 Potencjalni klienci niemal zawsze szukają informacji o działalności w Google.     
 Tylko od Państwa zależy, czy znajdą informacje na Państwa stronie internetowej, czy zrezygnują i trafią do konkurencji. 
