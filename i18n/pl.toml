@@ -52,6 +52,10 @@
 	other = 'Lista tagów'
 [learnOffer]
 	other = 'Poznaj ofertę'
+[sourceCode]
+	other = 'Kod źródłowy'
+[visitRepo]
+	other = 'Odwiedź repo po więcej szczegółów'
 
 [menuOffer]
 	other = 'Oferta'

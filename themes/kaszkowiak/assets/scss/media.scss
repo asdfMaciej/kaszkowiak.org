@@ -2,7 +2,7 @@
 	body {
 		font-size: 1.6rem;
 	}
-	body.home-page section:not(.contact-front) > .wrapper > h2,
+	body.home-page section:not(.contact-front):not(.about-me-front) > .wrapper > h2,
 	body.home-page section > .wrapper > h1 {
 		padding-left: 12px;
 		padding-right: 12px;
@@ -104,10 +104,15 @@
 		transition: height 300ms linear, background 300ms linear;
 		height: auto;
 		overflow: hidden;
+		align-items: inherit;
 
 		a {
 			border-top: 1px solid #ffffff2e;
 			padding: 12px;
+		}
+
+		a:last-child {
+			width: auto;
 		}
 	}
 
@@ -149,10 +154,7 @@
 	.offer__header {
 		font-size: 1.7em;
 	}
-	.projects h2 {
-		font-size: 1.7em;
-		margin-bottom: 0;
-	}
+
 	section.blog > h2 {
 		margin: 8px 0;
 		font-size: 1.7em;

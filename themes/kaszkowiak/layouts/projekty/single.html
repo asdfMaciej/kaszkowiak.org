@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ partial "breadcrumbs.html" . }}
-<article class="blog-post">
+<article class="blog-post blog-post--project">
 	<header class="blog-post__header">
 		<h1>{{ .Title }}</h1>
 	</header>
@@ -8,9 +8,9 @@
     	{{ partial "thumbnail-lightbox.html" . }}
 		{{ .Content }}
 		{{ with .Params.github }}
-		<h2>Kod źródłowy</h2>
+		<h2>{{ i18n "sourceCode" }}</h2>
 		<p>
-			Odwiedź repo po więcej szczegółów: <a href="{{.}}" target="_blank" rel="noopener">Github</a>
+			{{ i18n "visitRepo" }}: <a href="{{.}}" target="_blank" rel="noopener">Github</a>
 		</p>
 		{{ end}}  
     </section>

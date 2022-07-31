@@ -26,6 +26,6 @@ Napisałem również artykuł wyjaśniający [różnice pomiędzy stroną dynami
 
 Efekty dotychczasowej pracy przekonają Państwa lepiej, niż zrobi to sam tekst. Udostępniłem Państwu wybrane [zrealizowane projekty](/projekty/) wraz ze zdjęciami i opisem realizacji. Za każdym kryje się osiągnięty cel. Zamieściłem również [przedstawienie swoich umiejętności](/o-mnie/).
 
-Zapraszam bardzo serdecznie do [kontaktu](/kontakt/) - odpowiadam codziennie w ciągu doby. Mogę umówić się również na rozmowę telefoniczną bądź spotkanie. Z chęcią odpowiem na wszystkie pytania, pomogę ustalić szczegóły oraz wycenię projekt.
+Zapraszam do [kontaktu](/kontakt/) - odpowiadam codziennie w ciągu doby. Mogę umówić się również na rozmowę telefoniczną bądź spotkanie. Z chęcią odpowiem na wszystkie pytania, pomogę ustalić szczegóły oraz wycenię projekt.
 
 Podejmę się wykonania również bardziej skomplikowanych systemów, służących do zarządzania firmą lub jej zasobami. Jeśli posiadacie Państwo pomysł na aplikację usprawniającą pracę w firmie, proszę [śmiało napisać](/kontakt/). Nie zmarnuję Państwa czasu - gdy zakres projektu okaże się ponad moje zasoby czasowe bądź umiejętności, poinformuję Państwa przed rozpoczęciem współpracy - nie wykonam projektu „po łebkach”.

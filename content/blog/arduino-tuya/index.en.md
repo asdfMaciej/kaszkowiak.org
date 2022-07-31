@@ -45,7 +45,7 @@ We now can test if the circuit works correctly by running the Blink code from th
 
 ## ESP-01 source code
 {{< unsafe >}}
-<div style="height: 500px; max-height: 50vh; overflow: scroll;">
+<div class="github-code">
 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FasdfMaciej%2Farduino-tuya%2Fblob%2Fmain%2FCode%2520-%2520ESP8266%2Fesp8266.cpp&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 </div>
 {{< /unsafe >}}
@@ -56,7 +56,7 @@ After programming the ESP-01, we can now program the Arduino using a standard co
 
 ## Arduino source code
 {{< unsafe >}}
-<div style="height: 500px; max-height: 50vh; overflow: scroll;">
+<div class="github-code">
 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FasdfMaciej%2Farduino-tuya%2Fblob%2Fmain%2FCode%2520-%2520Arduino%2Farduino.cpp&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 </div>
 {{< /unsafe >}}
@@ -78,7 +78,7 @@ The PHP script plays a small purpose. It authorizes the request based on a built
 The code works, however it should be noted that the GET request type is misused and a POST would generally work better. In this specific scenario it shouldn't cause any harm, but as an example - browsers can duplicate or preload GET requests by themselves (Safari is known for this). We wouldn't want our lights changing randomly, would we? ;)   
 
 {{< unsafe >}}
-<div style="height: 500px; max-height: 50vh; overflow: scroll;">
+<div class="github-code">
 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FasdfMaciej%2Farduino-tuya%2Fblob%2Fmain%2FCode%2520-%2520Server%2Findex.php&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 </div>
 {{< /unsafe >}}
@@ -90,7 +90,7 @@ The scenes are defined and bound to IDs in the tuyalights script. Based on their
 For my deployment purposes I've placed the file in my /usr/bin directory (which is in PATH), so executing the script doesn't require a direct path. Omitting this step might cause an error in the PHP script. I strongly do not recommend placing the script in the same directory as the index.php file, as a wrong server configuration might permit downloading the script, and therefore your secrets could leak.
 
 {{< unsafe >}}
-<div style="height: 500px; max-height: 50vh; overflow: scroll;">
+<div class="github-code">
 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FasdfMaciej%2Farduino-tuya%2Fblob%2Fmain%2FCode%2520-%2520Server%2Ftuyalights&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 </div>
 {{< /unsafe >}}

@@ -44,7 +44,7 @@ Możemy sprawdzić, czy poprawnie skonfigurowaliśmy układ poprzez wgranie apli
 
 ## Kod źródłowy dla ESP-01
 {{< unsafe >}}
-<div style="height: 500px; max-height: 50vh; overflow: scroll;">
+<div class="github-code">
 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FasdfMaciej%2Farduino-tuya%2Fblob%2Fmain%2FCode%2520-%2520ESP8266%2Fesp8266.cpp&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 </div>
 {{< /unsafe >}}
@@ -55,7 +55,7 @@ Po zaprogramowaniu ESP-01 możemy zająć się programowaniem Arduino - w tym wy
 
 ## Kod źródłowy dla Arduino
 {{< unsafe >}}
-<div style="height: 500px; max-height: 50vh; overflow: scroll;">
+<div class="github-code">
 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FasdfMaciej%2Farduino-tuya%2Fblob%2Fmain%2FCode%2520-%2520Arduino%2Farduino.cpp&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 </div>
 {{< /unsafe >}}
@@ -78,7 +78,7 @@ Rola skryptu PHP przetwarzającego zapytanie to wyłącznie autoryzacja na podst
 Kod działa poprawnie, jednak należy zauważyć, że typ żądania GET jest niewłaściwie użyty - POST z reguły zadziałałby lepiej. W tym konkretnym przypadku nie powinno to wyrządzić żadnej szkody, ale jako przykład - przeglądarki mogą samoistnie duplikować lub preloadować żądania GET (Safari z tego słynie). Nie chcielibyśmy, aby nasze światła zmieniały się losowo, prawda? ;)   
 
 {{< unsafe >}}
-<div style="height: 500px; max-height: 50vh; overflow: scroll;">
+<div class="github-code">
 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FasdfMaciej%2Farduino-tuya%2Fblob%2Fmain%2FCode%2520-%2520Server%2Findex.php&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 </div>
 {{< /unsafe >}}
@@ -89,7 +89,7 @@ Sceny są zdefiniowane oraz przypisane do identyfikatorów w skrypcie tuyalights
 W moim deploymencie umieściłem plik w katalogu /usr/bin znajdującym się w zmiennej PATH, aby wywołanie skryptu nie wymagało podania bezpośredniej ścieżki. Pominięcie tego kroku może wywołać błąd w skrypcie PHP. Nie zalecam umieszczać pliku w tym samym katalogu co index.php, ponieważ bez uprzedniej konfiguracji serwera skrypt stanie się możliwy do pobrania - a co za tym idzie wyciekną klucze API oraz ID urządzeń.
 
 {{< unsafe >}}
-<div style="height: 500px; max-height: 50vh; overflow: scroll;">
+<div class="github-code">
 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FasdfMaciej%2Farduino-tuya%2Fblob%2Fmain%2FCode%2520-%2520Server%2Ftuyalights&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 </div>
 {{< /unsafe >}}

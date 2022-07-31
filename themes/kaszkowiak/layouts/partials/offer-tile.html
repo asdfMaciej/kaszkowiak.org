@@ -3,9 +3,9 @@
 		{{ with .Resources.GetMatch (printf "%s" .Params.icon) }}
 			<img src="{{ .RelPermalink }}" alt="" class="offer__box-icon">
 		{{ end }}
-		<h2 class="offer__box-title">
+		<h3 class="offer__box-title">
 			{{ .Title }}
-		</h2>
+		</h3>
 	</div>
 	<p class="offer__box-description">
 		{{ .Summary | plainify | htmlUnescape }}

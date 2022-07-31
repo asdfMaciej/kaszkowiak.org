@@ -130,6 +130,7 @@ figcaption {
 
 	&__navigation {
 		display: flex;
+		align-items: center;
 
 		a:hover {
 			font-weight: bold;
@@ -149,6 +150,10 @@ figcaption {
 			a {
 				text-shadow: none;
 			}
+		}
+
+		a:last-child {
+			width: 36px;
 		}
 	}
 
@@ -273,8 +278,8 @@ background-image: url("/img/ryjec.jpg");
 }
 
 .link-button {
-	background: $red-hex;
-	color: $navbar-color-darker;
+	background: $red-hex; /* #427bd8? */
+	color: $navbar-color-darker; /* white? */
 	padding: 8px 16px;
 	border-radius: 12px;
 	font-weight: 500;
@@ -284,9 +289,9 @@ background-image: url("/img/ryjec.jpg");
 	box-shadow: 1px 2px 2px #00000040;
 
 	&--outline {
-		color: $red-darker;
+		color: $red-darker; /* ~ #151515 ? */
 		background: white;
-		border: 2px solid $red-hex;
+		border: 2px solid $red-hex; /* #5f8fdf ? */
 		box-shadow: none;
 		padding: 6px 16px; /* compensating for border */
 	}
@@ -301,7 +306,6 @@ background-image: url("/img/ryjec.jpg");
 	}
 
 	h2 {
-		font-size: 1.8em;
 		margin: 0;
 	}
 }
@@ -456,7 +460,6 @@ background-image: url("/img/ryjec.jpg");
 	&__header {
 		padding: 12px;
 		margin: 0;
-		font-size: 2em;
 	}
 
 	&__boxes {
@@ -507,6 +510,7 @@ background-image: url("/img/ryjec.jpg");
 
 		&-title {
 			margin: 0;
+			font-size: 1.3em;
 		}
 
 		&-description {
@@ -518,6 +522,8 @@ background-image: url("/img/ryjec.jpg");
 			border-bottom: 1px solid $red-hex;
 			padding-bottom: 24px;
 			width: 100%;
+			display: flex;
+			align-items: center;
 			#{$self}:hover & {
 				border-bottom: 1px solid white;
 			}
@@ -540,7 +546,6 @@ background-image: url("/img/ryjec.jpg");
 	padding-bottom: 4px;
 	h2 {
 		margin: 0;
-		font-size: 1.8em;
 		margin-bottom: 24px;
 	}
 }
@@ -586,7 +591,7 @@ background-image: url("/img/ryjec.jpg");
 	&__text {
 		grid-area: text;
 		h3 {
-			font-size: 1.4em;
+			font-size: 1.3em;
 			margin: 12px 0;
 			margin-top: 0;
 		}
@@ -613,7 +618,6 @@ background-image: url("/img/ryjec.jpg");
 
 	h2 {
 		margin: 0;
-		font-size: 1.8em;
 	}
 
 	img {
@@ -710,12 +714,17 @@ background-image: url("/img/ryjec.jpg");
 	min-height: 100vh;
 	@include wrapper768;
 	
+
 	&__header {
 		max-width: 720px;
 		h1 {
 			margin: 0;
 		}
 		
+	}
+
+	&--project &__header h1 {
+		margin: revert;
 	}
 
 	.blog-thumbnail {
@@ -788,6 +797,7 @@ section.blog {
 
 		h2 {
 			margin: 0;
+			font-size: 1.3em;
 		}
 
 		a {
@@ -809,6 +819,13 @@ section.blog {
 		margin: 0;
 		margin-top: 16px;
 	}
+}
+
+.github-code {
+	height: 500px;
+	max-height: 50vh;
+	overflow: scroll;
+	margin: 0 10px;
 }
 
 @import 'media.scss';

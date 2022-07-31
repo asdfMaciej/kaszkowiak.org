@@ -7,7 +7,7 @@ icon: "web-service.svg"
 ---
 
 # Zaktualizuję, naprawię bądź ulepszę istniejący serwis internetowy.
-Zajmę się utrzymaniem bądź rozbudową Państwa strony internetowej. Na życzenie wykonam takie czynności jak:
+Zajmę się utrzymaniem bądź rozbudową strony internetowej. Mogę wykonać takie czynności jak:
 - rozbudowa strony, poszerzenie funkcjonalności
 - dostosowanie strony pod komórki
 - przyspieszenie działania i polepszenie wyniku PageSpeed
