@@ -56,7 +56,8 @@
 	other = 'Source code'
 [visitRepo]
 	other = 'Visit the repo for more details'
-
+[offerDesc]
+	other = 'As a full-stack developer I can offer'
 
 [menuOffer]
 	other = 'Services'

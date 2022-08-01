@@ -281,7 +281,7 @@ background-image: url("/img/ryjec.jpg");
 	background: $red-hex; /* #427bd8? */
 	color: $navbar-color-darker; /* white? */
 	padding: 8px 16px;
-	border-radius: 12px;
+	border-radius: 8px;
 	font-weight: 500;
 	display: inline-block;
 	text-decoration: none;
@@ -469,10 +469,18 @@ background-image: url("/img/ryjec.jpg");
 		flex-wrap: wrap;
 	}
 
+	&__desc {
+		padding-left: 12px;
+		margin-top: 0px;
+		margin-bottom: 6px;
+	}
+
 	&__box {
-		&:first-child:not(&--expanded) {
+		/*&:first-child:not(&--expanded) {
 			flex: 1 1 100%;
-		}
+		}*/
+
+		border-radius: 8px;
 
 		flex: 1 1;
 		margin: 12px;
@@ -506,6 +514,7 @@ background-image: url("/img/ryjec.jpg");
 
 		.link-button {
 			max-width: 12em;
+			display: none;
 		}
 
 		&-title {
@@ -519,7 +528,7 @@ background-image: url("/img/ryjec.jpg");
 		}
 
 		&-top {
-			border-bottom: 1px solid $red-hex;
+			border-bottom: 1px solid black;
 			padding-bottom: 24px;
 			width: 100%;
 			display: flex;
@@ -566,6 +575,7 @@ background-image: url("/img/ryjec.jpg");
 	background: white;
 	margin: 16px 0;
 	box-shadow: $tile-shadow;
+	border-radius: 8px;
 
 	&__wrapper {
 		@include wrapper;
@@ -636,6 +646,7 @@ background-image: url("/img/ryjec.jpg");
 		text-decoration: none;
 		margin-top: 24px;
 		font-weight: 500;
+		border-radius: 8px;
 	}
 }
 .about-me {
