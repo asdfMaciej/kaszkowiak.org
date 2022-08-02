@@ -10,6 +10,9 @@
       <h3>{{ .Title }}</h3>
       <hr>
       {{ .Summary }}
+      <div class="project__buttons">
+        <a class="link-button" href="{{ .Permalink }}">{{ i18n "learnDetails" }}</a>
+      </div>
     </div>
 
     {{- with .Params.thumbnail }}
@@ -18,16 +21,7 @@
       </div>
     {{ end -}}
 
-    <div class="project__buttons">
-      {{ with .Params.github -}}
-      <a class="link-button link-button--outline" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "visitGithub" }}</a>
-      {{- else -}}
-      <a class="link-button" href="{{ .Permalink }}">{{ i18n "learnDetails" }}</a>
-      {{- end -}}
-    	{{ with .Params.link -}}
-      <a class="link-button link-button--outline" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "visitWebsite" }}</a>
-      {{- end }}
-    </div>
+    
   </div>
 </article>
 {{- end }}

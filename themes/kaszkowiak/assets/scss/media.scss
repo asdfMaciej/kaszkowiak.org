@@ -73,15 +73,15 @@
 	}
 
 	.project__wrapper {
-		grid-template-areas: "text" "gallery" "buttons";
+		grid-template-areas: "gallery" "text";
 		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-gap: 20px;
+		padding: 12px;
+
 	}
 	.project__gallery {
 		justify-content: flex-start;
-	}
-	.project__buttons {
-		margin-top: 24px;
-		display: flex;
 	}
 	.offer__box {
 		flex: 1 1 100%;
@@ -94,6 +94,12 @@
 		grid-template-areas: "left" "right" "bottom";
 		grid-template-columns: 1fr;
 		grid-gap: 12px;
+	}
+
+	body.projekty.list .projects {
+		& > h1, & > p, & > h2 {
+			padding-left: 12px;
+		}
 	}
 
 	.navbar__navigation {

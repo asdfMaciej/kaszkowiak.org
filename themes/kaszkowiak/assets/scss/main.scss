@@ -45,15 +45,28 @@ body {
 	&.blog.page,
 	&.o-mnie,
 	&.projekty.page,
+	&.projekty.list,
 	&.oferta.list {
 		background: white;
 	}
 
 	&.kontakt.list {
-		/*background: $red-hex;
-		.breadcrumbs a {
+		background: white;
+		/*.breadcrumbs a {
 			color: $navbar-color-darker;
 		}*/
+	}
+
+	&.projekty.list {
+		.projects {
+
+			& > h1, & > p, & > h2 {
+				padding-left: 24px;
+			}
+		}
+		.main-content {
+			max-width: 960px;
+		}
 	}
 	
 }
@@ -75,6 +88,7 @@ figure img {
 	max-width: 100%;
 	max-height: 300px;
 	padding: 8px;
+	border-radius: 8px;
 }
 
 figure div {
@@ -528,7 +542,7 @@ background-image: url("/img/ryjec.jpg");
 		}
 
 		&-top {
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid #bdbdbd;
 			padding-bottom: 24px;
 			width: 100%;
 			display: flex;
@@ -551,30 +565,42 @@ background-image: url("/img/ryjec.jpg");
 	}
 }
 .projects {
-	background: $background;
-	padding-bottom: 4px;
-	h2 {
-		margin: 0;
-		margin-bottom: 24px;
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	.wrapper {
+		max-width: 960px;
+		& > h2, & > p {
+			margin: 0;
+			margin-bottom: 24px;
+			padding-left: 24px;
+		}
+		& > h2 {
+			margin-top: 20px;
+		}
 	}
+	
 }
 .project-mini {
 	display: block;
-	border-bottom: 1px dotted $red-hex;
-	padding: 8px 12px;
+	padding: 12px;
 	text-decoration: none;
 	line-height: 1.9;
-	color: $navbar-color;
-	font-weight: 500;
+	color: black;
+	font-weight: 400;
+	margin: 12px 0;
+	background: #e8f1f0; /*#d7fbff*/ /* tint: #e4eff3 */
+	border-radius: 8px;
+	box-shadow: #11111a1a 0px 1px 0px;
 	&__container {
 		padding: 0;
-		background: white;
+		margin: auto;
+		max-width: 912px;
 	}
 }
 .project {
-	background: white;
-	margin: 16px 0;
-	box-shadow: $tile-shadow;
+	margin: 25px auto;
+	max-width: 960px;
 	border-radius: 8px;
 
 	&__wrapper {
@@ -582,31 +608,32 @@ background-image: url("/img/ryjec.jpg");
 
 		padding: 24px;
 		display: grid;
-		grid-template-columns: 3fr 2fr;
-		grid-template-rows: 1fr auto;
-		grid-template-areas: 'text gallery' 'buttons gallery';
-
-		&--noimg {
-			grid-template-columns: 3fr auto;
-		}
+		grid-template-areas: 'gallery text';
+		grid-template-columns: auto 1fr;
+		grid-gap: 50px;
 	}
 	
 	&__buttons {
-		grid-area: buttons;
 		.link-button {
-			margin-right: 8px;
+			background: $navbar-color;
+			color: white;
+			font-weight: 300;
 		}
 	}
 
 	&__text {
 		grid-area: text;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-weight: 300;
 		h3 {
 			font-size: 1.3em;
-			margin: 12px 0;
-			margin-top: 0;
+			margin: 0;
 		}
 		hr {
 			margin-right: 24px;
+			display: none;
 		}
 	}
 	&__gallery {
@@ -617,6 +644,7 @@ background-image: url("/img/ryjec.jpg");
 
 		img {
 			max-width: 300px;
+			border-radius: 8px;
 			box-shadow: #0000000f 0 10px 30px;
 		}
 	}
@@ -741,6 +769,7 @@ background-image: url("/img/ryjec.jpg");
 	.blog-thumbnail {
 		max-width: 500px;
 		width: 100%;
+		border-radius: 8px;
 	}
 
 	&__content {
@@ -790,6 +819,8 @@ section.blog {
 	box-shadow: $tile-shadow;
 	padding: 24px;
 	min-width: 250px;
+	margin: 12px 0;
+	border-radius: 8px;
 
 	h2 {
 		margin: 0;
@@ -805,6 +836,7 @@ section.blog {
 		padding: 24px;
 		padding-bottom: 12px;
 		margin: 12px auto;
+		border-radius: 8px;
 
 		h2 {
 			margin: 0;
@@ -819,9 +851,10 @@ section.blog {
 		.blog-thumbnail {
 			max-width: 200px;
 			width: 100%;
-			margin-right: 12px;
+			margin-right: 40px;
 			margin-bottom: 12px;
 			float: left;
+			border-radius: 4px;
 		}
 	}
 
