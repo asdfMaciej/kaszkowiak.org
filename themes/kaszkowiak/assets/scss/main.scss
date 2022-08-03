@@ -12,11 +12,8 @@ $wrapper-width: 1200px;
 
 /*$red-hex: #ED0044;*/
 /*$red-hex: #60acca;*/
-/* beloved #69bbb3 */
-$red-hex: #69bbb3; /* #3eb5e5 */
-$red-darker: #2c615b;
-
-$red-filter: invert(12%) sepia(84%) saturate(7491%) hue-rotate(338deg) brightness(92%) contrast(103%); 
+/* previous green:  #69bbb3 */
+$red-hex: #3a71d7; /* #3eb5e5 */
 
 $top-padding: 64px;
 
@@ -72,7 +69,9 @@ body {
 }
 
 a {
-	color: #69bbb3;
+	color: $red-hex;
+	text-decoration: none;
+	font-weight: 600;
 }
 
 .gallery {
@@ -137,6 +136,7 @@ figcaption {
 		color: $navbar-font-color;
 		padding: 0 8px;
 		text-decoration: none;
+		font-weight: 400;
 		
 		transition: 200ms;
 		text-shadow: 0 0 5px #000000;
@@ -212,26 +212,6 @@ figcaption {
 	}
 }
 
-.hero {
-	/*height: 300px;
-	overflow: hidden;
-	background-image: url("/img/pizza.jpg");
-	background-size: cover;*/
-}
-.footer {
-
-}
-
-/*
-background-image: url("/img/ryjec.jpg");
-	background-size: cover;
-	background-position: 65%;
-	background-attachment: fixed;
-
-	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
-	*/
 .landing {
 	position: relative;
 	overflow: hidden;
@@ -303,7 +283,7 @@ background-image: url("/img/ryjec.jpg");
 	box-shadow: 1px 2px 2px #00000040;
 
 	&--outline {
-		color: $red-darker; /* ~ #151515 ? */
+		color: $red-hex; /* ~ #151515 ? */
 		background: white;
 		border: 2px solid $red-hex; /* #5f8fdf ? */
 		box-shadow: none;
@@ -311,7 +291,7 @@ background-image: url("/img/ryjec.jpg");
 	}
 }
 .contact-front {
-	background: $red-hex;
+	background: #d7fbff;
 	padding: 24px 0;
 	color: $navbar-color-darker;
 
@@ -503,6 +483,7 @@ background-image: url("/img/ryjec.jpg");
 		box-shadow: $tile-shadow;
 		color: $font-color;
 		text-decoration: none;
+		font-weight: 400;
 
 		display: flex;
 		flex-direction: column;
@@ -658,23 +639,29 @@ background-image: url("/img/ryjec.jpg");
 		margin: 0;
 	}
 
+	p {
+		max-width: 600px;
+	}
+
 	img {
 		float: right;
 		max-width: 500px;
 		width: 50%;
 		min-width: 150px;
+		padding: 10px;
+		opacity: 0.93;
 	}
 
 	a {
 		text-align: center;
 		display: block;
 		background: $red-hex;
-		color: $navbar-color-darker;
+		color: white;
 		padding: 12px;
 		text-decoration: none;
-		margin-top: 24px;
 		font-weight: 500;
 		border-radius: 8px;
+		clear:  both;
 	}
 }
 .about-me {
@@ -687,6 +674,7 @@ background-image: url("/img/ryjec.jpg");
 	a {
 		color: white;
 		text-decoration: none;
+		font-weight: 400;
 	}
 	.wrapper {
 		display: grid;
@@ -747,6 +735,7 @@ background-image: url("/img/ryjec.jpg");
 	padding-top: 12px;
 	a {
 		color: #a7a7a7;
+		font-weight: 300;
 	}
 }
 .blog-post {
