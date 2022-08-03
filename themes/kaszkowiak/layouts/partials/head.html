@@ -42,6 +42,8 @@
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}">
 {{ if .Params.thumbnail -}}
 <meta property="og:image" content="{{ .Permalink }}{{ .Params.thumbnail }}">
+{{- else if .IsHome -}}
+<meta property="og:image" content="{{ .Site.BaseURL }}img/maciej kaszkowiak.jpg">
 {{- end }}
 <meta name="twitter:card" content="summary_large_image">
 
