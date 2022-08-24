@@ -82,6 +82,11 @@ body.blog.page h1, body.blog.page h2, body.blog.page h3,
 body.blog.page h4, body.blog.page h5, body.blog.page h6 {
 	clear: both;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.4;
+}
+
 figure {
 	margin: 16px 0;
 }
@@ -778,12 +783,13 @@ li {
 		display: block;
 		@include wrapper768;
 	}
-	
+
 	&__header {
 		grid-area: header;
 		max-width: 720px;
 		h1 {
 			margin: 0;
+			margin-bottom: 5px;
 		}
 	}
 
