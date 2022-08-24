@@ -18,11 +18,9 @@
     {{ $large.RelPermalink }}
   {{ else }}
 	{{ $src.RelPermalink }}
-  {{ end }}' class="glightbox" data-description='{{.Get "alt" }}'>
+  {{ end }}' class="glightbox"  data-description='{{ if .Get "caption" }}{{ .Get "caption" }}{{ else }}{{ .Get "alt" }}{{ end }}'>
     <img src='{{ $tiny.RelPermalink }}' loading="lazy" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} >
-
 </a>
-    
     {{ if .Get "caption" }}
       <figcaption>{{ .Get "caption" }}</figcaption>
     {{ else if .Get "alt" }}

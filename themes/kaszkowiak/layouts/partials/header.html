@@ -43,16 +43,16 @@
       {{ if .IsTranslated }}
 		    {{- range .Translations -}}
 		      {{- if eq .Site.Language.Lang "en" -}}
-		    		<a title="English" href="{{- .RelPermalink -}}"><img class="navbar__lang" src="/img/gb.svg"></a>
+		    		<a title="English" href="{{- .RelPermalink -}}"><img class="navbar__lang" alt="English" src="/img/gb.svg"></a>
 		      {{- else -}}
-		    		<a title="Polish" href="{{- .RelPermalink -}}"><img class="navbar__lang" src="/img/pl.svg"></a>
+		    		<a title="Polish" href="{{- .RelPermalink -}}"><img class="navbar__lang" alt="Polski" src="/img/pl.svg"></a>
 		    {{- end -}}
 	    {{- end -}}
 		  {{ else }}
 		    {{- if eq .Site.Language.Lang "pl" -}}
-		    	<a title="English" href="/en/"><img class="navbar__lang" src="/img/gb.svg"></a>
+		    	<a title="English" href="/en/"><img class="navbar__lang" alt="English" src="/img/gb.svg"></a>
 		    {{- else -}}
-		    	<a title="Polish" href="/"><img class="navbar__lang" src="/img/pl.svg"></a>
+		    	<a title="Polish" href="/"><img class="navbar__lang" alt="Polski" src="/img/pl.svg"></a>
 		    {{- end -}}
 		  {{- end -}}
 		</nav>

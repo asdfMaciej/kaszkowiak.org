@@ -38,6 +38,12 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta name="twitter:url" content="{{ .Permalink }}">
 
+{{ if eq .Section "blog" -}}
+<meta property="og:type" content="article">
+{{- else -}}
+<meta property="og:type" content="website">
+{{- end }}
+
 <meta property="og:locale" content="{{ .Site.Params.locale }}">
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}">
 {{ if .Params.thumbnail -}}

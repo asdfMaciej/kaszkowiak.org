@@ -1,11 +1,11 @@
 <nav class="breadcrumbs" id="breadcrumbs">
 {{ if eq .Site.Language.Lang "pl" }}
     <a href="/">Strona główna</a>
-    {{if or (eq .Section "blog") (eq .Section "projekty")  }}
+    {{if or (eq .Section "blog") (eq .Section "projekty") (eq .Section "tags")  }}
 
 	    {{ range first 2 (split .RelPermalink "/") }}
 	        {{ if gt (len . ) 0 }}
-	            / <a href="/{{ . }}">{{ humanize . }}</a>
+	            / <a href="/{{ . }}/">{{ humanize . }}</a>
 	        {{ end }}
 	    {{ end }}
 	    {{ if .IsPage }}
@@ -14,7 +14,7 @@
 	{{else}}
 		{{ range (split .RelPermalink "/") }}
 	        {{ if gt (len . ) 0 }}
-	            / <a href="/{{ . }}">{{ humanize . }}</a>
+	            / <a href="/{{ . }}/">{{ humanize . }}</a>
 	        {{ end }}
 	    {{ end }}
 	{{ end }}
@@ -26,7 +26,7 @@
 
 	    {{ range first 3 (split .RelPermalink "/") }}
 	        {{ if and (not (eq . "en")) (gt (len . ) 0) }}
-	            / <a href="/{{ . }}">{{ humanize . }}</a>
+	            / <a href="/en/{{ . }}/">{{ humanize . }}</a>
 	        {{ end }}
 	    {{ end }}
 	    {{ if .IsPage }}
@@ -35,7 +35,7 @@
 	{{else}}
 		{{ range (split .RelPermalink "/") }}
 	        {{ if and (not (eq . "en")) (gt (len . ) 0) }}
-	            / <a href="/{{ . }}">{{ humanize . }}</a>
+	            / <a href="/en/{{ . }}/">{{ humanize . }}</a>
 	        {{ end }}
 	    {{ end }}
 	{{ end }}
