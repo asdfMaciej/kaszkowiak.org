@@ -6,9 +6,15 @@
         </a>
     </h2>
     <time class="posts-list__date" datetime="{{ .Date }}">
-        {{ dateFormat "02" .Date }}
-        {{ index $.Site.Data.months (printf "%d" .Date.Month) }}
-        {{ dateFormat "2006" .Date }}
+        {{ if eq .Site.Language.Lang "pl" }}
+            {{ dateFormat "02" .Date }}
+            {{ index $.Site.Data.months (printf "%d" .Date.Month) }}
+            {{ dateFormat "2006" .Date }}
+        {{ else }}
+            {{ dateFormat "02" .Date }}
+            {{ dateFormat "Jan" .Date }}
+            {{ dateFormat "2006" .Date }}
+        {{ end }}
     </time>
     {{ partial "post-tags.html" . }}
     <p>

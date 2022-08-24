@@ -3,7 +3,7 @@ title: "Portfolio for an experienced translator"
 subtitle: "static website"
 thumbnail: "0.png"
 link: "https://izaokane.pl"
-url: "/en/projects/portfolio"
+url: "/en/projects/translator-portfolio"
 weight: 3
 ---
 

@@ -22,7 +22,7 @@
 {{ else }}
     
     <a href="/en/">Homepage</a>
-    {{if or (eq .Section "blog") (eq .Section "projekty")  }}
+    {{if or (eq .Section "blog") (eq .Section "projekty") (eq .Section "tags")  }}
 
 	    {{ range first 3 (split .RelPermalink "/") }}
 	        {{ if and (not (eq . "en")) (gt (len . ) 0) }}
