@@ -14,10 +14,15 @@
 
 		{{ partial "post-tags.html" . }}
 		<p class="blog-post__summary"> {{.Summary}} </p>
-
+		{{ partial "thumbnail-lightbox.html" . }}
 	</header>
+	<aside class="blog-post__toc">
+		<div class="blog-post__toc-wrapper">
+			<h2>{{ i18n "tableOfContents" }}</h2>
+			{{ .TableOfContents }}
+		</div>
+	</aside>
     <section class="blog-post__content">
-    	{{ partial "thumbnail-lightbox.html" . }}
 		{{ .Content }}
     </section>
 </article>

@@ -12,7 +12,7 @@
 {{ $large := .Scratch.Get "large" }}
 
 {{ if .Get "src" }}
-<figure>
+<figure {{ with .Get "float" }} class="float-{{ . }}" {{ end }}>
 	<div>
   <a href='{{ if ge $src.Width "1500" }}
     {{ $large.RelPermalink }}
@@ -22,8 +22,10 @@
     <img src='{{ $tiny.RelPermalink }}' loading="lazy" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} >
 
 </a>
-
-    {{ if .Get "alt" }}
+    
+    {{ if .Get "caption" }}
+      <figcaption>{{ .Get "caption" }}</figcaption>
+    {{ else if .Get "alt" }}
       <figcaption>{{ .Get "alt" }}</figcaption>
     {{ end }}
     </div>

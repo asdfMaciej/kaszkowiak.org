@@ -58,6 +58,8 @@
 	other = 'Visit the repo for more details'
 [offerDesc]
 	other = 'As a full-stack developer I can offer'
+[tableOfContents]
+	other = 'Table of contents'
 
 [menuOffer]
 	other = 'Services'
