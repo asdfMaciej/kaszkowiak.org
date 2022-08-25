@@ -13,7 +13,7 @@ $wrapper-width: 1200px;
 /*$red-hex: #ED0044;*/
 /*$red-hex: #60acca;*/
 /* previous green:  #69bbb3 */
-$red-hex: #3a71d7; /* #3eb5e5 */
+$red-hex: #346cd5; /* #3eb5e5 */
 
 $top-padding: 64px;
 
@@ -250,7 +250,7 @@ li {
 	overflow: hidden;
 
 	&::before {
-		background-image: url("/img/maciej kaszkowiak.jpg");
+		background-image: url("/img/maciej kaszkowiak.webp");
 		background-size: cover;
 		background-position: 65%;
 		background-repeat: no-repeat;
@@ -704,6 +704,7 @@ li {
 	background: $navbar-color;
 	color: white;
 	padding: 24px;
+	line-height: 1.8;
 	a {
 		color: white;
 		text-decoration: none;
@@ -832,11 +833,12 @@ li {
 	&:empty::before {
 		content: '';
 	}
-	display: inline-block;
+	display: inline;
 	a {
 		color: $font-color;
 		text-decoration: none;
 		font-weight: 300;
+		margin: 0 2px;
 	}
 }
 section.blog {
@@ -886,6 +888,7 @@ section.blog {
 		h2 {
 			margin: 0;
 			font-size: 1.3em;
+			padding-bottom: 4px;
 		}
 
 		a {
@@ -915,6 +918,7 @@ section.blog {
 	max-height: 50vh;
 	overflow: scroll;
 	margin: 0 10px;
+	max-width: calc(100vw - 50px);
 
 	td {
 		text-align: left;
