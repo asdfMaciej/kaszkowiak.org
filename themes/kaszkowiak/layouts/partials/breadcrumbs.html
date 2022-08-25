@@ -1,41 +1,104 @@
-<nav class="breadcrumbs" id="breadcrumbs">
+<nav class="breadcrumbs" id="breadcrumbs" vocab="https://schema.org/" typeof="BreadcrumbList">
+{{ $index := 1 }}
 {{ if eq .Site.Language.Lang "pl" }}
-    <a href="/">Strona główna</a>
+	<span property="itemListElement" typeof="ListItem">
+		<meta property="position" content="{{ $index }}">
+	    {{- $index = add 1 $index -}}
+
+	    <a href="{{.Site.BaseURL}}" property="item" typeof="WebPage">
+	    	<span property="name">Strona główna</span>
+		</a>
+	</span>
     {{if or (eq .Section "blog") (eq .Section "projekty") (eq .Section "tags")  }}
 
 	    {{ range first 2 (split .RelPermalink "/") }}
 	        {{ if gt (len . ) 0 }}
-	            / <a href="/{{ . }}/">{{ humanize . }}</a>
+	            / 
+	            <span property="itemListElement" typeof="ListItem">
+	            	<meta property="position" content="{{ $index }}">
+	            	{{- $index = add 1 $index -}}
+
+		            <a href="/{{ . }}/" property="item" typeof="WebPage">
+		            	<span property="name">{{ humanize . }}</span>
+		        	</a>
+	        	</span>
 	        {{ end }}
 	    {{ end }}
 	    {{ if .IsPage }}
-	    	/ <a href="{{ $.Permalink }}">{{ .Title }}</a>
+	    	/
+	    	<span property="itemListElement" typeof="ListItem"> 
+	    		<meta property="position" content="{{ $index }}">
+		    	{{- $index = add 1 $index -}}
+		    	
+		    	<a href="{{ $.Permalink }}" property="item" typeof="WebPage">
+		    		<span property="name">{{ .Title }}</span>	
+		    	</a>
+		    </span>
 	    {{ end }}
 	{{else}}
 		{{ range (split .RelPermalink "/") }}
 	        {{ if gt (len . ) 0 }}
-	            / <a href="/{{ . }}/">{{ humanize . }}</a>
+	            / 
+	            <span property="itemListElement" typeof="ListItem"> 
+	            	<meta property="position" content="{{ $index }}">
+		           	{{- $index = add 1 $index -}}
+		            
+		            <a href="/{{ . }}/" property="item" typeof="WebPage">
+		            	<span property="name">{{ humanize . }}</span>
+		        	</a>
+		        </span>
 	        {{ end }}
 	    {{ end }}
 	{{ end }}
 
 {{ else }}
     
-    <a href="/en/">Homepage</a>
+    <span property="itemListElement" typeof="ListItem">
+		<meta property="position" content="{{ $index }}">
+	    {{- $index = add 1 $index -}}
+
+	    <a href="{{.Site.BaseURL}}en/" property="item" typeof="WebPage">
+	    	<span property="name">Homepage</span>
+		</a>
+	</span>
     {{if or (eq .Section "blog") (eq .Section "projekty") (eq .Section "tags")  }}
 
 	    {{ range first 3 (split .RelPermalink "/") }}
 	        {{ if and (not (eq . "en")) (gt (len . ) 0) }}
-	            / <a href="/en/{{ . }}/">{{ humanize . }}</a>
+	            / 
+	            <span property="itemListElement" typeof="ListItem">
+	            	<meta property="position" content="{{ $index }}">
+	            	{{- $index = add 1 $index -}}
+
+		            <a href="/en/{{ . }}/" property="item" typeof="WebPage">
+		            	<span property="name">{{ humanize . }}</span>
+		        	</a>
+	        	</span>
 	        {{ end }}
 	    {{ end }}
 	    {{ if .IsPage }}
-	    	/ <a href="{{ $.Permalink }}">{{ .Title }}</a>
+	    	/ 
+	    	<span property="itemListElement" typeof="ListItem"> 
+	    		<meta property="position" content="{{ $index }}">
+		    	{{- $index = add 1 $index -}}
+		    	
+		    	<a href="{{ $.Permalink }}" property="item" typeof="WebPage">
+		    		<span property="name">{{ .Title }}</span>	
+		    	</a>
+		    </span>
 	    {{ end }}
 	{{else}}
 		{{ range (split .RelPermalink "/") }}
 	        {{ if and (not (eq . "en")) (gt (len . ) 0) }}
-	            / <a href="/en/{{ . }}/">{{ humanize . }}</a>
+	            / 
+	            <span property="itemListElement" typeof="ListItem"> 
+	            	<meta property="position" content="{{ $index }}">
+		           	{{- $index = add 1 $index -}}
+		            
+		            <a href="/en/{{ . }}/" property="item" typeof="WebPage">
+		            	<span property="name">{{ humanize . }}</span>
+		        	</a>
+		        </span>
 	        {{ end }}
 	    {{ end }}
 	{{ end }}
