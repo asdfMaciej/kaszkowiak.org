@@ -4,6 +4,7 @@ date: 2022-08-24T16:00:00+02:00
 summary: "Recenzja toreb, które sprawdzą się zarówno na długiej, jak i na krótszej trasie. Poznajcie zalety i wady popularnych tanich modelów."
 thumbnail: "bikepacking road bike.png"
 tags: ["sport", "rower", "bikepacking", "podróż"]
+aliases: ["/blog/bikepacking-torby/"]
 ---
 
 ## Bikepacking?
