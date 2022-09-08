@@ -1,17 +1,22 @@
 ---
-title: "O mnie - doświadczenie, umiejętności"
+title: "O mnie"
 ---
 
-Programuję od najmłodszych lat. Od kilku lat specjalizuję się w tworzeniu stron i serwisów internetowych. Stale się rozwijam poprzez dokształcanie się i poszerzanie swojej wiedzy.
+Cześć! Nazywam się Maciej Kaszkowiak. Zajmuję się programowaniem od moich najmłodszych lat. Specjalizuję się w tworzeniu stron i serwisów internetowych.
 
 Studiuję Informatykę na Politechnice Poznańskiej w trybie stacjonarnym. Mieszkam w Poznaniu oraz we Wronkach. Ukończyłem technikum z tytułami najlepszego absolwenta oraz najlepszego technika informatyka. Jestem również laureatem II Olimpiady Cyfrowej. 
 
 Uwielbiam sport. Jazda na szosie i treningi siłowe to moje główne odskocznie od komputera :) W wolnych chwilach również gram w szachy oraz tworzę projekty open-source.
 <!--more-->
 
+{{< gallerystart >}}
+{{< img src="hackathon.jpg" alt="PhD: Poznań hack Day" >}}
+{{< img src="maciej kaszkowiak.jpeg" alt="Sarnia Skała" >}}
+{{< galleryend >}}
+
 ## Doświadczenie jako web-developer
 
-Aktualnie wykonuję projekty jako freelancer oraz współpracuję z firmą Trol Intermedia, w głównej mierze pełniąc rolę back-end developera. Od 2018 regularnie zajmuję się utrzymaniem i rozwojem systemów firmy BRAMY-SERWIS. Odbyłem staż w firmach Komputerpartner (czerwiec 2020) i w Trol Intermedia (maj, lipiec 2019), gdzie zajmowałem się tworzeniem stron internetowych.
+Aktualnie wykonuję różne projekty jako freelancer. W 2021 roku współpracowałem z firmą Trol Intermedia rozwijając projekt systemu rekomendacji, w głównej mierze jako back-end developer. Od 2018 regularnie zajmuję się utrzymaniem i rozwojem systemów firmy BRAMY-SERWIS. Odbyłem staż w firmach Komputerpartner (czerwiec 2020) i w Trol Intermedia (maj, lipiec 2019), gdzie zajmowałem się tworzeniem stron internetowych.
 
 Zachęcam do spojrzenia na efekty mojej dotychczasowej pracy. Udostępniłem [wybrane projekty](/projekty/) wraz ze zdjęciami i opisem realizacji.
 
@@ -25,7 +30,7 @@ Optymalizuję każdą stronę pod kątem wydajności i wyników wyszukiwania. Ko
 
 Potrafię również wykonać zaawansowane projekty. Korzystam z frameworków i wzorców projektowych - przyspiesza to proces tworzenia oraz zapewnia prostszą rozbudowę i utrzymanie. Potrafię odwzorować model struktury firmy, organizacji, czy też danego zadania - a następnie utworzyć relacyjną bazę danych spełniającą swoją rolę.
 
-## Poza stronami również umiem:
+## Poza stronami również potrafię:
 
 Potrafię współpracować z innymi programistami za pomocą systemu kontroli wersji. Znam podstawy administracji serwerów. Umiem wdrożyć stosowne zabezpieczenie oraz skonfigurować wymagane usługi - bazy danych, intepretery kodu, monitorowanie zasobów.
 

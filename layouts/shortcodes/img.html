@@ -11,10 +11,7 @@
 {{ $tinyw := default "500x" }}
 {{ $largew := default "1500x" }}
 
-{{ if (eq $orientation 1) }}
-  {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
-  {{ .Scratch.Set "large" ($src.Resize $largew) }}
-{{ else if (eq $orientation 3) }}
+{{ if (eq $orientation 3) }}
   {{ $tinyw := print $tinyw " r180"}}
   {{ $largew := print $largew " r180"}}
   {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
@@ -27,6 +24,9 @@
 {{ else if (eq $orientation 8) }}
   {{ $tinyw := print $tinyw " r90"}}
   {{ $largew := print $largew " r90"}}
+  {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+  {{ .Scratch.Set "large" ($src.Resize $largew) }}
+{{ else }}
   {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
   {{ .Scratch.Set "large" ($src.Resize $largew) }}
 {{ end }}

@@ -3,16 +3,21 @@ title: "A few words about me"
 url: "about-me"
 ---
 
-I have been programming since I was a child. For the past few years I have been specializing in web development. I constantly try to improve by learning and extending my knowledge.
+Hey! My name is Maciej Kaszkowiak. I have been programming since I was a child. Currently I specialize in web development.
 
-Currently I am studying Computer Science at the Poznań University of Technology. I live in Poznań and Wronki. I have graduated from technical school with a title of the best graduate. I am also a laureate of the 2nd Digital Olympiad.
+Currently I am a Computer Science student at the Poznań University of Technology. I live in Poznań and Wronki. I have graduated from a technical school with the best graduate title. I am also a laureate of the 2nd Digital Olympiad.
 
 I love sport, especially road cycling and weight training :) During my free time I also play chess and create open-source projects.
 <!--more-->
 
+{{< gallerystart >}}
+{{< img src="hackathon.jpg" alt="PhD: Poznań hack Day" >}}
+{{< img src="maciej kaszkowiak.jpeg" alt="Sarnia Skała" >}}
+{{< galleryend >}}
+
 ## My experience as a web-developer
 
-I am currently freelancing and working with Trol Intermedia, primarily in the role of a back-end developer. Since 2018 I have been regularly involved in the maintenance and development of the systems of BRAMY-SERWIS. I did an internship at Komputerpartner (June 2020) and Trol Intermedia (May, July 2019). 
+I am currently working on multiple projects as a freelancer. In 2021 I was focused on developing a recommender system for Trol Intermedia, primarily as a back-end developer. Since 2018 I have been regularly involved in the maintenance and development of the systems of BRAMY-SERWIS. I did an internship at Komputerpartner (June 2020) and Trol Intermedia (May, July 2019). 
 
 ## What do I bring to the table?
 

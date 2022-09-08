@@ -18,6 +18,12 @@
 			</a>
             {{- end -}}
 
+            {{ with .Site.GetPage "/blog/" }}      
+			<a href="{{- .Permalink -}}" title='{{- i18n "menuBlog" -}}'>
+				{{- i18n "menuBlog" -}}
+			</a>
+            {{- end -}}
+
 			{{ with .Site.GetPage "/oferta/" }}      
 			<a href="{{- .Permalink -}}" title='{{- i18n "menuOffer" -}}'>
 				{{- i18n "menuOffer" -}}
@@ -30,11 +36,6 @@
 			</a>
             {{- end -}}
 
-            {{ with .Site.GetPage "/blog/" }}      
-			<a href="{{- .Permalink -}}" title='{{- i18n "menuBlog" -}}'>
-				{{- i18n "menuBlog" -}}
-			</a>
-            {{- end -}}
             {{ with .Site.GetPage "/kontakt/" }}      
 			<a href="{{- .Permalink -}}" title='{{- i18n "menuContact" -}}'>
 				{{- i18n "menuContact" -}}
