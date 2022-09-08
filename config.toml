@@ -26,3 +26,7 @@ defaultContentLanguage = "pl"
 
 [taxonomies]
 	tag = "tags"
+
+[imaging]
+	[imaging.exif]
+		includeFields = "Orientation"

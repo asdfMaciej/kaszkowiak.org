@@ -2,11 +2,34 @@
 {{ $srcUrl := .Get "src" | safeURL }}
 {{ $src := .Page.Resources.GetMatch (printf "%s" $srcUrl) }}
 
+{{ $orientation := 1 }}
+
+{{ with $src.Exif }}
+{{ $orientation = .Tags.Orientation }}
+{{ end }}
+
 {{ $tinyw := default "500x" }}
 {{ $largew := default "1500x" }}
 
-{{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
-{{ .Scratch.Set "large" ($src.Resize $largew) }}
+{{ if (eq $orientation 1) }}
+  {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+  {{ .Scratch.Set "large" ($src.Resize $largew) }}
+{{ else if (eq $orientation 3) }}
+  {{ $tinyw := print $tinyw " r180"}}
+  {{ $largew := print $largew " r180"}}
+  {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+  {{ .Scratch.Set "large" ($src.Resize $largew) }}
+{{ else if (eq $orientation 6) }}
+  {{ $tinyw := print $tinyw " r270"}}
+  {{ $largew := print $largew " r270"}}
+  {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+  {{ .Scratch.Set "large" ($src.Resize $largew) }}
+{{ else if (eq $orientation 8) }}
+  {{ $tinyw := print $tinyw " r90"}}
+  {{ $largew := print $largew " r90"}}
+  {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+  {{ .Scratch.Set "large" ($src.Resize $largew) }}
+{{ end }}
 
 {{ $tiny := .Scratch.Get "tiny" }}
 {{ $large := .Scratch.Get "large" }}
