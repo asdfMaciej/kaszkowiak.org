@@ -102,6 +102,7 @@ figure img {
 	max-width: 100%;
 	max-height: 300px;
 	border-radius: 8px;
+	padding: 4px;
 }
 
 figure div {
@@ -833,7 +834,7 @@ li {
 	&:empty::before {
 		content: '';
 	}
-	display: inline;
+	display: inlineS;
 	a {
 		color: $font-color;
 		text-decoration: none;
