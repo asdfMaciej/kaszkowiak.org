@@ -24,6 +24,8 @@
 	other = 'Facebook'
 [recentBlogPosts]
 	other = 'Recent blog posts'
+[blogPosts]
+	other = 'Blog posts'
 [blogTheme]
 	other = 'I write mostly about my projects, technology, and programming'
 [seePosts]
@@ -60,6 +62,12 @@
 	other = 'As a full-stack developer I can offer'
 [tableOfContents]
 	other = 'Table of contents'
+[seeOtherPosts]
+	other = 'Other posts'
+[checkOutMyOtherPosts]
+	other = "Make sure to take a look at my most recent posts!"
+[allTagPosts]
+	other = "All blog posts published under the tag"
 
 [menuOffer]
 	other = 'Services'

@@ -1,5 +1,7 @@
 // init lightbox for images
-const lightbox = GLightbox({});
+if (typeof GLightbox !== 'undefined') {
+	const lightbox = GLightbox({});
+}
 
 // change navbar class on scroll, when an element #navbar-transparent exists
 const navbar = document.querySelector('.navbar');

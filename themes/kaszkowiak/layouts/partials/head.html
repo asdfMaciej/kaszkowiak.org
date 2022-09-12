@@ -10,7 +10,7 @@
 	{{- $title = printf "%s - %s" .Title .Params.Subtitle -}}
 {{- else if (eq .Section "oferta") -}}
 	{{- $title = .Title -}}
-{{- else if (and (eq .Section "tags") (ne .Title "Lista tagów")) -}}
+{{- else if (and (eq .Section "tags") (eq .Kind "term")) -}}
 	{{- $title = printf "Blog - #%s - Maciej Kaszkowiak" .Title -}}
 {{- else -}}
 	{{- $title = printf "%s - Maciej Kaszkowiak" .Title -}}
@@ -25,6 +25,8 @@
 {{- $desc := "" -}}
 {{- if (isset .Params "desc") -}}
 	{{- $desc = .Params.desc -}}
+{{- else if eq .Kind "term" -}}
+  {{- $desc = printf "%s #%s." (i18n "allTagPosts") .Title -}}
 {{- else -}}
 	{{- $desc = (substr (.Summary | plainify) 0 150) -}}
 {{- end }}
@@ -44,6 +46,7 @@
 <meta property="og:type" content="website">
 {{- end }}
 
+<meta name="author" content="Maciej Kaszkowiak">
 <meta property="og:locale" content="{{ .Site.Params.locale }}">
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}">
 {{ if .Params.thumbnail -}}
@@ -62,6 +65,30 @@
   {{- end -}}
 {{ end }}
 
+{{ if (and (eq .Section "blog") (.IsPage)) -}}
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ .Title }}",
+      "image": [
+        {{ $thumbnail := .Resources.GetMatch .Params.thumbnail -}}
+        {{- $thumbnail.Permalink }}
+       ],
+
+      "datePublished": {{ .Date.Format "2006-01-02T15:04:05-07:00" }},
+      {{ with .Lastmod -}}
+      "dateModified": {{ .Format "2006-01-02T15:04:05-07:00" }},
+      {{- end }}
+      "author": [{
+          "@type": "Person",
+          "name": "Maciej Kaszkowiak",
+          "url": "https://kaszkowiak.org"
+        }]
+    }
+    </script>
+{{- end }}
 <!-- favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -71,13 +98,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link
     rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&subset=latin,latin-ext&display=swap"
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
 />
 <noscript>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&subset=latin,latin-ext&display=swap"
         rel="stylesheet"
         type="text/css"
     />
@@ -85,9 +112,13 @@
 
 {{ $stylemain := resources.Get "scss/main.scss" | toCSS | postCSS (dict "use" "autoprefixer") | minify | fingerprint "sha512" }}
 <link rel="stylesheet" href="{{ $stylemain.RelPermalink }}" integrity="{{ $stylemain.Data.Integrity }}">
-<link rel="stylesheet" href="/css/glightbox.css" >
+{{- if not .IsHome -}}
+<link rel="preload" href="/css/glightbox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="/css/glightbox.css">
+</noscript>
 <script language="javascript" type="text/javascript" src="/js/glightbox.min.js"></script>
-
+{{- end -}}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KR0JWKVK6"></script>

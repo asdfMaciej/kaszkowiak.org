@@ -1,6 +1,7 @@
 ---
 title: "Strona dynamiczna a strona statyczna - zalety, wady, definicja"
 date: 2021-06-12T13:33:06+02:00
+lastmod: 2021-06-12T13:33:06+02:00
 summary: "Poznaj różnicę pomiędzy dwoma typami stron."
 thumbnail: "computer.jpeg"
 tags: ["webdev", "newbie"]

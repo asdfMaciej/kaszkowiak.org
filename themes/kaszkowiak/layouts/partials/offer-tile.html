@@ -1,7 +1,7 @@
 <a href="{{ with .Site.GetPage "/oferta" }}{{ .Permalink}}{{end}}#{{.Params.slug}}" class="offer__box">
 	<div class="offer__box-top">
 		{{ with .Resources.GetMatch (printf "%s" .Params.icon) }}
-			<img src="{{ .RelPermalink }}" alt="" role="presentation" class="offer__box-icon">
+			<img width="45" height="45" src="{{ .RelPermalink }}" alt="" role="presentation" class="offer__box-icon">
 		{{ end }}
 		<h3 class="offer__box-title">
 			{{ .Title }}

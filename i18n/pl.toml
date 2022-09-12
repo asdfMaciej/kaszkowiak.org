@@ -24,8 +24,10 @@
 	other = 'Facebooku'
 [recentBlogPosts]
 	other = 'Ostatnie posty na blogu'
+[blogPosts]
+	other = 'Posty na blogu'
 [blogTheme]
-	other = 'Piszę o projektach, technologii i programowaniu'
+	other = 'Bloguję o projektach, technologii, sporcie i programowaniu'
 [seePosts]
 	other = 'zobacz wszystkie posty'
 [contactHeader]
@@ -60,6 +62,12 @@
 	other = 'Jako full-stack developer potrafię zaoferować'
 [tableOfContents]
 	other = 'Spis treści'
+[seeOtherPosts]
+	other = 'Zobacz inne posty'
+[checkOutMyOtherPosts]
+	other = 'Zapraszam do zapoznania się z moimi pozostałymi postami.'
+[allTagPosts]
+	other = "Wszystkie posty zamieszczone na blogu pod tagiem"
 
 [menuOffer]
 	other = 'Oferta'

@@ -1,6 +1,7 @@
 ---
 title: "Bikepacking on a budget - a review of cheap bike bags"
 date: 2022-09-07T16:00:00+02:00
+lastmod: 2022-09-07T16:00:00+02:00
 summary: "How do unexpensive bags fare on short and long bike trips? I've tested and reviewed some of the most popular models."
 slug: "budget-bikepacking-bags"
 thumbnail: "bikepacking road bike.png"

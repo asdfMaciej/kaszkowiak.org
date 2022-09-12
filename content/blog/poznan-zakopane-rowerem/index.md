@@ -1,7 +1,7 @@
 ---
 title: "Rowerem z Poznania do Zakopanego w 3 dni!"
 date: 2022-09-08T23:00:00+02:00
-summary: "Relacja / opis / trasy / przygody "
+lastmod: 2022-09-08T23:00:00+02:00
 summary: "Trzy dni jazdy, dwa koła i jedna niezapomniana przygoda. Moja relacja z trasy pełnej wrażeń, zjedzonych bananów i malowniczych widoków!"
 thumbnail: "postój na stacji benzynowej.jpg"
 tags: ["sport", "rower", "bikepacking", "podróż"]

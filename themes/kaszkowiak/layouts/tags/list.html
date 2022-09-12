@@ -1,11 +1,28 @@
 {{ define "main" }}
-	
     <section class="posts-list">
     	{{ partial "breadcrumbs.html" . }}
+
+        <h1> {{ i18n "blogPosts" }}: #{{ .Title }} </h1>
         {{ range .Pages }}
             {{ partial "blog-tile.html" . }}
         
         {{ end }}
+
+        <h2>{{ i18n "seeOtherPosts" }}</h2>
+        
+        {{ i18n "checkOutMyOtherPosts"}}
+
+            <p>{{ i18n "blogTheme" }} - 
+              {{ with .Site.GetPage "/blog" }}
+              <a href="{{ .Permalink }}">
+              {{ end }}
+                {{i18n "seePosts"}}</a>.
+            </p>
+            {{ range ( where .Site.RegularPages "Type" "blog" | first 5 ) }}
+                {{ if not (in .Params.tags $.Title) }}
+                {{ partial "blog-tile.html" . }}
+                {{ end }}
+            {{ end }}
     </section>
 
 {{ end }}

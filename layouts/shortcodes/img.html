@@ -8,41 +8,50 @@
 {{ $orientation = .Tags.Orientation }}
 {{ end }}
 
-{{ $tinyw := default "500x" }}
-{{ $largew := default "1500x" }}
+{{ $tinyw := default "500x jpg Lanczos" }}
+{{ $tinywwebp := default "500x webp Lanczos" }}
+{{ $largew := default "1500x jpg Lanczos" }}
 
 {{ if (eq $orientation 3) }}
   {{ $tinyw := print $tinyw " r180"}}
+  {{ $tinywwebp := print $tinywwebp " r180"}}
   {{ $largew := print $largew " r180"}}
   {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+  {{ .Scratch.Set "tinywebp" ($src.Resize $tinywwebp) }}
   {{ .Scratch.Set "large" ($src.Resize $largew) }}
 {{ else if (eq $orientation 6) }}
   {{ $tinyw := print $tinyw " r270"}}
+  {{ $tinywwebp := print $tinywwebp " r270"}}
   {{ $largew := print $largew " r270"}}
   {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+  {{ .Scratch.Set "tinywebp" ($src.Resize $tinywwebp) }}
   {{ .Scratch.Set "large" ($src.Resize $largew) }}
 {{ else if (eq $orientation 8) }}
   {{ $tinyw := print $tinyw " r90"}}
+  {{ $tinywwebp := print $tinywwebp " r90"}}
   {{ $largew := print $largew " r90"}}
   {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+  {{ .Scratch.Set "tinywebp" ($src.Resize $tinywwebp) }}
   {{ .Scratch.Set "large" ($src.Resize $largew) }}
 {{ else }}
   {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+  {{ .Scratch.Set "tinywebp" ($src.Resize $tinywwebp) }}
   {{ .Scratch.Set "large" ($src.Resize $largew) }}
 {{ end }}
 
 {{ $tiny := .Scratch.Get "tiny" }}
+{{ $tinywebp := .Scratch.Get "tinywebp" }}
 {{ $large := .Scratch.Get "large" }}
 
 {{ if .Get "src" }}
 <figure {{ with .Get "float" }} class="float-{{ . }}" {{ end }}>
 	<div>
-  <a href='{{ if ge $src.Width "1500" }}
-    {{ $large.RelPermalink }}
-  {{ else }}
-	{{ $src.RelPermalink }}
-  {{ end }}' class="glightbox"  data-description='{{ if .Get "caption" }}{{ .Get "caption" }}{{ else }}{{ .Get "alt" }}{{ end }}'>
-    <img src='{{ $tiny.RelPermalink }}' loading="lazy" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} >
+  <a href='{{ $large.RelPermalink }}' class="glightbox"  data-description='{{ if .Get "caption" }}{{ .Get "caption" }}{{ else }}{{ .Get "alt" }}{{ end }}'>
+  <picture>
+    <source srcset='{{ $tinywebp.RelPermalink }}' width="{{ $tinywebp.Width }}" height="{{ $tinywebp.Height }}" type="image/webp">
+      <source srcset='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" type="image/jpeg">
+    <img src='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" loading="lazy" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }}>
+  </picture>
 </a>
     {{ if .Get "caption" }}
       <figcaption>{{ .Get "caption" }}</figcaption>

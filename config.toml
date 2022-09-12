@@ -3,6 +3,7 @@ baseURL = "https://kaszkowiak.org/"
 theme = "kaszkowiak"
 title = "Maciej Kaszkowiak"
 defaultContentLanguage = "pl"
+timeout = "120s"
 
 [languages]
 	[languages.pl]

@@ -1,6 +1,7 @@
 ---
 title: "Meet Hugo, a static page generator"
 date: 2021-06-18T14:33:06+02:00
+lastmod: 2021-06-18T14:33:06+02:00
 summary: "A convenient workflow for every web developer."
 thumbnail: "hugo.png"
 slug: "hugo-static-page-generator"

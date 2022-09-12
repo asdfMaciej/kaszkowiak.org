@@ -1,6 +1,7 @@
 ---
 title: "Sterowanie żarówkami Tuya za pomocą Arduino i ESP8266"
 date: 2022-03-15T18:33:06+02:00
+lastmod: 2022-03-15T18:33:06+02:00
 summary: "Stworzyłem fizyczny panel sterujący najtańszym oświetleniem RGB. Przedstawiam Wam opis wykonania, kod oraz schematy elektryczne."
 thumbnail: "arduino.jpg"
 tags: ["arduino", "esp8266", "iot"]
@@ -24,7 +25,7 @@ Do połączenia z siecią wykorzystałem moduł ESP-01 (oparty o SoC ESP8266EX),
 
 Komunikacja pomiędzy Arduino oraz ESP-01 jest możliwa dzięki wykorzystaniu portów seryjnych. Skrzyżowanie pinów TX/RX sprawia, że urządzenia nawiązują ze sobą transmisję. Po naciśnięciu przycisku Arduino przesyła wybrane przez użytkownika znaki do ESP-01 za pośrednictwem portu seryjnego, a także wyświetla informację zwrotną przez kontrolowanie trzech LEDów.
 
-W celu uproszczenia konfiguracji wykorzystałem wcześniej stworzony skrypt. Przystosowałem jego strukturę oraz napisałem wrapper w PHP umożliwiający zmianę sceny zwykłym GET requestem. Zaimplementowałem proste zabezpieczenie w postaci zhardcodowania hasła zarówno po stronie ESP-01 jak i skryptu PHP. Dla skryptu wydzieliłem domenę genesis13.kaszkowiak.org - niech stanie się światłość ;)
+W celu uproszczenia konfiguracji wykorzystałem wcześniej stworzony skrypt. Przystosowałem jego strukturę oraz napisałem wrapper w PHP umożliwiający zmianę sceny zwykłym GET requestem. Zaimplementowałem proste zabezpieczenie w postaci zhardcodowania hasła zarówno po stronie ESP-01 jak i skryptu PHP. Dla skryptu wydzieliłem domenę {{<link href="https://genesis13.kaszkowiak.org" text="genesis13.kaszkowiak.org" rel="nofollow" target="_blank">}} - niech stanie się światłość ;)
 
 Modyfikacja scen polega na zmianie kodu po stronie serwera, przez co kod sieciowy na ESP-01 nie wymaga zmian. Wymusza to dodatkową zależność w postaci uptime kaszkowiak.org - jest to minimalny koszt w stosunku do zalet.
 

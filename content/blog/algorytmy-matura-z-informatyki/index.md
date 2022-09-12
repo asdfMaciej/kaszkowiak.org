@@ -1,6 +1,7 @@
 ---
 title: "Algorytmy na maturę z informatyki"
 date: 2021-06-16T14:33:06+02:00
+lastmod: 2021-06-16T14:33:06+02:00
 thumbnail: "repetytorium.jpg"
 summary: "Zestawiłem, opisałem i zimplementowałem w Pythonie wszystkie wymagane algorytmy na maturę z informatyki."
 tags: ["python", "newbie"]

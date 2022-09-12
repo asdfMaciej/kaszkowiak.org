@@ -1,6 +1,7 @@
 ---
 title: "Poznaj Hugo - generator stron statycznych"
 date: 2021-06-18T14:33:06+02:00
+lastmod: 2021-06-18T14:33:06+02:00
 summary: "Wygodny workflow dla każdego web developera."
 thumbnail: "hugo.png"
 tags: ["webdev", "hugo"]

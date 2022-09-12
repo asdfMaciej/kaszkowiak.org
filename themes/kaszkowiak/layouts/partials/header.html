@@ -1,5 +1,5 @@
 {{define "header"}}
-<header class="navbar">
+<header class="navbar {{ if not .IsHome -}}navbar--active{{- end -}}">
 	<div class="wrapper wrapper--navbar">
 		{{- with .Site.GetPage "/" -}}
 		<a class="navbar__logo" href="{{- .Permalink -}}">

@@ -1,6 +1,7 @@
 ---
 title: "Controlling Tuya lights with Arduino and ESP8266"
 date: 2022-03-15T18:33:06+02:00
+lastmod: 2022-03-15T18:33:06+02:00
 summary: "I've created a physical controller for the cheapest RGB lighting available in Poland. Do it yourself - code and circuit designs included!"
 thumbnail: "arduino.jpg"
 tags: ["arduino", "esp8266", "iot"]
@@ -24,7 +25,7 @@ I've used ESP-01 (based on the SoC ESP8266EX) to connect to and use the Wi-Fi ne
 
 Arduino and ESP-01 can communicate via the serial ports. Crossing the TX/RX pins allows the devices to transmit data to themselves. After user presses a button, Arduino sends accordingly mapped characters to the ESP-01 as a command, receives connection status as a result, and controls 3 LEDs to signal to the user.   
 
-To simplify the configuration I've used my previously created Python script. I've adapted it to a PHP wrapper which handles the network requests. There's a very simple security measure in-place, as I've hardcoded a password both in the ESP-01 and PHP code. The wrapper runs on a [genesis13.kaszkowiak.org](https://genesis13.kaszkowiak.org) subdomain - let there be light ;)
+To simplify the configuration I've used my previously created Python script. I've adapted it to a PHP wrapper which handles the network requests. There's a very simple security measure in-place, as I've hardcoded a password both in the ESP-01 and PHP code. The wrapper runs on a {{<link href="https://genesis13.kaszkowiak.org" text="genesis13.kaszkowiak.org" rel="nofollow" target="_blank">}} subdomain - let there be light ;)
 
 The reason for this set-up is that modifying scenes shouldn't require a ESP-01 reflash. Creating an additional layer of abstraction simplifies the ESP-01 code and allows me to easily tinker by connecting to my VPS. It introduces an additional dependency of [kaszkowiak.org](https://kaszkowiak.org) uptime, which I consider a small price for the upsides.
 

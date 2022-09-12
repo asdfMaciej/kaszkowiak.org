@@ -1,6 +1,7 @@
 ---
 title: "Algorithms for the IT Matura exam"
 date: 2021-06-16T14:33:06+02:00
+lastmod: 2021-06-16T14:33:06+02:00
 thumbnail: "repetytorium.jpg"
 summary: "I've put together, described (in Polish) and implemented (in Python) every required algorithm for the IT Matura exam."
 tags: ["python", "newbie"]

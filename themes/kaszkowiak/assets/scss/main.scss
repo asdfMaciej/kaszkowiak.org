@@ -83,7 +83,10 @@ body.blog.page h4, body.blog.page h5, body.blog.page h6 {
 	clear: both;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+	line-height: 1.2;
+}
+h2, h3, h4, h5, h6 {
 	line-height: 1.4;
 }
 
@@ -103,6 +106,8 @@ figure img {
 	max-height: 300px;
 	border-radius: 8px;
 	padding: 4px;
+	height: auto;
+	width: auto;
 }
 
 figure div {
@@ -251,6 +256,10 @@ li {
 	overflow: hidden;
 
 	&::before {
+		@supports not (background-image: url("/img/maciej kaszkowiak.webp")) {
+		   background-image: url("/img/maciej kaszkowiak.jpg")
+		}
+		
 		background-image: url("/img/maciej kaszkowiak.webp");
 		background-size: cover;
 		background-position: 65%;
@@ -661,6 +670,8 @@ li {
 			max-width: 300px;
 			border-radius: 8px;
 			box-shadow: #0000000f 0 10px 30px;
+			width: auto;
+			height: auto;
 		}
 	}
 }
@@ -684,6 +695,7 @@ li {
 		min-width: 150px;
 		padding: 10px;
 		opacity: 0.93;
+		height: auto;
 	}
 
 	a {
@@ -769,7 +781,7 @@ li {
 	margin: 0 auto 16px;
 	padding-top: 12px;
 	a {
-		color: #a7a7a7;
+		color: #726f6f;
 		font-weight: 300;
 	}
 }
@@ -816,6 +828,7 @@ li {
 		max-width: 500px;
 		width: 100%;
 		border-radius: 8px;
+		height: auto;
 	}
 
 	&__content {
@@ -904,6 +917,7 @@ section.blog {
 			margin-bottom: 12px;
 			float: left;
 			border-radius: 4px;
+			height:  auto;
 		}
 	}
 

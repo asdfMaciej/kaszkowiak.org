@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="posts-list">
+    	{{ partial "breadcrumbs.html" . }}
+
+        <h1> {{ .Title }} </h1>
+	    	{{ partial "tags-cloud.html" . }}
+
+	    {{ .Content }}
+
+            <p>{{ i18n "blogTheme" }} - 
+              {{ with .Site.GetPage "/blog" }}
+              <a href="{{ .Permalink }}">
+              {{ end }}
+                {{i18n "seePosts"}}</a>.
+            </p>
+            {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
+                {{ partial "blog-tile.html" . }}
+            {{ end }}
+    </section>
+{{ end }}
