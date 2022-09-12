@@ -15,3 +15,5 @@ I created a fast, responsive website with low maintenance costs. I made it possi
 I decided to create a static site based on a consultation with Mrs. Okane. We came to a consensus that she doesn't need the ability to edit it regularly, so I focused on the site's speed and low maintenance costs. Free hosting on Github Pages limited the expenses to only the domain.
 
 I advised on what content to include on the site. Based on these, I chose a theme and tailored it to Ms. Iza's requirements. The use of a pre-existing theme made it possible to achieve a great result with a low cost. After the final touches were made, I configured the hosting and the domain.
+
+The website is available under the [izaokane.pl](https://izaokane.pl) domain. Currently as a freelancer I work among others on the [colorbox24.com](https://colorbox24.com) website.
