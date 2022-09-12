@@ -4,6 +4,7 @@ date: 2022-09-12T22:30:00+02:00
 lastmod: 2022-09-12T22:30:00+02:00
 summary: "Three days of riding, two wheels, and one unforgettable experience. My report from a trip full of adventures, eaten bananas, and beautiful sights!"
 thumbnail: "postój na stacji benzynowej.jpg"
+slug: "poznan-zakopane-cycling-trip"
 tags: ["sport", "bike", "bikepacking", "adventure"]
 ---
 
