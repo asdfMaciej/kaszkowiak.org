@@ -5,7 +5,7 @@ thumbnail: "0.jpg"
 weight: 4
 ---
 
-Od ponad trzech lat zajmuję się utrzymaniem i rozwojem serwisów firmowych.
+Od ponad trzech lat zajmuję się utrzymaniem i rozwojem serwisów firmowych dla BRAMY - SERWIS.
 <!--more-->
 Pracuję nad stronami [bramy-serwis.pl](https://bramy-serwis.pl) oraz [naprawa-sterownikow.com.pl](https://naprawa-sterownikow.com.pl).
 Stworzyłem również wyżej wspomniany portal [szybkarolka.pl](https://szybkarolka.pl).

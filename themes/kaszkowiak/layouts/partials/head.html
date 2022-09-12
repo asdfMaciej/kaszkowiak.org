@@ -26,7 +26,7 @@
 {{- if (isset .Params "desc") -}}
 	{{- $desc = .Params.desc -}}
 {{- else if eq .Kind "term" -}}
-  {{- $desc = printf "%s #%s." (i18n "allTagPosts") .Title -}}
+  {{- $desc = printf "%s #%s. %s." (i18n "allTagPosts") .Title (i18n "blogTopics") -}}
 {{- else -}}
 	{{- $desc = (substr (.Summary | plainify) 0 150) -}}
 {{- end }}

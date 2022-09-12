@@ -67,7 +67,9 @@
 [checkOutMyOtherPosts]
 	other = 'Zapraszam do zapoznania się z moimi pozostałymi postami.'
 [allTagPosts]
-	other = "Wszystkie posty zamieszczone na blogu pod tagiem"
+	other = "Wszystkie moje posty o"
+[blogTopics]
+	other = "Na blogu piszę również o projektach, technologii, sporcie i programowaniu"
 
 [menuOffer]
 	other = 'Oferta'

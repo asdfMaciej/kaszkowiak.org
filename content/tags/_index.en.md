@@ -1,6 +1,6 @@
 ---
-title: "List of blog tags"
-summary: "List of all tags published on my personal blog."
+title: "List of post tags"
+summary: "All tags published under my blog posts. Take a look at my posts about your favourite topics and interests."
 ---
 
 ## Recent posts

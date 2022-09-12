@@ -1,4 +1,4 @@
 ---
-title: "Tworzenie stron i witryn internetowych - Wronki, Szamotuły"
-desc: "Zaprojektuję i wykonam stronę WWW od podstaw - szybką i dostosowaną do komórek."
+title: "Tworzenie stron i aplikacji internetowych - Maciej Kaszkowiak"
+desc: "Zaprojektuję i wykonam stronę WWW od podstaw, a także zajmę się rozwojem istniejącego systemu. Zapoznaj się z moją pełną ofertą."
 ---

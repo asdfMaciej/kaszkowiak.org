@@ -67,7 +67,9 @@
 [checkOutMyOtherPosts]
 	other = "Make sure to take a look at my most recent posts!"
 [allTagPosts]
-	other = "All blog posts published under the tag"
+	other = "All of my posts about"
+[blogTopics]
+	other = "On my blog I write also about projects, technology, sports, and software development"
 
 [menuOffer]
 	other = 'Services'

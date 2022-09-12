@@ -1,5 +1,5 @@
 ---
 title: "Web development services - Maciej Kaszkowiak"
-desc: "I will design and develop a fast, mobile-friendly website from scratch."
+desc: "I can design and develop a website, improve an existing system, and create complex applications. Learn more about services I provide."
 url: /en/services
 ---

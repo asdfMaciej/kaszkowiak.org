@@ -1,8 +1,8 @@
 ---
-title: "Dynamic website vs. static website - advantages, disadvantages, definition"
+title: "Dynamic website vs. static website - pros, cons and definition"
 date: 2021-06-12T13:33:06+02:00
 lastmod: 2021-06-12T13:33:06+02:00
-summary: "Learn the differences between the two types of sites."
+summary: "Learn the differences between the two types of sites: dynamic and static. A practical list of the most important pros and cons."
 slug: "dynamic-vs-static-website"
 thumbnail: "computer.jpeg"
 tags: ["webdev", "newbie"]
