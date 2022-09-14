@@ -1,8 +1,8 @@
 {{ define "main" }}
 	{{ partial "breadcrumbs.html" . }}
 
-	<h1>{{ i18n "recentBlogPosts" }}</h1>
-	<p>{{ .Summary }}</p>
+	<h1 class="blog-list-header">{{ i18n "recentBlogPosts" }}</h1>
+	<p class="blog-list-summary">{{ .Summary }}</p>
     <div class="blog-view">
 		<section class="posts-list">
 	    	

@@ -47,6 +47,16 @@ body {
 		background: white;
 	}
 
+	&.blog.list {
+		background: white;
+
+		.main-content {
+			max-width: 1600px;
+			padding-left: 70px;
+			padding-right: 70px;
+		}
+	}
+
 	&.kontakt.list {
 		background: white;
 		/*.breadcrumbs a {
@@ -840,21 +850,7 @@ li {
 	}
 }
 
-.post-tags {
-	&::before {
-		content: '/';
-	}
-	&:empty::before {
-		content: '';
-	}
-	display: inlineS;
-	a {
-		color: $font-color;
-		text-decoration: none;
-		font-weight: 300;
-		margin: 0 2px;
-	}
-}
+
 section.blog {
 	padding-top: 4px;
 	background: $background;
@@ -868,66 +864,101 @@ section.blog {
 }
 
 .blog-view {
-	display: grid;
-	grid-template-areas: 'posts tags';
-	grid-template-columns: auto 1fr;
-	grid-gap: 24px;
+	display: flex;
+	flex-direction: column;
+
 }
 
-.tags-list {
-	grid-area: tags;
-	background: white;
-	box-shadow: $tile-shadow;
-	padding: 24px;
-	min-width: 250px;
-	margin: 12px 0;
-	border-radius: 8px;
-
-	h2 {
-		margin: 0;
+.post-tags {
+	&:empty::before {
+		content: '';
+	}
+	display: inline;
+	a {
+		color: $red-hex;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 14px;
+		letter-spacing: -0.006;
 	}
 }
 
 .posts-list {
 	grid-area: posts;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 90px 70px;
 
 	&__post {
-		background: white;
-		box-shadow: $tile-shadow;
-		padding: 24px;
-		padding-bottom: 12px;
-		margin: 12px auto;
-		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
 
 		h2 {
 			margin: 0;
-			font-size: 1.3em;
-			padding-bottom: 4px;
-		}
-
-		a {
-			color: black;
-			text-decoration: none;
+			font-size: 2.4rem;
+			line-height: 1.15;
+			letter-spacing: -0.019em;
+			a {
+				color: black;
+				font-weight: 700;
+			}
 		}
 
 		.blog-thumbnail {
-			max-width: 200px;
-			width: 100%;
-			margin-right: 40px;
-			margin-bottom: 12px;
-			float: left;
-			border-radius: 4px;
-			height:  auto;
+		    width: 100%;
+		    border-radius: 8px;
+		    height: auto;
+		    aspect-ratio: 450 / 295;
+		    object-fit: cover;
+		    background: #ededed;
 		}
 	}
 
-	&__date {}
+	&__date {
+		color: #3C3B3B;
+		font-size: 15px;
+		font-weight:  300;
+		letter-spacing: -0.009em;
+	}
 	&__summary {
-		margin: 0;
-		margin-top: 16px;
+		font-size:  16px;
+		line-height: 1.56;
+		font-weight: 400;
+		margin:  0;
+		margin-top: 4px;
+		letter-spacing: -0.011em;
 	}
 }
 
+.tags-list {
+	grid-area: tags;
+	background: white;
+	margin: 90px 0;
+	h2 {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 1.15;
+		letter-spacing: -0.022em;
+		margin: 0;
+	}
+}
+.blog-list-header {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.15;
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 25px;
+	letter-spacing: -0.022em;
+}
+.blog-list-summary {
+	margin: 0;
+	margin-bottom: 40px;
+	font-size: 16px;
+	line-height: 1.56;
+	letter-spacing: -0.011em;
+}
 .github-code {
 	height: 500px;
 	max-height: 50vh;

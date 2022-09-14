@@ -51,9 +51,19 @@
 			transform: none;
 		}
 	}
+	.posts-list {
+		grid-gap: 90px 45px;
+	}
+	body.blog.list .main-content {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.posts-list {
+		grid-template-columns: 1fr 1fr;
+	}
 	body {
 		font-size: 1.5rem;
 	}
@@ -93,10 +103,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.posts-list__post .blog-thumbnail {
-		float: none;
+	.posts-list {
+		grid-template-columns: 1fr;
+		grid-gap: 60px;
 	}
-
 	.project__wrapper {
 		grid-template-areas: "gallery" "text";
 		grid-template-columns: 1fr;
