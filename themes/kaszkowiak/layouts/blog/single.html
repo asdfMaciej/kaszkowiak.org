@@ -5,6 +5,7 @@
 
 <article class="blog-post">
 	<header class="blog-post__header">
+		{{ partial "post-tags.html" . }}
 		<h1>{{ .Title }}</h1>
 		<time class="blog-post__date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
 			{{ if eq .Site.Language.Lang "pl" }}
@@ -18,7 +19,7 @@
 	        {{ end }}
 		</time>
 
-		{{ partial "post-tags.html" . }}
+		
 		<p class="blog-post__summary"> {{.Summary}} </p>
 		{{ partial "thumbnail-lightbox.html" . }}
 	</header>

@@ -1,14 +1,15 @@
 {{ define "main" }}
-    <section class="posts-list">
+    
     	{{ partial "breadcrumbs.html" . }}
 
         <h1> {{ i18n "blogPosts" }}: #{{ .Title }} </h1>
+        <section class="posts-list">
         {{ range .Pages }}
             {{ partial "blog-tile.html" . }}
         
         {{ end }}
-
-        <h2>{{ i18n "seeOtherPosts" }}</h2>
+    </section>
+        <h2 style="margin: 40px 0 20px">{{ i18n "seeOtherPosts" }}</h2>
         
         {{ i18n "checkOutMyOtherPosts"}}
 
@@ -18,6 +19,7 @@
               {{ end }}
                 {{i18n "seePosts"}}</a>.
             </p>
+            <section class="posts-list">
             {{ range ( where .Site.RegularPages "Type" "blog" | first 5 ) }}
                 {{ if not (in .Params.tags $.Title) }}
                 {{ partial "blog-tile.html" . }}

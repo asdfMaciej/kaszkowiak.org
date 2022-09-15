@@ -62,7 +62,7 @@
           </div>
         </section>
 
-        <section class="blog">
+        <section class="front-blog">
           <div class="wrapper">
             <h2>{{ i18n "recentBlogPosts" }}</h2>
             <p>{{ i18n "blogTheme" }} - 
@@ -71,9 +71,12 @@
               {{ end }}
                 {{i18n "seePosts"}}</a>.
             </p>
-            {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
+            <div class="posts-list">
+              {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
                 {{ partial "blog-tile.html" . }}
             {{ end }}
+            </div>
+            
           </div>
         </section>
 
