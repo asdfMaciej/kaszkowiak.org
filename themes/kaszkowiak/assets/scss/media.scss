@@ -51,6 +51,7 @@
 			transform: none;
 		}
 	}
+
 	.posts-list {
 		grid-gap: 90px 45px;
 	}
@@ -58,9 +59,68 @@
 		padding-left: 25px;
 		padding-right: 25px;
 	}
+
+	.offer {
+		padding-bottom: 0;
+		&__header {
+			font-size: 4rem;
+    		margin: 20px 0;
+		}
+	}
+
+	.offer__box {
+	    grid-template-areas:
+	        "content"
+	        "image"
+	        "project";
+	    grid-template-columns: 1fr;
+	    grid-template-rows: repeat(3, auto);
+
+	    border-bottom: 2px solid white;
+    	padding-bottom: 20px;
+    	margin-bottom: 40px;
+
+    	&:last-child {
+    		margin-bottom: 0;
+    	}
+
+	    &-project-cta {
+	    	margin: 10px 0 40px;
+	    }
+	    &__title {
+	    	margin: 20px 0 10px;
+	    }
+	    &-description:after {
+	    	content: none;
+	    }
+
+	    &-project-desc {
+	    	padding-top: 0;
+	    }
+		
+		&:nth-child(2n) .offer__box-project-img picture:after {
+			top: calc(50% - 30px);
+		}
+	    &-project-img {
+		    grid-area: image;
+		    transition: all .3s ease;
+		    width: calc(100% - 40px);
+
+		    picture:before {
+		    	content: none;
+		    }
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.projects__list {
+		gap: 0;
+
+		& .project {
+			flex: 1 1 100%;
+		}
+	}
 	.blog-list-header {
 		font-size: 2.8rem;
 	}
@@ -76,11 +136,29 @@
 	}
 	
 	.offer {
-		padding: 0;
+		padding: 0 25px;
 		padding-bottom: 20px;
-	}
-	.offer__box {
-		margin: 6px;
+		grid-template-areas:
+        "scroll"
+        "title"
+        "content";
+	    grid-template-columns: 1fr;
+	    grid-template-rows: repeat(3, auto);
+
+	    &__scroll {
+	    	position: sticky;
+		    top: 0px;
+		    opacity: 0.8;
+		    padding: 20px 0;
+
+		    div {
+		    	padding: 0;
+			    flex-direction: row;
+			    justify-content: center;
+			    top: 50px;
+		    }
+	    }
+
 	}
 
 	.blog-view {
@@ -101,6 +179,39 @@
 	figure.float-right img {
 		display: block;
 		margin:  auto;
+	}
+
+	.project-mini {
+		flex: 1 1;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		img {
+			display: block;
+		}
+
+		img {
+			max-width: 20px;
+			height: auto;
+		}
+		&__container {
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+			margin: 30px 0 60px;
+		}
+	}
+
+	.project-mini-icon {
+		&__container {
+			display: flex;
+			gap: 10px;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
 	}
 
 }
@@ -206,9 +317,6 @@
 		&__content h2, &__content h3 {
 			letter-spacing: -0.019em;
 		}
-	}
-	.offer__header {
-		font-size: 1.7em;
 	}
 
 	section.blog > h2 {

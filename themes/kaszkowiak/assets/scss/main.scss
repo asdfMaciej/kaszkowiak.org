@@ -508,7 +508,7 @@ li {
 
 }
 .offer {
-	padding: 20px;
+	padding: 20px 40px;
 	
 
 background: #C33764;  /* fallback for old browsers */
@@ -739,6 +739,11 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 }
 .project-mini {
 	display: block;
+
+	img {
+		display: none;
+	}
+
 	text-decoration: none;
 	line-height: 1.6;
 	color: white;
@@ -748,7 +753,7 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 	&__container {
 		padding: 0 20px;
 		display: grid;
-		grid-template-columns: repeat(3, minmax(200px, 340px));
+		grid-template-columns: repeat(3, minmax(190px, 340px));
 		flex-wrap: wrap;
 		gap: 40px 20px;
 		margin-top: 60px;

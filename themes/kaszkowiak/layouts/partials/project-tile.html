@@ -1,5 +1,15 @@
 {{ if isset .Params "github" -}}
-<a href="{{.Params.github}}" class="project-mini" target="_blank" rel="noopener">{{.Title}}</a>
+<a href="{{.Params.github}}" class="project-mini" target="_blank" rel="noopener">
+  {{ with .Resources.GetMatch "icon.png" }}
+    {{ $webp := .Resize "200x webp Lanczos" }}
+    <picture>
+      <source srcset='{{ $webp.RelPermalink }}' width="{{ $webp.Width }}" height="{{ $webp.Height }}" type="image/webp">
+        <source srcset='{{ .RelPermalink }}' width="{{ .Width }}" height="{{ .Height }}" type="image/png">
+        <img src='{{ .RelPermalink }}' width="{{ .Width }}" height="{{ .Height }}" loading="lazy" alt="Emoji" role="presentation">
+    </picture>
+  {{ end }}
+{{.Title}}
+</a>
 {{- else if (not (isset .Params "shownoffer")) }}
 <article class="project">
   {{ with .Resources.GetMatch (printf "%s" .Params.thumbnail) }}
