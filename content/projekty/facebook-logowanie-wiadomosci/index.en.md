@@ -1,5 +1,7 @@
 ---
-title: "💬 I've created a tool to export Facebook Takeout messages into a SQLite database."
+emoji: "💬"
+thumbnail: "messages.png"
+title: "I've created a tool to export Facebook Takeout messages into a SQLite database."
 subtitle: "Github"
 github: "https://github.com/asdfMaciej/fb-messages-parser"
 url: "/en/projects/facebook-messages-parser"

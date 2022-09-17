@@ -1,9 +1,14 @@
 ---
-title: "Kompletna strona WWW"
+title: "Wykonanie strony WWW od A do Z"
 headless: true
 slug: "strona-www"
 summary: "Zaprojektuję i wykonam stronę od podstaw - szybką i dostosowaną dla urządzeń mobilnych. Skonfiguruję pocztę email oraz pomogę z doborem domeny i oferty hostingowej. Zapewnię również kłódkę na pasku i zadbam o pozycję strony w Google. "
 icon: "globe.svg"
+
+project_image: "szybkarolka.jpg"
+project_title: "szybkarolka.pl"
+project_desc: "Stworzyłem stronę szybkarolka.pl w oparciu o autorski projekt graficzny. Postawiłem na wydajność, wygląd na komórkach oraz zgodność z SEO."
+project_cta: "Poznaj proces tworzenia" 
 ---
 
 # Stworzę dopasowaną stronę w korzystnej cenie.

@@ -4,6 +4,7 @@ subtitle: "company website"
 thumbnail: "0.png"
 link: "https://szybkarolka.pl"
 url: "/en/projects/product-catalog"
+shownoffer: 1
 weight: 1
 ---
 

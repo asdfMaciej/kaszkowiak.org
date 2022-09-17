@@ -2,6 +2,7 @@
 title: "Współpraca z firmą BRAMY-SERWIS"
 subtitle: "jako full-stack developer"
 thumbnail: "0.jpg"
+shownoffer: 1
 weight: 4
 ---
 

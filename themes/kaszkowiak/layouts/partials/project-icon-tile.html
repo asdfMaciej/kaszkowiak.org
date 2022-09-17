@@ -1,0 +1,11 @@
+<a href="{{ .Permalink}}" class="project-mini-icon">
+  {{ with .Resources.GetMatch (printf "%s" .Params.thumbnail) }}
+    {{ $tiny := .Resize "200x jpg Lanczos" }}
+    {{ $tinywebp := .Resize "200x webp Lanczos" }}
+          <picture>
+            <source srcset='{{ $tinywebp.RelPermalink }}' width="{{ $tinywebp.Width }}" height="{{ $tinywebp.Height }}" type="image/webp">
+            <source srcset='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" type="image/jpeg">
+            <img src='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" loading="lazy"alt="{{ $.Title }}">
+          </picture> 
+  {{ end }}
+</a>

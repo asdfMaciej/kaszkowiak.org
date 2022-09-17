@@ -3,6 +3,7 @@ title: "Firmowy katalog bram szybkobieżnych"
 subtitle: "projekt strony WWW"
 thumbnail: "0.png"
 link: "https://szybkarolka.pl"
+shownoffer: 1
 weight: 1
 ---
 

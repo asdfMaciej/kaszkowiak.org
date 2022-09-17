@@ -57,7 +57,39 @@ function checkOfferScroll() {
 	}
 }
 
+function checkOfferScrollCircles() {
+	let offerSections = document.querySelectorAll(".offer__box-title");
+	let scrollY = document.querySelector(".offer__scroll > div > svg").getBoundingClientRect().top + window.scrollY;
+
+	let index = 0;
+	let topIndex = 0;
+	for (let element of offerSections) {
+		let elementY = element.getBoundingClientRect().top + window.scrollY;
+
+		if (scrollY >= elementY) {
+			topIndex = index;
+		}
+		index += 1;
+	}
+
+	let circles = document.querySelectorAll(".offer__scroll > div > svg > circle");
+	index = 0;
+	circles.forEach((circle) => {
+		if (index == topIndex) {
+			circle.setAttribute("fill", "white");
+		} else {
+			circle.setAttribute("fill", "transparent");
+		}
+		index += 1;
+	})
+}
+
 if (document.querySelector(".offer-list__headers")) {
 	document.addEventListener('scroll', checkOfferScroll, {capture: true, passive: true});
 	checkOfferScroll();
+}
+
+if (document.querySelector(".offer__scroll")) {
+	document.addEventListener('scroll', checkOfferScrollCircles, {capture: true, passive: true});
+	checkOfferScrollCircles();
 }
