@@ -1,5 +1,7 @@
 <article class="posts-list__post">
-    {{ partial "thumbnail.html" . }}
+    <a href="{{ .Permalink }}">
+        {{ partial "thumbnail.html" . }}
+    </a>
 
     {{ partial "post-tags.html" . }}
 

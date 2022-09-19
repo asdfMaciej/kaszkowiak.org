@@ -11,7 +11,7 @@
 [myOffer]
 	other = 'Tworzę strony internetowe.'
 [selectedProjects]
-	other = 'Wybrane projekty z opisem realizacji'
+	other = 'Wykonane projekty'
 [openSourceProjects]
 	other = 'Moje projekty open-source'
 [miniProjects]
@@ -57,7 +57,7 @@
 [sourceCode]
 	other = 'Kod źródłowy'
 [visitRepo]
-	other = 'Odwiedź repo po więcej szczegółów'
+	other = 'Odwiedź repozytorium po więcej szczegółów'
 [offerDesc]
 	other = 'Jako full-stack developer potrafię zaoferować'
 [tableOfContents]
@@ -70,6 +70,12 @@
 	other = "Wszystkie moje posty o"
 [blogTopics]
 	other = "Na blogu piszę również o projektach, technologii, sporcie i programowaniu"
+[servicesCta]
+	other = 'Zapoznaj się z ofertą'
+[projectsFrontDesc]
+	other = 'Zapoznaj się ze stworzonymi przeze mnie projektami. Naciśnij na projekt, aby poznać szczegóły, lub '
+[projectsFrontCta]
+	other = 'zobacz wszystkie projekty'
 
 [menuOffer]
 	other = 'Oferta'

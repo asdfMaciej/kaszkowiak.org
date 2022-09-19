@@ -14,11 +14,13 @@
 		{{ $tiny := .Resize "600x jpg Lanczos" }}
 		{{ $tinywebp := .Resize "600x webp Lanczos" }}
 			<div class="offer__box-project-img">
-			    <picture>
-					<source srcset='{{ $tinywebp.RelPermalink }}' width="{{ $tinywebp.Width }}" height="{{ $tinywebp.Height }}" type="image/webp">
-					<source srcset='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" type="image/jpeg">
-					<img src='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" loading="lazy"alt="{{ $.Params.project_title }}">
-				</picture> 
+				<a href="{{ with $.Site.GetPage (printf "%s" $.Params.project_href)}}{{ .RelPermalink}}{{end}}">
+				    <picture>
+						<source srcset='{{ $tinywebp.RelPermalink }}' width="{{ $tinywebp.Width }}" height="{{ $tinywebp.Height }}" type="image/webp">
+						<source srcset='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" type="image/jpeg">
+						<img src='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" loading="lazy"alt="{{ $.Params.project_title }}">
+					</picture> 
+				</a>
 			</div>
 	{{ end }}
 
@@ -27,7 +29,7 @@
 		<p>
 			{{ .Params.project_desc }}
 		</p>
-		<a class="offer__box-project-cta" href="{{ with .Site.GetPage "/projekty/firmowy-katalog" }}{{ .Permalink}}{{end}}">{{ .Params.project_cta }}</a>
+		<a class="offer__box-project-cta" href="{{ with $.Site.GetPage (printf "%s" $.Params.project_href)}}{{ .RelPermalink}}{{end}}">{{ .Params.project_cta }}</a>
 	</div>
 </div>
 <!-- {{ with .Site.GetPage "/oferta" }}{{ .Permalink}}{{end}}#{{.Params.slug}} -->

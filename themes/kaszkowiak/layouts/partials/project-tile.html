@@ -16,11 +16,13 @@
     {{ $tiny := .Resize "600x jpg Lanczos" }}
     {{ $tinywebp := .Resize "600x webp Lanczos" }}
       <div class="offer__box-project-img">
+        <a href="{{ $.RelPermalink }}">
           <picture>
           <source srcset='{{ $tinywebp.RelPermalink }}' width="{{ $tinywebp.Width }}" height="{{ $tinywebp.Height }}" type="image/webp">
           <source srcset='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" type="image/jpeg">
           <img src='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" loading="lazy"alt="{{ $.Title }}">
-        </picture> 
+        </picture>
+        </a> 
       </div>
   {{ end }}
 

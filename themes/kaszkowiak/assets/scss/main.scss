@@ -1,26 +1,23 @@
 $background: #f7f7f7;
 $font: Inter, sans-serif;
-$font-color: #232323;
+$font-color: #101010;
 $wrapper: white;
 
 
-/*$navbar-color: #30475e;*/
 $navbar-color: #1c355e;
 $navbar-color-darker: #142543;
 $navbar-font-color: white;
 $wrapper-width: 1300px;
 
-/*$red-hex: #ED0044;*/
-/*$red-hex: #60acca;*/
-/* previous green:  #69bbb3 */
-$red-hex: #346cd5; /* #3eb5e5 */
+
+$red-hex: #346cd5;
 
 $top-padding: 64px;
 
 $gold-hex: #EEE8A9;
 
 $grey-hex: #454555;
-$tile-shadow: 0 2px 10px #0000000d; /* 26 na koncu hex */
+$tile-shadow: 0 2px 10px #0000000d;
 
 
 * {
@@ -52,6 +49,9 @@ body {
 	&.blog.list {
 		background: white;
 
+		.breadcrumbs {
+			max-width: 1600px;
+		}
 		.main-content {
 			max-width: 1600px !important;
 			padding-left: 70px;
@@ -61,9 +61,6 @@ body {
 
 	&.kontakt.list {
 		background: white;
-		/*.breadcrumbs a {
-			color: $navbar-color-darker;
-		}*/
 	}
 	
 }
@@ -185,8 +182,10 @@ li {
 		display: flex;
 		align-items: center;
 
-		a:hover {
-			font-weight: bold;
+		@media (hover: hover) and (pointer: fine) {
+			a:hover {
+				font-weight: bold;
+			}
 		}
 
 		a::after {
@@ -214,6 +213,8 @@ li {
 	&__lang {
 		width: 20px;
 		margin-bottom: -2px;
+		border: 1px solid black;
+    	background: white;
 	}
 
 	&__hamburger {
@@ -344,15 +345,18 @@ li {
 }
 .contact-front {
 	background: #d7fbff;
-	padding: 24px 0;
 	color: $navbar-color-darker;
 
+	& > .wrapper {
+		padding: 20px 10px 20px;
+	}
 	a {
 		color: $navbar-color-darker;
 	}
 
 	h2 {
 		margin: 0;
+		font-size: 4rem;
 	}
 }
 .contact {
@@ -428,75 +432,131 @@ li {
 			transition: all 200ms ease;
 		}
 
-		button:hover {
-			box-shadow: none;
-			cursor: pointer;
-			opacity: 0.9;
+		@media (hover: hover) and (pointer: fine) {
+			button:hover {
+				box-shadow: none;
+				cursor: pointer;
+				opacity: 0.9;
+			}
 		}
 	}
 }
 
-.offer-list {
-	display: grid;
-	grid-template-areas: "breadcrumbs breadcrumbs" "headers articles";
-	grid-template-columns: auto 768px;
-	grid-gap: 16px 60px;
-	&__headers {
-		grid-area: headers;
-		text-align: right;
-		&-wrapper {
-			position: sticky;
-			top: calc(50vh - 78px - 32px);
+.offer-front {
+	background-color: #afd6f6;
+	@supports not (background-image: url("/img/pastel gradient.webp")) {
+	   background-image: url("/img/pastel gradient.jpg")
+	}
+	background-image: url("/img/pastel gradient.webp");
+	background-size: cover;
+	background-position: 10%;
+	color: black;
 
-			h1 {
-				font-size: 1.3em;
-				font-weight: 600;
-				margin-top: 0;
+	& > .wrapper {
+		display: grid;
+		grid-template-areas: "header header" "one ." "two ." "three cta";
+		grid-template-columns: auto 1fr;
+		padding: 0 10px;
+		padding-bottom: 60px;
+	}
+
+	&__header {
+		grid-area: header;
+	}
+	&__box {
+		font-size: 1.8em;
+	    margin-bottom: 40px;
+	    padding-bottom: 20px;
+	    font-weight: 500;
+	    line-height: 1.2;
+	    position: relative;
+		&--1 {
+			grid-area: one;
+		}
+		&--2 {
+			grid-area: two;
+		}
+		&--3 {
+			grid-area: three;
+		}
+
+		&:after {
+			position: absolute;
+			bottom: 0;
+			content: "";
+		    width: 115%;
+		    border-bottom: 2px solid black;
+		    height: 100%;
+		    display: block;
+		}
+	}
+
+	&__button {
+		&-container {
+			grid-area: cta;
+			justify-self: flex-end;
+		}
+		font-size: 1.2em;
+		background:  black;
+		color:  white;
+		font-weight: 700;
+		text-decoration: none;
+		border-radius: 10px;
+		padding: 15px 60px;
+		text-align: center;
+		display: inline-block;
+		transition: all 0.2s ease;
+
+		@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				opacity: 0.85;
+			}
+		}
+		
+	}
+}
+
+.projects-front {
+	background: white;
+	padding: 20px 0;
+	& > .wrapper {
+		padding: 0 10px;
+	}
+
+	&__header {
+		font-size: 4rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+
+		&-item {
+			border: 2px solid black;
+			border-radius: 10px;
+			padding: 4px 8px;
+			font-weight: 500;
+			font-size: 1.5rem;
+			color: black;
+			display: inline-block;
+			line-height: 1.4;
+			transition: all 0.2s ease;
+
+			&.highlight {
+				background: black;
+				color:  white;
 			}
 
-			a {
-				text-decoration: none;
+			@media (hover: hover) and (pointer: fine) {
+				&:hover {
+					color: #fff;
+				    background: #0c0c0c;
+				    opacity: 0.82;
+				}
 			}
 		}
 	}
-	&__articles {
-		grid-area: articles;
-	}
-	#breadcrumbs {
-		grid-area: breadcrumbs;
-		margin: 0;
-	}
-}
-.offer-expanded {
-	padding-bottom: 50px;
-	border-top: 1px solid $navbar-color;
-    padding-top: 20px;
-    position: relative;
-
-    &__scrollpoint {
-    	position: absolute;
-    	top: -64px;
-    }
-	&:first-child {
-		border: none;
-		margin-top: -20px; /* not using padding so scrollpoint works */
-	}
-	&__title {
-		margin: 0;
-		font-weight: 400;
-	    font-size: 1em;
-	    line-height: 1em;
-	    margin: 1.5rem 0;
-	    text-transform: lowercase;
-	    transition: all 0.3s ease;
-
-	    &--active {
-	    	font-weight: 500;
-	    	color: black;
-	    	cursor: default;
-	    }
-	}
-
 }
 
 .offer {
@@ -506,17 +566,20 @@ li {
 		padding-top: $top-padding;
 	}
 
+	background-color: #afd6f6;
 	@supports not (background-image: url("/img/pastel gradient.webp")) {
 	   background-image: url("/img/pastel gradient.jpg")
 	}
 	background-image: url("/img/pastel gradient.webp");
+	background-size: cover;
+	background-position: 10%;
 
 	color: black;
 	position: relative;
 	display: grid;
-	grid-template-columns: 50px 1fr;
+	grid-template-columns: 50px 1fr 50px;
 	grid-template-rows: auto auto auto;
-	grid-template-areas: "scroll title" "scroll content" ". below";
+	grid-template-areas: "scroll title ." "scroll content ." ". below .";
 	grid-gap: 0 30px;
 
 	&__scroll {
@@ -544,6 +607,9 @@ li {
 		&.wrapper--below {
 			grid-area: below;
 		}
+		.breadcrumbs a {
+			color: black;
+		}
 	}
 
 
@@ -552,6 +618,7 @@ li {
 		font-weight: 700;
 		letter-spacing: -.021em;
 		margin: 80px 0;
+		line-height: 1.1;
 	}
 
 	&__boxes {
@@ -721,9 +788,10 @@ li {
 		& > h2, & > p, & > h1, & > .breadcrumbs {
 			margin: 0;
 			margin-bottom: 24px;
-			padding: 0 20px;
+			padding: 0 10px;
 		}
 		& > h2 {
+			font-size: 2em;
 			margin-top: 20px;
 		}
 
@@ -736,7 +804,7 @@ li {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 80px;
-		padding: 0 20px;
+		padding: 0 10px;
 
 		.project {
 			flex: 0 1 calc(50% - 40px);
@@ -852,12 +920,17 @@ li {
 	}
 }
 .about-me-front {
-	padding: 24px;
 	background: white;
 	box-shadow: $tile-shadow;
 
+	& > .wrapper {
+		contain: content;
+		padding: 20px 10px 40px;
+	}
+
 	h2 {
 		margin: 0;
+		font-size: 4rem;
 	}
 
 	p {
@@ -876,14 +949,21 @@ li {
 
 	a {
 		text-align: center;
-		display: block;
-		background: $red-hex;
-		color: white;
-		padding: 12px;
+		display: inline-block;
+		background: white;
+		color: black;
+		padding: 10px 40px;
 		text-decoration: none;
-		font-weight: 500;
-		border-radius: 8px;
+		font-weight: 600;
+		border-radius: 10px;
 		clear:  both;
+		border: 2px solid black;
+
+		@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				opacity: 0.85;
+			}
+		}
 	}
 }
 .about-me {
@@ -915,42 +995,7 @@ li {
 		grid-area: bottom;
 	}
 }
-.key-points {
-	@include wrapper;
-	display: flex;
-	flex-direction: row;
 
-	justify-content: space-around; 
-
-	margin-top: 24px;
-
-	&__point {
-		display: flex;
-		flex-direction: column;
-		flex: 1 1;
-
-		align-items: center;
-		padding: 16px;
-		max-width: 240px;
-
-		box-shadow: #959da533 0px 8px 24px;
-
-		&-title {
-			font-weight: bold;
-			text-align: center;
-			border-bottom: 1px solid $red-hex;
-			padding-bottom: 8px;
-		}
-		&-description {
-			width: 100%;
-		}
-		&-icon {
-			width: 4em;
-			height: 3em;
-			display: none;
-		}
-	}
-}
 .breadcrumbs {
 	@include wrapper;
 	font-size: 0.9em;
@@ -1027,17 +1072,15 @@ li {
 }
 
 
-section.front-blog {
+.front-blog {
 	padding-top: 4px;
 	background: white;
-	padding-bottom: 24px;
+	padding-bottom: 40px;
 	padding-left:  10px;
 	padding-right:  10px;
 
-	& > h2 {
-		margin-top: 32px;
-		margin-bottom: 24px;
-		font-size: 1.8em;
+	&__header {
+		font-size: 4rem;
 	}
 }
 
@@ -1090,6 +1133,13 @@ section.front-blog {
 		    aspect-ratio: 450 / 295;
 		    object-fit: cover;
 		    background: #ededed;
+		    transition: all 0.2s ease;
+
+		    @media (hover: hover) and (pointer: fine) {
+				&:hover {
+					opacity: 0.85;
+				}
+			}
 		}
 	}
 

@@ -2,30 +2,34 @@
 	body {
 		font-size: 1.6rem;
 	}
-	body.home-page section:not(.contact-front):not(.about-me-front):not(.front-blog) > .wrapper > h2,
-	body.home-page section.landing > .wrapper > h1 {
-		padding-left: 12px;
-		padding-right: 12px;
-	}
-
-	.contact-front > .wrapper {
-		padding: 24px;
+	.about-me-front h2,
+	.projects-front__header,
+	.front-blog__header,
+	.contact-front h2 {
+		font-size: 3rem;
 	}
 
 	.project__gallery img {
 		max-width: 200px;
 	}
 
+	.offer-front__button-container {
+		justify-self: flex-start;
+	}
 	body:not(.home-page):not(.projekty.list):not(.oferta.list) .main-content {
 		padding-left: 8px;
 		padding-right: 8px;
 	}
 
-	.projects > .wrapper > p,
-	.blog > .wrapper > p {
-		padding-left: 12px;
-		padding-right: 12px;
+	.projects .wrapper {
+		& > h2, & > p, & > .breadcrumbs {
+			margin-bottom: 10px;
+		}
+		& > h1 {
+			margin-bottom: 15px;
+		}
 	}
+	
 
 	.offer-list {
 		display: grid;
@@ -60,12 +64,46 @@
 		padding-right: 25px;
 	}
 
+	.offer-front {
+		& > .wrapper {
+		    grid-template-areas:
+		        "header"
+		        "one"
+		        "two"
+		        "three"
+		        "cta";
+		    grid-template-columns: 1fr;
+		    padding: 20px 10px 40px;
+		}
+
+		&__box {
+			font-size: 1.5em;
+		    padding-bottom: 10px;
+		    margin-bottom: 40px;	
+		}
+
+		&__box:after {
+			width: 100%;
+		}
+
+		&__button {
+			padding: 12px 40px;
+		}
+	}
+
 	.offer {
 		padding-bottom: 0;
+
 		&__header {
 			font-size: 4rem;
-    		margin: 20px 0;
+			margin: 30px 0 20px;
 		}
+	}
+
+	.offer-front__header {
+		font-size: 3.5rem;
+		margin: 0;
+		margin-bottom: 40px;
 	}
 
 	.offer__box {
@@ -86,7 +124,10 @@
     	}
 
 	    &-project-cta {
-	    	margin: 10px 0 40px;
+	    	margin: 0 0 40px;
+	    }
+	    &-title {
+	    	font-size: 2.4rem;
 	    }
 	    &__title {
 	    	margin: 20px 0 10px;
@@ -95,8 +136,10 @@
 	    	content: none;
 	    }
 
-	    &-project-desc {
+	    &-project-desc,
+	    .projects__list &-project-desc {
 	    	padding-top: 0;
+	    	font-size: 1.5rem;
 	    }
 		
 		&:nth-child(2n) .offer__box-project-img picture:after {

@@ -7,6 +7,7 @@ icon: "globe.svg"
 
 project_image: "szybkarolka.jpg"
 project_title: "szybkarolka.pl"
+project_href: "/projekty/firmowy-katalog"
 project_desc: "Stworzyłem stronę szybkarolka.pl w oparciu o autorski projekt graficzny. Postawiłem na wydajność, wygląd na komórkach oraz zgodność z SEO."
 project_cta: "Poznaj proces tworzenia" 
 ---

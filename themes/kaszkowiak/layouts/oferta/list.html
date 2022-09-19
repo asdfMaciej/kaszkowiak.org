@@ -15,15 +15,13 @@
     </div>
   </nav>
   <div class="wrapper">
+    {{ partial "breadcrumbs.html" . }}
     <h1 class="offer__header">
       {{ i18n "myOffer" }}
     </h1>
   </div>
   {{ partial "offer-tiles.html" . }}
   <div class="wrapper wrapper--below">
-  	<h2>
-  		Zapoznaj się z moim portfolio
-  	</h2>
   </div>
 </section>
 
