@@ -10,7 +10,7 @@
   {{ end }}
 {{.Title}}
 </a>
-{{- else if (not (isset .Params "shownoffer")) }}
+{{- else }}
 <article class="project">
   {{ with .Resources.GetMatch (printf "%s" .Params.thumbnail) }}
     {{ $tiny := .Resize "600x jpg Lanczos" }}

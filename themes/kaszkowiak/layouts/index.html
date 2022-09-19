@@ -28,13 +28,13 @@
           <nav class="offer__scroll">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 110 110" width="20" height="20">
-                 <circle cx="55" cy="55" r="45" stroke="white" stroke-width="12" fill="transparent" />
+                 <circle cx="55" cy="55" r="45" stroke="black" stroke-width="10" fill="transparent" />
               </svg> 
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 110 110" width="20" height="20">
-                 <circle cx="55" cy="55" r="45" stroke="white" stroke-width="12" fill="transparent" />
+                 <circle cx="55" cy="55" r="45" stroke="black" stroke-width="10" fill="transparent" />
               </svg> 
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 110 110" width="20" height="20">
-                 <circle cx="55" cy="55" r="45" stroke="white" stroke-width="12" fill="transparent" />
+                 <circle cx="55" cy="55" r="45" stroke="black" stroke-width="10" fill="transparent" />
               </svg> 
             </div>
           </nav>
@@ -53,7 +53,7 @@
             </h2>
             <div class="projects__list">
               {{ range ( where .Site.RegularPages "Type" "projekty") }}
-                {{- if not (isset .Params "github") -}}
+                {{- if not (or (isset .Params "github") (isset .Params "shownoffer")) -}}
                 {{ partial "project-tile.html" . }}
                 {{- end -}}
               {{ end }}
@@ -71,13 +71,6 @@
               {{- range (where .Site.RegularPages "Type" "projekty") }}
                 {{- if isset .Params "github" }}
                 {{ partial "project-tile.html" . }}
-                {{- end -}}
-              {{ end }}
-            </nav>
-            <nav class="project-mini-icon__container">
-              {{- range (where .Site.RegularPages "Type" "projekty") }}
-                {{- if isset .Params "github" }}
-                {{ partial "project-icon-tile.html" . }}
                 {{- end -}}
               {{ end }}
             </nav>

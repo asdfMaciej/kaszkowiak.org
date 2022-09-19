@@ -8,7 +8,7 @@ $wrapper: white;
 $navbar-color: #1c355e;
 $navbar-color-darker: #142543;
 $navbar-font-color: white;
-$wrapper-width: 1200px;
+$wrapper-width: 1300px;
 
 /*$red-hex: #ED0044;*/
 /*$red-hex: #60acca;*/
@@ -53,7 +53,7 @@ body {
 		background: white;
 
 		.main-content {
-			max-width: 1600px;
+			max-width: 1600px !important;
 			padding-left: 70px;
 			padding-right: 70px;
 		}
@@ -64,18 +64,6 @@ body {
 		/*.breadcrumbs a {
 			color: $navbar-color-darker;
 		}*/
-	}
-
-	&.projekty.list {
-		.projects {
-
-			& > h1, & > p, & > h2 {
-				padding-left: 24px;
-			}
-		}
-		.main-content {
-			max-width: 960px;
-		}
 	}
 	
 }
@@ -155,8 +143,6 @@ li {
 .navbar {
 	$self: &;
 	padding: 16px;
-	/*box-shadow: 1px 1px 14px #0000000d;*/
-	/*background: $primary-color;*/
 	color: $navbar-font-color;
 	position: fixed;
 	width: 100%;
@@ -168,26 +154,28 @@ li {
 	transition: background 200ms linear;
 
 	&--active {
-		box-shadow: 1px 1px 7px #0000002b;
-		background: $navbar-color;
+		background: #dddddda6;
+		backdrop-filter: blur(10px);
 	}
 
 	a#{$self}__logo {
 		flex: 1;
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 1.2em;
 		text-shadow: 0 0 5px #000000;
 	}
 
-	&--active a#{$self}__logo {
+	&--active a#{$self}__logo,
+	&--active .navbar__hamburger {
 		text-shadow: none;
+		color: black;
 	}
 
 	a {
 		color: $navbar-font-color;
 		padding: 0 8px;
 		text-decoration: none;
-		font-weight: 400;
+		font-weight: 500;
 		
 		transition: 200ms;
 		text-shadow: 0 0 5px #000000;
@@ -214,6 +202,7 @@ li {
 		#{$self}--active & {
 			a {
 				text-shadow: none;
+				color: black;
 			}
 		}
 
@@ -255,9 +244,11 @@ li {
 	min-height: 100vh;
 	padding-top: $top-padding;
 
-	
+	body.oferta.list & {
+		padding-top: 0;
+	}
 
-	body:not(.home-page) & {
+	body:not(.home-page):not(.oferta.list):not(.projekty.list) & {
 		@include wrapper;
 		padding-bottom: 32px;
 	}
@@ -507,19 +498,25 @@ li {
 	}
 
 }
+
 .offer {
 	padding: 20px 40px;
-	
 
-background: #C33764;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color: white;
+	body.oferta.list & {
+		padding-top: $top-padding;
+	}
+
+	@supports not (background-image: url("/img/pastel gradient.webp")) {
+	   background-image: url("/img/pastel gradient.jpg")
+	}
+	background-image: url("/img/pastel gradient.webp");
+
+	color: black;
 	position: relative;
 	display: grid;
 	grid-template-columns: 50px 1fr;
-	grid-template-rows: auto auto;
-	grid-template-areas: "scroll title" "scroll content";
+	grid-template-rows: auto auto auto;
+	grid-template-areas: "scroll title" "scroll content" ". below";
 	grid-gap: 0 30px;
 
 	&__scroll {
@@ -536,6 +533,7 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 		}
 
 		circle {
+			opacity: 0.9;
 			transition: fill 0.3s ease-in-out;
 		}
 	}
@@ -543,6 +541,9 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 		grid-area: title;
 		max-width: 1330px;
 		width: 100%;
+		&.wrapper--below {
+			grid-area: below;
+		}
 	}
 
 
@@ -577,17 +578,17 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 
 		&-title {
 			grid-area: header;
-			color: white;
+			color: black;
 			font-size: 3.2rem;
 			letter-spacing: -.020em;
-			font-weight: 600;
+			font-weight: 700;
 		}
 
 		&-description {
 			grid-area: content;
-			font-size: 18px;
+			font-size: 1.8rem;
 			line-height: 1.65;
-			font-weight: 400;
+			font-weight: 500;
 			margin-bottom: 20px;
 			position: relative;
 
@@ -596,7 +597,7 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 				bottom: 0;
 				content: "";
 			    width: 100%;
-			    border-bottom: 2px solid white;
+			    border-bottom: 2px solid black;
 			    height: 100%;
 			    display: block;
 			}
@@ -612,9 +613,11 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 		&-project-desc {
 			grid-area: project;
 			padding-top: 60px;
+			font-size: 1.8rem;
+			font-weight: 500;
 			h3 {
 				font-size: 24px;
-				font-weight: 600;
+				font-weight: 700;
 				letter-spacing: -0.020em;
 			}
 		}
@@ -625,7 +628,7 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 
 			@media (hover: hover) and (pointer: fine) {
 				&:hover {
-					transform: scale(1.01);
+					opacity: 0.9;
     				cursor: pointer;
 				}
 			}
@@ -639,7 +642,7 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 			    transform: translate(-50%, -50%);
 			    width: 100%;
 			    height: 100%;
-			    border: 2px solid white;
+			    border: 2px solid black;
 			    border-radius: 20px;
     			z-index: 10;
 			}
@@ -678,20 +681,20 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 		}
 
 		&-project-cta {
-			margin: 20px 0;
+			margin: 10px 0 20px;
 			display: inline-block;
-			color: white;
+			color: black;
 			padding: 5px 10px;
-			border: 2px solid white;
+			border: 2px solid black;
 			border-radius: 10px;
-			font-weight: 400;
+			font-weight: 500;
 			transition: all 0.3s ease;
+			mix-blend-mode: multiply;
 
 			@media (hover: hover) and (pointer: fine) {
 				&:hover {
-					background: white;
-				    color: black;
-				    mix-blend-mode: screen;
+					background: black;
+				    color: white;
 				    font-weight: bold;
 				    letter-spacing: -0.03em;
 				}
@@ -700,19 +703,32 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 	}
 }
 .projects {
-	background: linear-gradient(to bottom,#1D2671,#0e1024);
-	color: white;
+	background: white;
+	color: black;
 	padding-top: 20px;
 	padding-bottom: 20px;
+
+	.breadcrumbs {
+		max-width: none;
+	}
+
+	.offer__box-project-img img {
+		border: 2px solid black;
+	}
+
 	.wrapper {
 		max-width: 1330px;
-		& > h2, & > p {
+		& > h2, & > p, & > h1, & > .breadcrumbs {
 			margin: 0;
 			margin-bottom: 24px;
 			padding: 0 20px;
 		}
 		& > h2 {
 			margin-top: 20px;
+		}
+
+		& > h1 {
+			font-size: 2em;
 		}
 	}
 
@@ -741,19 +757,20 @@ background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Fir
 	display: block;
 
 	img {
-		display: none;
+		max-width: 30px;
+		height: auto;
 	}
 
 	text-decoration: none;
 	line-height: 1.6;
-	color: white;
-	font-weight: 300;
+	color: black;
+	font-weight: 500;
 	flex: 0 1 280px;
 
 	&__container {
 		padding: 0 20px;
 		display: grid;
-		grid-template-columns: repeat(3, minmax(190px, 340px));
+		grid-template-columns: repeat(3, minmax(190px, 370px));
 		flex-wrap: wrap;
 		gap: 40px 20px;
 		margin-top: 60px;

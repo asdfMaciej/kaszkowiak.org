@@ -76,7 +76,7 @@ function checkOfferScrollCircles() {
 	index = 0;
 	circles.forEach((circle) => {
 		if (index == topIndex) {
-			circle.setAttribute("fill", "white");
+			circle.setAttribute("fill", "black");
 		} else {
 			circle.setAttribute("fill", "transparent");
 		}

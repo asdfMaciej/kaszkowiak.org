@@ -16,7 +16,7 @@
 		max-width: 200px;
 	}
 
-	body:not(.home-page) .main-content {
+	body:not(.home-page):not(.projekty.list):not(.oferta.list) .main-content {
 		padding-left: 8px;
 		padding-right: 8px;
 	}
@@ -76,12 +76,13 @@
 	    grid-template-columns: 1fr;
 	    grid-template-rows: repeat(3, auto);
 
-	    border-bottom: 2px solid white;
+	    border-bottom: 2px solid black;
     	padding-bottom: 20px;
     	margin-bottom: 40px;
 
     	&:last-child {
     		margin-bottom: 0;
+    		border-bottom: none;
     	}
 
 	    &-project-cta {
@@ -141,11 +142,13 @@
 		grid-template-areas:
         "scroll"
         "title"
-        "content";
+        "content"
+        "below";
 	    grid-template-columns: 1fr;
-	    grid-template-rows: repeat(3, auto);
+	    grid-template-rows: repeat(4, auto);
 
 	    &__scroll {
+	    	display: none;
 	    	position: sticky;
 		    top: 0px;
 		    opacity: 0.8;
@@ -190,13 +193,10 @@
 		gap: 10px;
 
 		img {
+			max-width: 20px;
 			display: block;
 		}
 
-		img {
-			max-width: 20px;
-			height: auto;
-		}
 		&__container {
 			display: flex;
 			flex-direction: column;
