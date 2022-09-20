@@ -1,14 +1,24 @@
 ---
-title: "Turning a design into a website"
+title: "Creating a web-based application"
 headless: true
 slug: "backend-development"
-summary: "I will turn a finished graphic design into a working, functional website. I will take care of the speed and search engine positioning."
 icon: "psd-file.svg"
 url: /en/services/backend-development
+
+project_image: "hermes.jpg"
+project_title: "Hermes"
+project_href: "/projekty/serwis-spolecznosciowy"
+project_desc: "I've created a social network based on a convenient workout journal. A hobbyist open-source project for gym-goers."
+project_cta: "Learn more" 
+
 ---
 
-# I will turn a finished graphic design into a working, functional website. 
+I am ready to turn your idea into reality.
 
-I will take care of the speed and search engine positioning. I use the latest technology to ensure the website works well. I will create the website using a CMS, enabling easy content maintenance. I can also help with the configuration of the web server, domain, e-mail, etc.
+I can create a web-based application for managing a company or its resources. It can help improve business processes, therefore saving employees' valuable time. I create applications with an emphasis on security.
 
-If you are looking for a developer ready to implement your graphic design, feel free to [contact me](/en/contact/).
+I can also undertake a smaller project. Due to a [broad skillset](/en/about-me/) I can also develop an Android app, write a desktop script for task automation, and create a simple device based on Arduino among others. 
+
+If you have an idea, let's [get in touch](/en/contact/). Your time will not be wasted - if the scope of the project turns out to be beyond my time or skills, I will inform you before starting work.
+
+<!--more-->

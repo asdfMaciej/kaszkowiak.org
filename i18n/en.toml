@@ -9,9 +9,9 @@
 [fewWords]
 	other = 'A few words about me'
 [myOffer]
-	other = 'What I bring to the table'
+	other = 'I create websites and applications.'
 [selectedProjects]
-	other = 'Highlighted projects with in-depth descriptions'
+	other = 'Completed projects'
 [openSourceProjects]
 	other = 'My open-source projects'
 [miniProjects]
@@ -70,6 +70,12 @@
 	other = "All of my posts about"
 [blogTopics]
 	other = "On my blog I write also about projects, technology, sports, and software development"
+[servicesCta]
+	other = 'View more details'
+[projectsFrontDesc]
+	other = "I've showcased some of my completed projects. Click on a project to learn more or"
+[projectsFrontCta]
+	other = 'view all projects'
 
 [menuOffer]
 	other = 'Services'

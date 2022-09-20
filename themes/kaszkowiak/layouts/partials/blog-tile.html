@@ -1,5 +1,10 @@
 <article class="posts-list__post">
-    {{ partial "thumbnail.html" . }}
+    <a href="{{ .Permalink }}">
+        {{ partial "thumbnail.html" . }}
+    </a>
+
+    {{ partial "post-tags.html" . }}
+
     <h2>
         <a href="{{ .Permalink }}">
             {{ .Title }}
@@ -16,9 +21,8 @@
             {{ dateFormat "2006" .Date }}
         {{ end }}
     </time>
-    {{ partial "post-tags.html" . }}
-    <p>
+    
+    <p class="posts-list__summary">
         {{ .Summary }}
     </p>
-    <div class="clear"></div>
 </article>

@@ -1,19 +1,27 @@
 ---
-title: "Utrzymanie istniejącego systemu"
+title: "Rozwój istniejącej strony lub aplikacji"
 headless: true
 slug: "utrzymanie-systemu"
-summary: "Zaktualizuję, naprawię bądź ulepszę istniejący serwis internetowy."
 icon: "web-service.svg"
+
+project_image: "bramy serwis.jpg"
+project_title: "Rozwój stron firmowych"
+project_href: "/projekty/bramy-serwis"
+project_desc: "Od ponad trzech lat zajmuję się utrzymaniem i rozwojem serwisów firmowych dla BRAMY - SERWIS."
+project_cta: "Zobacz szczegóły" 
 ---
 
-# Zaktualizuję, naprawię bądź ulepszę istniejący serwis internetowy.
-Zajmę się utrzymaniem bądź rozbudową strony internetowej. Mogę wykonać takie czynności jak:
-- rozbudowa strony, poszerzenie funkcjonalności
-- dostosowanie strony pod komórki
-- przyspieszenie działania i polepszenie wyniku PageSpeed
-- zkonfigurowanie certyfikatu SSL (kłódki przy pasku);
-- zkonfigurowanie serwera pocztowego
-- dodanie nowej treści / aktualizacja obecnej
-- i wiele innych
+Ulepszę, naprawię bądź zaktualizuję istniejącą stronę internetową.
 
-Jeśli chcecie Państwo rozbudować stronę internetową, serdecznie zapraszam [do kontaktu](/kontakt/).
+Mogę wykonać następujące czynności:
+- rozbudowa strony, poszerzenie funkcjonalności
+- dostosowanie wyglądu pod komórki
+- audyt techniczny pod kątem SEO (on-page)
+- przyspieszenie działania
+- skonfigurowanie certyfikatu SSL (kłódki przy pasku);
+- skonfigurowanie poczty internetowej (e-mail)
+- dodanie nowej treści
+
+Podejmę się również rozbudowy aplikacji internetowych oraz wielu czynności niewymienionych na powyższej liście.   
+[Zapraszam do kontaktu](/kontakt/), z chęcią odpowiem na wszystkie pytania.
+<!--more-->

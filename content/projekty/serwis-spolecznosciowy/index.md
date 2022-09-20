@@ -3,6 +3,7 @@ title: "Serwis społecznościowy dla ćwiczących siłowo"
 subtitle: "open-source"
 thumbnail: "0.png"
 link: "https://hermes.kaszkowiak.org"
+shownoffer: 1
 weight: 2
 ---
 

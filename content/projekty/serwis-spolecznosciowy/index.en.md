@@ -4,6 +4,7 @@ subtitle: "open-source"
 thumbnail: "0.png"
 url: "/en/projects/social-network"
 link: "https://hermes.kaszkowiak.org"
+shownoffer: 1
 weight: 2
 ---
 

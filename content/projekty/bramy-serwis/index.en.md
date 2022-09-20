@@ -3,6 +3,7 @@ title: "Maintaining and developing company websites for BRAMY-SERWIS"
 subtitle: "as a full-stack developer"
 url: "/en/projects/bramy-serwis"
 thumbnail: "0.jpg"
+shownoffer: 1
 weight: 4
 ---
 

@@ -20,60 +20,66 @@
               {{ .Summary }}
               <a href="{{ .Permalink }}">{{ i18n "readAll" }}!</a>
             {{ end }}
+            <div class="clear"></div>
           </div>
 
         </section>
 
-        <section class="offer">
+        <section class="offer-front">
           <div class="wrapper">
-            <h2 class="offer__header">
+            <h1 class="offer__header offer-front__header">
               {{ i18n "myOffer" }}
-            </h2>
-            <p class="offer__desc">{{ i18n "offerDesc" }}:</p>
+            </h1>
+          
+          {{ with .Site.GetPage "/oferta/oferta-www" }}
+            <div class="offer-front__box offer-front__box--1">{{ .Title }}</div>
+          {{ end }}
+          {{ with .Site.GetPage "/oferta/oferta-grafika" }}
+            <div class="offer-front__box offer-front__box--2">{{ .Title }}</div>
+          {{ end }}
+          {{ with .Site.GetPage "/oferta/oferta-system" }}
+            <div class="offer-front__box offer-front__box--3">{{ .Title }}</div>
+          {{ end }}
+          <div class="offer-front__button-container">
+            <a href="{{ with .Site.GetPage "/oferta"}}{{ .RelPermalink }}{{ end }}" class="offer-front__button">{{ i18n "servicesCta" }}</a>
           </div>
-          {{ partial "offer-tiles.html" . }}
+          </div>
         </section>
 
-        <section class="projects">
+        <section class="projects-front">
           <div class="wrapper">
-            <h2>
+            <h2 class="projects-front__header">
               {{ i18n "selectedProjects" }}
             </h2>
-            {{ range ( where .Site.RegularPages "Type" "projekty") }}
-              {{- if not (isset .Params "github") -}}
-              {{ partial "project-tile.html" . }}
-              {{- end -}}
-            {{ end }}
-            <h2>
-              {{ i18n "openSourceProjects" }}
-            </h2>
             <p>
-              {{ i18n "miniProjects" }} 
-              <br>
-              {{ i18n "miniProjectsDesc" }} <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">{{ i18n "githubD" }}</a>.
+              {{ i18n "projectsFrontDesc" }} <a href="{{ with .Site.GetPage "/projekty/" }}{{.RelPermalink}}{{end}}">{{ i18n "projectsFrontCta" }}</a>.
             </p>
-            <nav class="project-mini__container">
-            {{- range (where .Site.RegularPages "Type" "projekty") }}
-              {{- if isset .Params "github" }}
-              {{ partial "project-tile.html" . }}
-              {{- end -}}
-            {{ end }}
-            </nav>
+            <div class="projects-front__list">
+              {{ range ( where .Site.RegularPages "Type" "projekty") }}
+                
+                  <a href="{{.RelPermalink}}"class="projects-front__list-item {{ if (not (isset .Params "github"))}}highlight{{ end }}">
+                    {{ .Title }}
+                  </a>
+              {{ end }}
+            </div>
           </div>
         </section>
 
-        <section class="blog">
+        <section class="front-blog">
           <div class="wrapper">
-            <h2>{{ i18n "recentBlogPosts" }}</h2>
+            <h2 class="front-blog__header">{{ i18n "recentBlogPosts" }}</h2>
             <p>{{ i18n "blogTheme" }} - 
               {{ with .Site.GetPage "/blog" }}
               <a href="{{ .Permalink }}">
               {{ end }}
                 {{i18n "seePosts"}}</a>.
             </p>
-            {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
+            <div class="posts-list">
+              {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
                 {{ partial "blog-tile.html" . }}
             {{ end }}
+            </div>
+            
           </div>
         </section>
 

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="posts-list">
+
     	{{ partial "breadcrumbs.html" . }}
 
         <h1> {{ .Title }} </h1>
@@ -13,6 +13,7 @@
               {{ end }}
                 {{i18n "seePosts"}}</a>.
             </p>
+    <section class="posts-list">
             {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
                 {{ partial "blog-tile.html" . }}
             {{ end }}

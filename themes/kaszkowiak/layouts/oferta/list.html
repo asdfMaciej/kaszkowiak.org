@@ -1,59 +1,28 @@
 {{ define "main"}}
 
-<section class="offer-list">
-	{{ partial "breadcrumbs.html" . }}
-	
-	<aside class="offer-list__headers">
-		<div class="offer-list__headers-wrapper">
-			<h1>{{ i18n "learnOffer" }}</h1>
-			{{ with .Site.GetPage "/oferta/oferta-www" }}
-				<a href="#{{.Params.slug}}">
-					<h2 class="offer-expanded__title offer-expanded__title--active" id="title-{{.Params.slug}}">
-						{{ .Title }}
-					</h2>
-				</a>
-			{{ end }}
-
-			{{ with .Site.GetPage "/oferta/oferta-grafika" }}
-				<a href="#{{.Params.slug}}">
-					<h2 class="offer-expanded__title" id="title-{{.Params.slug}}">
-						{{ .Title }}
-					</h2>
-				</a>
-			{{ end }}
-
-			{{ with .Site.GetPage "/oferta/oferta-system" }}
-				<a href="#{{.Params.slug}}">
-					<h2 class="offer-expanded__title" id="title-{{.Params.slug}}">
-						{{ .Title }}
-					</h2>
-				</a>
-			{{ end }}
-		</div>
-	</aside>
-
-	<div class="offer-list__articles">
-		{{ with .Site.GetPage "/oferta/oferta-www" }}
-			<article class="offer-expanded">
-				<div class="offer-expanded__scrollpoint" id="{{.Params.slug}}"></div>
-				{{ .Content }}
-			</article>
-		{{ end }}
-
-		{{ with .Site.GetPage "/oferta/oferta-grafika" }}
-			<article class="offer-expanded">
-				<div class="offer-expanded__scrollpoint" id="{{.Params.slug}}"></div>
-				{{ .Content }}
-			</article>
-		{{ end }}
-
-		{{ with .Site.GetPage "/oferta/oferta-system" }}
-			<article class="offer-expanded">
-				<div class="offer-expanded__scrollpoint" id="{{.Params.slug}}"></div>
-				{{ .Content }}
-			</article>
-		{{ end }}
-	</div>
+<section class="offer">
+  <nav class="offer__scroll">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 110 110" width="20" height="20">
+         <circle cx="55" cy="55" r="45" stroke="black" stroke-width="10" fill="transparent" />
+      </svg> 
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 110 110" width="20" height="20">
+         <circle cx="55" cy="55" r="45" stroke="black" stroke-width="10" fill="transparent" />
+      </svg> 
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 110 110" width="20" height="20">
+         <circle cx="55" cy="55" r="45" stroke="black" stroke-width="10" fill="transparent" />
+      </svg> 
+    </div>
+  </nav>
+  <div class="wrapper">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="offer__header">
+      {{ i18n "myOffer" }}
+    </h1>
+  </div>
+  {{ partial "offer-tiles.html" . }}
+  <div class="wrapper wrapper--below">
+  </div>
 </section>
 
 
