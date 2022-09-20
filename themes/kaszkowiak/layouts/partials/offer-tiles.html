@@ -2,10 +2,10 @@
 	{{ with .Site.GetPage "/oferta/oferta-www" }}
 	  {{ partial "offer-tile.html" . }}
 	{{ end }}
-	{{ with .Site.GetPage "/oferta/oferta-grafika" }}
+	{{ with .Site.GetPage "/oferta/oferta-system" }}
 	  {{ partial "offer-tile.html" . }}
 	{{ end }}
-	{{ with .Site.GetPage "/oferta/oferta-system" }}
+	{{ with .Site.GetPage "/oferta/oferta-grafika" }}
 	  {{ partial "offer-tile.html" . }}
 	{{ end }}
 </div>

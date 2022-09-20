@@ -77,7 +77,7 @@
 		}
 
 		&__box {
-			font-size: 1.5em;
+			font-size: 1.3em;
 		    padding-bottom: 10px;
 		    margin-bottom: 40px;	
 		}
@@ -299,7 +299,6 @@
 		top: 50px;
 		left: 0;
 		width: 100vw;
-		background: #0c0c0c2b;
 		flex-direction: column;
 
 		transition: height 300ms linear, background 300ms linear;
@@ -322,7 +321,8 @@
 	}
 
 	.navbar--active .navbar__navigation {
-		background: $navbar-color;
+		background: #ffffffeb;
+		backdrop-filter: blur(10px);
 
 		a {
 			border-top: 1px solid #000;
