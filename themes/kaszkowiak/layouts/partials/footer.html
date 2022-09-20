@@ -3,7 +3,11 @@
 	<div class="wrapper">
 		<nav class="footer__left">
 			<strong>Maciej Kaszkowiak</strong>
-			<br>64-510, Wronki
+			<br>{{- if eq .Site.Language.Lang "en" -}}
+			Poznań, Poland
+			{{- else -}}
+			Poznań / Wronki
+			{{- end -}}
 			<br><a href="https://kaszkowiak.org">kaszkowiak.org</a>
 			<br><a href="mailto:maciej@kaszkowiak.org">maciej@kaszkowiak.org</a>
 
