@@ -1198,8 +1198,7 @@ li {
 	letter-spacing: -0.011em;
 }
 .github-code {
-	height: 500px;
-	max-height: 50vh;
+	max-height: Min(600px, 60vh);
 	overflow: scroll;
 	margin: 0 10px;
 	max-width: calc(100vw - 50px);
@@ -1207,6 +1206,18 @@ li {
 	td {
 		text-align: left;
 	}
+}
+
+.highlight, pre {
+	max-height: 50vh;
+    overflow: auto;
+    max-width: calc(100vw - 50px);
+    margin: auto;
+}
+
+code {
+	padding:  10px;
+	display:  block;
 }
 
 @import 'media.scss';
