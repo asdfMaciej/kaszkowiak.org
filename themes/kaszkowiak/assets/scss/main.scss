@@ -1208,7 +1208,8 @@ li {
 	}
 }
 
-.highlight, pre {
+.blog-post__content .highlight, 
+.blog-post__content pre {
 	max-height: 50vh;
     overflow: auto;
     max-width: calc(100vw - 50px);
