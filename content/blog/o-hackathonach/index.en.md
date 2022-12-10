@@ -1,5 +1,5 @@
 ---
-title: "Hackathon, source of rubber ducks and adrenaline"
+title: "Hackathon, a source of rubber ducks and adrenaline"
 date: 2022-12-10T18:00:00+02:00
 lastmod: 2022-12-10T18:00:00+02:00
 summary: "Do you associate being locked in a building for 48h with jail? Throw in free coffee, pizza and internet access, and people will lock themselves up voluntarily!"
