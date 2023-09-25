@@ -85,7 +85,7 @@ Nie minęła nawet godzina, a kolejna oferta pomocy okazała się nieoceniona! N
 {{< img src="maciej sakwy 3.jpg" alt="Nowe pachnące sakwy" >}}
 {{< galleryend >}}
 
-W Zamościu spotkała nas miła sytuacja. Wjechaliśmy na rynek, aby nacieszyć się pięknymi kamienicami i zjeść solidny obiad. Miejsce było idealne na zdjęcie grupowe! Nie zdążyłem nawet podejść do losowej osoby z prośbą o zrobienie zdjęcia, gdy podbiegła do nas uśmiechnięta pani, mówiąc: "ooo, ale mi się trafiło! Czy mogę zrobić Wam zdjęcie?" Z chęcią skorzystaliśmy i zamieniliśmy z nią kilka słów. Jak się okazało, prowadzi profil Centrum Informacji Turystycznej Zamość, więc wymieniliśmy się informacjami o naszej podróży w zamian za namiar na smaczne jedzenie :) 
+W Zamościu spotkała nas miła sytuacja. Wjechaliśmy na rynek, aby nacieszyć się pięknymi kamienicami i zjeść solidny obiad. Miejsce było idealne na zdjęcie grupowe! Nie zdążyłem nawet podejść do losowej osoby z prośbą o zrobienie zdjęcia, gdy podbiegła do nas uśmiechnięta pani, mówiąc: "ooo, ale mi się trafiło! Czy mogę zrobić Wam zdjęcie?" Z chęcią skorzystaliśmy i zamieniliśmy z nią kilka słów. Jak się okazało, prowadzi profil [Centrum Informacji Turystycznej Zamość](https://www.facebook.com/informacjaturystyczna.zamosc), więc wymieniliśmy się informacjami o naszej podróży w zamian za namiar na smaczne jedzenie :) 
 
 {{< gallerystart >}}
 {{< img src="post zamosc.png" alt="Promocja uczelni ;)" >}}
