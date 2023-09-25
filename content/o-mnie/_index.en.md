@@ -17,7 +17,7 @@ I love sport, especially road cycling and weight training :) During my free time
 
 ## My experience as a web-developer
 
-I am currently working on multiple projects as a freelancer. In 2021 I was focused on developing a recommender system for Trol Intermedia, primarily as a back-end developer. Since 2018 I have been regularly involved in the maintenance and development of the systems of BRAMY-SERWIS. I did an internship at Komputerpartner (June 2020) and Trol Intermedia (May, July 2019). 
+I am currently working as a back-end developer at [X-ONE](https://x-one.pl/). In 2021 I was focused on developing a recommender system for Trol Intermedia, primarily as a back-end developer. Since 2018 I have been regularly involved in the maintenance and development of the systems of BRAMY-SERWIS. I did an internship at Komputerpartner (June 2020) and Trol Intermedia (May, July 2019). 
 
 ## What do I bring to the table?
 

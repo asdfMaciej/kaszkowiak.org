@@ -4,7 +4,7 @@ title: "O mnie"
 
 Cześć! Nazywam się Maciej Kaszkowiak. Zajmuję się programowaniem od moich najmłodszych lat. Specjalizuję się w tworzeniu stron i serwisów internetowych.
 
-Studiuję Informatykę na Politechnice Poznańskiej w trybie stacjonarnym. Mieszkam w Poznaniu oraz we Wronkach. Ukończyłem technikum z tytułami najlepszego absolwenta oraz najlepszego technika informatyka. Jestem również laureatem II Olimpiady Cyfrowej. 
+Studiuję Informatykę na Politechnice Poznańskiej w trybie niestacjonarnym. Mieszkam w Poznaniu oraz we Wronkach. Ukończyłem technikum z tytułami najlepszego absolwenta oraz najlepszego technika informatyka. Jestem również laureatem II Olimpiady Cyfrowej. 
 
 Uwielbiam sport. Jazda na szosie i treningi siłowe to moje główne odskocznie od komputera :) W wolnych chwilach również gram w szachy oraz tworzę projekty open-source.
 <!--more-->
@@ -16,7 +16,7 @@ Uwielbiam sport. Jazda na szosie i treningi siłowe to moje główne odskocznie 
 
 ## Doświadczenie jako web-developer
 
-Aktualnie wykonuję różne projekty jako freelancer. W 2021 roku współpracowałem z firmą Trol Intermedia rozwijając projekt systemu rekomendacji, w głównej mierze jako back-end developer. Od 2018 regularnie zajmuję się utrzymaniem i rozwojem systemów firmy BRAMY-SERWIS. Odbyłem staż w firmach Komputerpartner (czerwiec 2020) i w Trol Intermedia (maj, lipiec 2019), gdzie zajmowałem się tworzeniem stron internetowych.
+Aktualnie pracuję jako backend developer w firmie [X-ONE](https://x-one.pl/). W 2021 roku współpracowałem z firmą Trol Intermedia rozwijając projekt systemu rekomendacji, w głównej mierze jako back-end developer. Od 2018 regularnie zajmuję się utrzymaniem i rozwojem systemów firmy BRAMY-SERWIS. Odbyłem staż w firmach Komputerpartner (czerwiec 2020) i w Trol Intermedia (maj, lipiec 2019), gdzie zajmowałem się tworzeniem stron internetowych.
 
 Zachęcam do spojrzenia na efekty mojej dotychczasowej pracy. Udostępniłem [wybrane projekty](/projekty/) wraz ze zdjęciami i opisem realizacji.
 

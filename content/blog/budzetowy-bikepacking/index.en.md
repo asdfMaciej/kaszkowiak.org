@@ -5,7 +5,7 @@ lastmod: 2022-09-07T16:00:00+02:00
 summary: "How do unexpensive bags fare on short and long bike trips? I've tested and reviewed some of the most popular models."
 slug: "budget-bikepacking-bags"
 thumbnail: "bikepacking road bike.png"
-tags: ["sport", "bike", "bikepacking", "adventure"]
+tags: ["sport", "bike", "bikepacking"]
 ---
 
 

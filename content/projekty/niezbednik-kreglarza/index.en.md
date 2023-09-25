@@ -1,7 +1,7 @@
 ---
 emoji: "🎳"
 thumbnail: "bowling app.png"
-title: "Over 170 people used my nine-pin bowling Android score tracker."
+title: "Nine-pin bowling Android score tracker with over 190 users."
 summary: "A hobby open-source project with its code available on my Github. Feel free to use or modify it!"
 subtitle: "Github"
 github: "https://github.com/asdfMaciej/niezbednik-kreglarza"

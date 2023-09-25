@@ -1,5 +1,5 @@
 ---
-title: "Printing last.fm scrobbles in real time"
+title: "Print your friends' listening history in real-time"
 date: 2022-09-29T15:30:00+02:00
 lastmod: 2022-09-29T15:30:00+02:00
 summary: "Do you happen to have a spare thermal printer? Turn it into a live feed of your friends' listening history."
