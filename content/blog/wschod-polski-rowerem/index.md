@@ -7,7 +7,7 @@ thumbnail: "krowy.png"
 tags: ["sport", "rower", "podróż", "green velo"]
 ---
 
-Wszystko zaczęło się od zeszłorocznej podróży rowerem z Poznania do Zakopanego. Trzydniowa trasa w pięcioosobowej grupie okazała się świetną zabawą i źródłem wielu wspomnień. Wyprawa nie zdążyła się zakończyć, a my już rzucaliśmy pomysłami na kolejny cel wędrówki. Wszystkie propozycje łączył jeden wspólny element - namiot. Nasza dotychczasowa turystyka rowerowa opierała się o lekko załadowane rowery z noclegami w hotelach. Postanowiliśmy to zmienić i wyruszyć w dłuższą podróż pod namioty. 
+Wszystko zaczęło się od zeszłorocznej [podróży rowerem z Poznania do Zakopanego](/blog/poznan-zakopane-rowerem/). Trzydniowa trasa w pięcioosobowej grupie okazała się świetną zabawą i źródłem wielu wspomnień. Wyprawa nie zdążyła się zakończyć, a my już rzucaliśmy pomysłami na kolejny cel wędrówki. Wszystkie propozycje łączył jeden wspólny element - namiot. Nasza dotychczasowa turystyka rowerowa opierała się o lekko załadowane rowery z noclegami w hotelach. Postanowiliśmy to zmienić i wyruszyć w dłuższą podróż pod namioty. 
 
 Wschód Polski był dobrym wyborem na rozeznanie się z turystyką rowerową. Trasa składała się z zarówno płaskich jak i górskich odcinków, przez co mogliśmy się sprawdzić w każdych warunkach. W odróżnieniu od obcych krajów wiedzieliśmy, na jaką pogodę możemy się nastawić, oraz jak przemieszczać się komunikacją publiczną. Aspekt turystyczny również do nas przemawiał - chcieliśmy zobaczyć Bieszczady, podlaskie wsie oraz pobliskie parki krajobrazowe. 
 
@@ -209,16 +209,16 @@ Jeśli wytrwałæś aż tutaj, zachęcam do przeczytania [moich pozostałych pos
 
 Poniżej zamieszczam linki do poszczególnych etapów:
 
-| Dzień | Trasa    | Link do Stravy | Dystans | Elewacja |
-|-------|----------|----------------|---------|----------|
-| 1 | Olsztyn > Szczytno | [Strava](https://www.strava.com/activities/9687735113) | 63,01 km | 312 m |
-| 2 | Szczytno > Łomża | [Strava](https://www.strava.com/activities/9687738051) | 124,21 km | 361 m |
-| 3 | Łomża > Bielsk Podlaski | [Strava](https://www.strava.com/activities/9693654786) | 107,90 km | 486 m |
-| 4 | Bielsk Podlaski > Biała Podlaska | [Strava](https://www.strava.com/activities/9701137174) | 116,85 km | 411 m |
-| 5 | Biała Podlaska > Chełm | [Strava](https://www.strava.com/activities/9707650827) | 130,09 km | 369 m |
-| 6 | Chełm (namiot > hotel) | [Strava](https://www.strava.com/activities/9711689329) | 6,32 km | 36 m |
-| 7 | Chełm > Susiec | [Strava](https://www.strava.com/activities/9719684237) | 108,91 km | 1017 m |
-| 8 | Susiec > Przemyśl | [Strava](https://www.strava.com/activities/9725566303) | 91,69 km | 379 m |
-| 9 | Przemyśl > Solina | [Strava](https://www.strava.com/activities/9730931823) | 78,43 km | 1174 m |
-| 10 | Solina > Wetlina | [Strava](https://www.strava.com/activities/9738184280) | 81,18 km | 1211 m |
-| 11 | Wetlina > Sanok | [Strava](https://www.strava.com/activities/9743862306) | 98,44 km | 773 m | |
+| Dzień | Trasa    | Link do Stravy | Dystans i elewacja |
+|-------|----------|----------------|--------------------|
+| 1 | Olsztyn > Szczytno | [Strava](https://www.strava.com/activities/9687735113) | 63,01 km, 312 m |
+| 2 | Szczytno > Łomża | [Strava](https://www.strava.com/activities/9687738051) | 124,21 km, 361 m |
+| 3 | Łomża > Bielsk Podlaski | [Strava](https://www.strava.com/activities/9693654786) | 107,90 km, 486 m |
+| 4 | Bielsk Podlaski > Biała Podlaska | [Strava](https://www.strava.com/activities/9701137174) | 116,85 km, 411 m |
+| 5 | Biała Podlaska > Chełm | [Strava](https://www.strava.com/activities/9707650827) | 130,09 km, 369 m |
+| 6 | Chełm (namiot > hotel) | [Strava](https://www.strava.com/activities/9711689329) | 6,32 km, 36 m |
+| 7 | Chełm > Susiec | [Strava](https://www.strava.com/activities/9719684237) | 108,91 km, 1017 m |
+| 8 | Susiec > Przemyśl | [Strava](https://www.strava.com/activities/9725566303) | 91,69 km, 379 m |
+| 9 | Przemyśl > Solina | [Strava](https://www.strava.com/activities/9730931823) | 78,43 km, 1174 m |
+| 10 | Solina > Wetlina | [Strava](https://www.strava.com/activities/9738184280) | 81,18 km, 1211 m |
+| 11 | Wetlina > Sanok | [Strava](https://www.strava.com/activities/9743862306) | 98,44 km, 773 m |
