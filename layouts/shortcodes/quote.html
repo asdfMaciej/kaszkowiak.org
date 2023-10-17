@@ -1,0 +1,16 @@
+<blockquote class="blockquote">
+	{{ .Inner | markdownify }}
+    {{ if .Get "source" }}
+    <footer class="blockquote-footer">
+		<cite title="Quelle: {{ with .Get "source"}}{{.}}{{ end }}">
+            {{ with .Get "src"}}
+                <a href="{{.}}" target="_blank" rel="noopener noreferrer">
+            {{ end }}
+            {{ with .Get "source" }}{{.}}{{ end }}
+            {{ with .Get "src"}}
+                </a>
+            {{ end }}
+		</cite>
+	</footer>
+    {{ end }}
+</blockquote>
