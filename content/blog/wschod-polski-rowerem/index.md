@@ -1,9 +1,9 @@
 ---
-title: "Poznaj wschód Polski - przygoda na dwóch kółkach"
+title: "Wschód Polski rowerem - przygoda na dwóch kółkach"
 date: 2023-09-25T20:50:00+02:00
 lastmod: 2023-09-25T20:50:00+02:00
 summary: "Piękne widoki, noclegi na dziko i duct tape. Poznaj moje przygody rowerowe z tysiąca kilometrów i jedenastu dni jazdy!"
-thumbnail: "krowy.png"
+thumbnail: "bieszczady droga.jpg"
 tags: ["sport", "rower", "podróż", "green velo"]
 ---
 
