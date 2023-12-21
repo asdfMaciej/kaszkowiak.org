@@ -1,9 +1,9 @@
 {{- with .Params.thumbnail -}}
 	{{- $srcUrl := . | safeURL -}}
 	{{- $src := $.Resources.GetMatch (printf "%s" $srcUrl) -}}
-	{{- $tinyw := default "500x jpg Lanczos" -}}
+	{{- $tinyw := default "750x jpg Lanczos" -}}
 	{{- $tiny := $src.Resize $tinyw -}}
-	{{ $tinywebp := $src.Resize "500x webp Lanczos" }}
+	{{ $tinywebp := $src.Resize "750x webp Lanczos q95" }}
 	    <picture>
 			<source srcset='{{ $tinywebp.RelPermalink }}' width="{{ $tinywebp.Width }}" height="{{ $tinywebp.Height }}" type="image/webp">
 			<source srcset='{{ $tiny.RelPermalink }}' width="{{ $tiny.Width }}" height="{{ $tiny.Height }}" type="image/jpeg">
