@@ -20,6 +20,19 @@ if (document.querySelector("#navbar-transparent")) {
 	navbar.classList.add("navbar--active");
 }
 
+function blogScroll() {
+	var wintop = window.scrollY,
+        docheight = document.body.clientHeight,
+        winheight = window.innerHeight;
+    var scrolled = (wintop / (docheight - winheight)) * 100;
+    document.querySelector('.blog-scroll-line').style.width = scrolled + '%';
+}
+if (document.querySelector("body.blog.page")) {
+	window.addEventListener('scroll', blogScroll, {capture: true, passive: true});
+	blogScroll();	
+}
+
+
 const navbarHamburger = document.querySelector("#nav-hamburger");
 const navbarList = document.querySelector(".navbar__navigation"); 
 navbarHamburger.onclick = function() {
