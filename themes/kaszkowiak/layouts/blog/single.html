@@ -7,19 +7,19 @@
 	<header class="blog-post__header">
 		{{ partial "post-tags.html" . }}
 		<h1>{{ .Title }}</h1>
-		<time class="blog-post__date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
+		<time class="blog-post__date" datetime="{{ .Date.Format " 2006-01-02T15:04:05Z0700" }}">
 			{{ if eq .Site.Language.Lang "pl" }}
-	            {{ dateFormat "02" .Date }}
-	            {{ index $.Site.Data.months (printf "%d" .Date.Month) }}
-	            {{ dateFormat "2006" .Date }}
-	        {{ else }}
-	            {{ dateFormat "02" .Date }}
-	            {{ dateFormat "Jan" .Date }}
-	            {{ dateFormat "2006" .Date }}
-	        {{ end }}
+			{{ dateFormat "02" .Date }}
+			{{ index $.Site.Data.months (printf "%d" .Date.Month) }}
+			{{ dateFormat "2006" .Date }}
+			{{ else }}
+			{{ dateFormat "02" .Date }}
+			{{ dateFormat "Jan" .Date }}
+			{{ dateFormat "2006" .Date }}
+			{{ end }}
 		</time>
 
-		
+
 		<p class="blog-post__summary"> {{.Summary}} </p>
 		{{ partial "thumbnail-lightbox.html" . }}
 	</header>
@@ -29,24 +29,30 @@
 			{{ .TableOfContents }}
 		</div>
 	</aside>
-    <section class="blog-post__content">
+	<section class="blog-post__content">
 		{{ .Content }}
-    </section>
-    <section class="blog-post__recommendations">
-    	<p>{{ i18n "blogTheme" }} - 
-              {{ with .Site.GetPage "/blog" }}
-              <a href="{{ .Permalink }}">
-              {{ end }}
-                {{i18n "seePosts"}}</a>.
-            </p>
-	    <section class="posts-list">
-    		{{/* ".Params.tags" "intersect" .Params.tags) */}}
-            {{ range ( where (where .Site.RegularPages "Type" "blog") "Permalink" "!=" .Permalink | first 3 ) }}
-                {{ partial "blog-tile.html" . }}
-            {{ end }}
-	    </section>
-    </section>
-                
+
+		{{- if eq .Site.Language.Lang "pl" -}}
+		<div class="ml-embedded" data-form="3Lp24m"></div>
+		{{- else -}}
+		<div class="ml-embedded" data-form="erTwuw"></div>
+		{{- end -}}
+	</section>
+	<section class="blog-post__recommendations">
+		<p>{{ i18n "blogTheme" }} -
+			{{ with .Site.GetPage "/blog" }}
+			<a href="{{ .Permalink }}">
+				{{ end }}
+				{{i18n "seePosts"}}</a>.
+		</p>
+		<section class="posts-list">
+			{{/* ".Params.tags" "intersect" .Params.tags) */}}
+			{{ range ( where (where .Site.RegularPages "Type" "blog") "Permalink" "!=" .Permalink | first 3 ) }}
+			{{ partial "blog-tile.html" . }}
+			{{ end }}
+		</section>
+	</section>
+
 </article>
 
 {{ end }}

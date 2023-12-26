@@ -3,17 +3,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{- $title := "" -}}
 {{- if .IsHome -}}
-	{{- $title = .Title -}}
+{{- $title = .Title -}}
 {{- else if (and (eq .Section "blog") (.IsPage)) -}}
-	{{- $title = .Title -}}
+{{- $title = .Title -}}
 {{- else if (and (eq .Section "projekty") (.IsPage)) -}}
-	{{- $title = printf "%s - %s" .Title .Params.Subtitle -}}
+{{- $title = printf "%s - %s" .Title .Params.Subtitle -}}
 {{- else if (eq .Section "oferta") -}}
-	{{- $title = .Title -}}
+{{- $title = .Title -}}
 {{- else if (and (eq .Section "tags") (eq .Kind "term")) -}}
-	{{- $title = printf "Blog - #%s - Maciej Kaszkowiak" .Title -}}
+{{- $title = printf "Blog - #%s - Maciej Kaszkowiak" .Title -}}
 {{- else -}}
-	{{- $title = printf "%s - Maciej Kaszkowiak" .Title -}}
+{{- $title = printf "%s - Maciej Kaszkowiak" .Title -}}
 {{- end }}
 
 <title>{{ $title }}</title>
@@ -24,11 +24,11 @@
 
 {{- $desc := "" -}}
 {{- if (isset .Params "desc") -}}
-	{{- $desc = .Params.desc -}}
+{{- $desc = .Params.desc -}}
 {{- else if eq .Kind "term" -}}
-  {{- $desc = printf "%s #%s. %s." (i18n "allTagPosts") .Title (i18n "blogTopics") -}}
+{{- $desc = printf "%s #%s. %s." (i18n "allTagPosts") .Title (i18n "blogTopics") -}}
 {{- else -}}
-	{{- $desc = (substr (.Summary | plainify) 0 150) -}}
+{{- $desc = (substr (.Summary | plainify) 0 150) -}}
 {{- end }}
 
 <meta name="description" content="{{ $desc }}">
@@ -36,7 +36,7 @@
 <meta name="twitter:description" content="{{ $desc }}">
 
 <link rel="canonical" href="{{ .Permalink }}">
-<meta name="url" content="{{ .Permalink }}" >
+<meta name="url" content="{{ .Permalink }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta name="twitter:url" content="{{ .Permalink }}">
 
@@ -57,12 +57,12 @@
 <meta name="twitter:card" content="summary_large_image">
 
 {{- if .IsTranslated -}}
-  {{ range .AllTranslations }}
+{{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
-  {{- end -}}
-  {{ range last 1 .AllTranslations }}
+{{- end -}}
+{{ range last 1 .AllTranslations }}
 <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-  {{- end -}}
+{{- end -}}
 {{ end }}
 
 {{ if (and (eq .Section "blog") (.IsPage)) -}}
@@ -96,21 +96,16 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link
-    rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&subset=latin,latin-ext&display=swap"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet'"
-/>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&subset=latin,latin-ext&display=swap" as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
 <noscript>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&subset=latin,latin-ext&display=swap"
-        rel="stylesheet"
-        type="text/css"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&subset=latin,latin-ext&display=swap"
+    rel="stylesheet" type="text/css" />
 </noscript>
 
-{{ $stylemain := resources.Get "scss/main.scss" | toCSS | postCSS (dict "use" "autoprefixer") | minify | fingerprint "sha512" }}
+{{ $stylemain := resources.Get "scss/main.scss" | toCSS | postCSS (dict "use" "autoprefixer") | minify | fingerprint
+"sha512" }}
 <link rel="stylesheet" href="{{ $stylemain.RelPermalink }}" integrity="{{ $stylemain.Data.Integrity }}">
 {{- if not .IsHome -}}
 <link rel="preload" href="/css/glightbox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -124,9 +119,26 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KR0JWKVK6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-4KR0JWKVK6');
 </script>
+
+{{ if (and (eq .Section "blog") (.IsPage)) -}}
+<!-- MailerLite Universal -->
+<script>
+  (function (w, d, e, u, f, l, n) {
+    w[f] = w[f] || function () {
+      (w[f].q = w[f].q || [])
+        .push(arguments);
+    }, l = d.createElement(e), l.async = 1, l.src = u,
+      n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+  })
+    (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+  ml('account', '744448');
+</script>
+<!-- End MailerLite Universal -->
+{{- end }}
+
 {{ end }}

@@ -24,9 +24,11 @@ $tile-shadow: 0 2px 10px #0000000d;
 * {
 	box-sizing: border-box;
 }
+
 html {
 	font-size: 62.5%;
 }
+
 body {
 	font-family: $font;
 	line-height: 1.6;
@@ -53,6 +55,7 @@ body {
 		.breadcrumbs {
 			max-width: 1600px;
 		}
+
 		.main-content {
 			max-width: 1600px !important;
 			padding-left: 70px;
@@ -63,7 +66,7 @@ body {
 	&.kontakt.list {
 		background: white;
 	}
-	
+
 }
 
 a {
@@ -76,17 +79,28 @@ a {
 	display: flex;
 }
 
-body.blog.page h1, body.blog.page h2, body.blog.page h3, 
-body.blog.page h4, body.blog.page h5, body.blog.page h6 {
+body.blog.page h1,
+body.blog.page h2,
+body.blog.page h3,
+body.blog.page h4,
+body.blog.page h5,
+body.blog.page h6 {
 	clear: both;
 }
 
-.clear {clear:both;}
+.clear {
+	clear: both;
+}
 
 h1 {
 	line-height: 1.2;
 }
-h2, h3, h4, h5, h6 {
+
+h2,
+h3,
+h4,
+h5,
+h6 {
 	line-height: 1.2;
 }
 
@@ -123,27 +137,32 @@ table {
 	border-collapse: collapse;
 	box-shadow: #0000000f 0 10px 30px;
 }
+
 th {
-    background: $navbar-color;
-    color: white;
-    padding: 5px 15px;
+	background: $navbar-color;
+	color: white;
+	padding: 5px 15px;
 }
+
 td {
-    padding: 10px;
-    line-height: 1.2;
-    text-align: center;
-    border: 1px solid #e7e7e7;
+	padding: 10px;
+	line-height: 1.2;
+	text-align: center;
+	border: 1px solid #e7e7e7;
 }
+
 li {
 	margin: 5px 0;
 }
+
 blockquote {
 	background-color: #ffffff;
-    background-image: linear-gradient(315deg, #e9eef44f 0%, #d7e1ec91 74%);
+	background-image: linear-gradient(315deg, #e9eef44f 0%, #d7e1ec91 74%);
 	padding: 0.5em 1em;
 	margin-left: 0;
 	margin-right: 0;
 }
+
 .blockquote-footer {
 	text-align: right;
 }
@@ -151,6 +170,7 @@ blockquote {
 .clear {
 	clear: both;
 }
+
 .navbar {
 	$self: &;
 	color: $navbar-font-color;
@@ -190,7 +210,7 @@ blockquote {
 		padding: 0 8px;
 		text-decoration: none;
 		font-weight: 500;
-		
+
 		transition: 200ms;
 		text-shadow: 0 0 5px #000000;
 	}
@@ -231,7 +251,7 @@ blockquote {
 		width: 20px;
 		margin-bottom: -2px;
 		border: 1px solid black;
-    	background: white;
+		background: white;
 	}
 
 	&__hamburger {
@@ -280,15 +300,15 @@ blockquote {
 
 	&::before {
 		@supports not (background-image: url("/img/maciej kaszkowiak.webp")) {
-		   background-image: url("/img/maciej kaszkowiak.jpg")
+			background-image: url("/img/maciej kaszkowiak.jpg")
 		}
-		
+
 		background-image: url("/img/maciej kaszkowiak.webp");
 		background-size: cover;
 		background-position: 65%;
 		background-repeat: no-repeat;
 		content: '';
-		
+
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -309,7 +329,7 @@ blockquote {
 
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(237deg,#22a1da00 15%,#0044ccad 100%);
+		background: linear-gradient(237deg, #22a1da00 15%, #0044ccad 100%);
 	}
 
 	&__content {
@@ -319,7 +339,8 @@ blockquote {
 		text-shadow: 0 0 50px #000000ad;
 		padding: 0 12px;
 
-		h2, h3 {
+		h2,
+		h3 {
 			margin-top: 0;
 			margin-bottom: 0;
 			font-weight: 600;
@@ -327,8 +348,9 @@ blockquote {
 		}
 
 		h3 {
-			margin-top:  15px;
+			margin-top: 15px;
 		}
+
 		p {
 			font-weight: 300;
 			letter-spacing: -0.021em;
@@ -336,16 +358,20 @@ blockquote {
 			margin-top: 25px;
 		}
 	}
+
 	&__image {
 		max-width: 450px;
 		width: 50%;
 	}
+
 	height: 100vh;
 }
 
 .link-button {
-	background: $red-hex; /* #427bd8? */
-	color: $navbar-color-darker; /* white? */
+	background: $red-hex;
+	/* #427bd8? */
+	color: $navbar-color-darker;
+	/* white? */
 	padding: 8px 16px;
 	border-radius: 8px;
 	font-weight: 500;
@@ -355,20 +381,25 @@ blockquote {
 	box-shadow: 1px 2px 2px #00000040;
 
 	&--outline {
-		color: $red-hex; /* ~ #151515 ? */
+		color: $red-hex;
+		/* ~ #151515 ? */
 		background: white;
-		border: 2px solid $red-hex; /* #5f8fdf ? */
+		border: 2px solid $red-hex;
+		/* #5f8fdf ? */
 		box-shadow: none;
-		padding: 6px 16px; /* compensating for border */
+		padding: 6px 16px;
+		/* compensating for border */
 	}
 }
+
 .contact-front {
 	background: #d7fbff;
 	color: $navbar-color-darker;
 
-	& > .wrapper {
+	&>.wrapper {
 		padding: 20px 10px 20px;
 	}
+
 	a {
 		color: $navbar-color-darker;
 	}
@@ -378,33 +409,37 @@ blockquote {
 		font-size: 4rem;
 	}
 }
+
 .contact {
 	@include wrapper;
 	color: $navbar-color-darker;
 
-	a {
-	}
+	a {}
 
 	h1 {
 		font-size: 2em;
 	}
+
 	&-form {
 		display: grid;
 		grid-template-areas: "namelabel emaillabel" "name email"
-								"msglabel msglabel" 
-								"message message" "submit submit";
+			"msglabel msglabel"
+			"message message" "submit submit";
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto auto auto auto;
 		grid-gap: 16px;
 
 		&__name {
 			grid-area: name;
+
 			&-label {
 				grid-area: namelabel;
 			}
 		}
+
 		&__email {
 			grid-area: email;
+
 			&-label {
 				grid-area: emaillabel;
 			}
@@ -412,6 +447,7 @@ blockquote {
 
 		&__message {
 			grid-area: message;
+
 			&-label {
 				grid-area: msglabel;
 			}
@@ -423,16 +459,20 @@ blockquote {
 			padding-left: 4px;
 			font-weight: 700;
 		}
+
 		input {
 			height: 48px;
 		}
+
 		textarea {
 			height: 160px;
 		}
 
 
 
-		input, textarea, button {
+		input,
+		textarea,
+		button {
 			border: none;
 			font-size: 1em;
 			font-family: $font;
@@ -440,6 +480,7 @@ blockquote {
 			box-shadow: 0 2px 10px #00000014;
 			border-radius: 8px;
 		}
+
 		button {
 			grid-area: submit;
 			min-width: 80px;
@@ -463,15 +504,17 @@ blockquote {
 
 .offer-front {
 	background-color: #afd6f6;
+
 	@supports not (background-image: url("/img/pastel gradient.webp")) {
-	   background-image: url("/img/pastel gradient.jpg")
+		background-image: url("/img/pastel gradient.jpg")
 	}
+
 	background-image: url("/img/pastel gradient.webp");
 	background-size: cover;
 	background-position: 10%;
 	color: black;
 
-	& > .wrapper {
+	&>.wrapper {
 		display: grid;
 		grid-template-areas: "header header" "one ." "two ." "three cta";
 		grid-template-columns: auto 1fr;
@@ -482,19 +525,23 @@ blockquote {
 	&__header {
 		grid-area: header;
 	}
+
 	&__box {
 		font-size: 1.8em;
-	    margin-bottom: 40px;
-	    padding-bottom: 20px;
-	    font-weight: 500;
-	    line-height: 1.2;
-	    position: relative;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+		font-weight: 500;
+		line-height: 1.2;
+		position: relative;
+
 		&--1 {
 			grid-area: one;
 		}
+
 		&--2 {
 			grid-area: two;
 		}
+
 		&--3 {
 			grid-area: three;
 		}
@@ -503,11 +550,11 @@ blockquote {
 			position: absolute;
 			bottom: 0;
 			content: "";
-		    width: 115%;
-		    border-bottom: 2px solid black;
-		    height: 100%;
-		    pointer-events: none;
-		    display: block;
+			width: 115%;
+			border-bottom: 2px solid black;
+			height: 100%;
+			pointer-events: none;
+			display: block;
 		}
 	}
 
@@ -516,9 +563,10 @@ blockquote {
 			grid-area: cta;
 			justify-self: flex-end;
 		}
+
 		font-size: 1.2em;
-		background:  black;
-		color:  white;
+		background: black;
+		color: white;
 		font-weight: 700;
 		text-decoration: none;
 		border-radius: 10px;
@@ -532,14 +580,15 @@ blockquote {
 				opacity: 0.85;
 			}
 		}
-		
+
 	}
 }
 
 .projects-front {
 	background: white;
 	padding: 20px 0;
-	& > .wrapper {
+
+	&>.wrapper {
 		padding: 0 10px;
 	}
 
@@ -565,14 +614,14 @@ blockquote {
 
 			&.highlight {
 				background: black;
-				color:  white;
+				color: white;
 			}
 
 			@media (hover: hover) and (pointer: fine) {
 				&:hover {
 					color: #fff;
-				    background: #0c0c0c;
-				    opacity: 0.82;
+					background: #0c0c0c;
+					opacity: 0.82;
 				}
 			}
 		}
@@ -587,9 +636,11 @@ blockquote {
 	}
 
 	background-color: #afd6f6;
+
 	@supports not (background-image: url("/img/pastel gradient.webp")) {
-	   background-image: url("/img/pastel gradient.jpg")
+		background-image: url("/img/pastel gradient.jpg")
 	}
+
 	background-image: url("/img/pastel gradient.webp");
 	background-size: cover;
 	background-position: 10%;
@@ -604,6 +655,7 @@ blockquote {
 
 	&__scroll {
 		grid-area: scroll;
+
 		div {
 			display: flex;
 			flex-direction: column;
@@ -620,13 +672,16 @@ blockquote {
 			transition: fill 0.3s ease-in-out;
 		}
 	}
+
 	.wrapper {
 		grid-area: title;
 		max-width: 1330px;
 		width: 100%;
+
 		&.wrapper--below {
 			grid-area: below;
 		}
+
 		.breadcrumbs a {
 			color: black;
 		}
@@ -642,7 +697,7 @@ blockquote {
 	}
 
 	&__boxes {
-		grid-area:  content;
+		grid-area: content;
 		@include wrapper;
 		max-width: 1400px;
 	}
@@ -683,17 +738,17 @@ blockquote {
 				position: absolute;
 				bottom: 0;
 				content: "";
-			    width: 100%;
-			    border-bottom: 2px solid black;
-			    pointer-events: none;
-			    height: 100%;
-			    display: block;
+				width: 100%;
+				border-bottom: 2px solid black;
+				pointer-events: none;
+				height: 100%;
+				display: block;
 			}
 
-			& > div {
+			&>div {
 				position: sticky;
 				top: 100px;
-				padding-bottom:  30px;
+				padding-bottom: 30px;
 
 			}
 		}
@@ -703,6 +758,7 @@ blockquote {
 			padding-top: 60px;
 			font-size: 1.8rem;
 			font-weight: 500;
+
 			h3 {
 				font-size: 24px;
 				font-weight: 700;
@@ -717,7 +773,7 @@ blockquote {
 			@media (hover: hover) and (pointer: fine) {
 				&:hover {
 					opacity: 0.9;
-    				cursor: pointer;
+					cursor: pointer;
 				}
 			}
 
@@ -725,46 +781,47 @@ blockquote {
 				position: relative;
 				display: block;
 			}
+
 			picture:after,
 			picture:before {
-			    position: absolute;
-			    transform: translate(-50%, -50%);
-			    width: 100%;
-			    height: 100%;
-			    border: 2px solid black;
-			    pointer-events: none;
-			    border-radius: 20px;
-    			z-index: 10;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				height: 100%;
+				border: 2px solid black;
+				pointer-events: none;
+				border-radius: 20px;
+				z-index: 10;
 			}
 
 			picture:after {
 				content: "";
 				top: calc(50% - 30px);
-			    left: calc(50% + 30px);
-			    z-index: 3;
+				left: calc(50% + 30px);
+				z-index: 3;
 
-			    .offer__box:nth-child(2n) & {
-			    	top: calc(50% + 30px);
-			    }
+				.offer__box:nth-child(2n) & {
+					top: calc(50% + 30px);
+				}
 			}
 
 			picture:before {
 				content: "";
 				top: calc(50% + 30px);
-			    left: calc(50% - 30px);
+				left: calc(50% - 30px);
 
-			    .offer__box:nth-child(2n) & {
-			    	top: calc(50% - 30px);
-			    }
+				.offer__box:nth-child(2n) & {
+					top: calc(50% - 30px);
+				}
 			}
 
 			img {
 				border-radius: 20px;
 				display: block;
 				width: 100%;
-    			height: auto;
-    			z-index: 5;
-    			position: relative;
+				height: auto;
+				z-index: 5;
+				position: relative;
 				aspect-ratio: 582 / 340;
 				object-fit: cover;
 			}
@@ -784,14 +841,15 @@ blockquote {
 			@media (hover: hover) and (pointer: fine) {
 				&:hover {
 					background: black;
-				    color: white;
-				    font-weight: bold;
-				    letter-spacing: -0.03em;
+					color: white;
+					font-weight: bold;
+					letter-spacing: -0.03em;
 				}
 			}
 		}
 	}
 }
+
 .projects {
 	background: white;
 	color: black;
@@ -808,17 +866,22 @@ blockquote {
 
 	.wrapper {
 		max-width: 1330px;
-		& > h2, & > p, & > h1, & > .breadcrumbs {
+
+		&>h2,
+		&>p,
+		&>h1,
+		&>.breadcrumbs {
 			margin: 0;
 			margin-bottom: 24px;
 			padding: 0 10px;
 		}
-		& > h2 {
+
+		&>h2 {
 			font-size: 2em;
 			margin-top: 20px;
 		}
 
-		& > h1 {
+		&>h1 {
 			font-size: 2em;
 		}
 	}
@@ -842,8 +905,9 @@ blockquote {
 			padding-top: 30px;
 		}
 	}
-	
+
 }
+
 .project-mini {
 	display: block;
 
@@ -866,7 +930,7 @@ blockquote {
 		gap: 40px 20px;
 		margin-top: 60px;
 		margin-bottom: 100px;
-    	justify-content: space-between;
+		justify-content: space-between;
 	}
 
 	&-icon {
@@ -907,7 +971,7 @@ blockquote {
 		grid-template-columns: auto 1fr;
 		grid-gap: 50px;
 	}
-	
+
 	&__buttons {
 		.link-button {
 			background: $navbar-color;
@@ -922,15 +986,18 @@ blockquote {
 		flex-direction: column;
 		justify-content: center;
 		font-weight: 300;
+
 		h3 {
 			font-size: 1.3em;
 			margin: 0;
 		}
+
 		hr {
 			margin-right: 24px;
 			display: none;
 		}
 	}
+
 	&__gallery {
 		grid-area: gallery;
 		display: flex;
@@ -946,11 +1013,12 @@ blockquote {
 		}
 	}
 }
+
 .about-me-front {
 	background: white;
 	box-shadow: $tile-shadow;
 
-	& > .wrapper {
+	&>.wrapper {
 		padding: 20px 10px 40px;
 	}
 
@@ -982,7 +1050,7 @@ blockquote {
 		text-decoration: none;
 		font-weight: 600;
 		border-radius: 10px;
-		clear:  both;
+		clear: both;
 		border: 2px solid black;
 
 		@media (hover: hover) and (pointer: fine) {
@@ -992,31 +1060,38 @@ blockquote {
 		}
 	}
 }
+
 .about-me {
 	@include wrapper768;
 }
+
 .footer {
 	background: $navbar-color;
 	color: white;
 	padding: 24px;
 	line-height: 1.8;
+
 	a {
 		color: white;
 		text-decoration: none;
 		font-weight: 400;
 	}
+
 	.wrapper {
 		display: grid;
 		grid-template-areas: "left right" "bottom bottom";
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto;
 	}
+
 	&__left {
 		grid-area: left;
 	}
+
 	&__right {
 		grid-area: right;
 	}
+
 	&__bottom {
 		grid-area: bottom;
 	}
@@ -1027,23 +1102,25 @@ blockquote {
 	font-size: 0.9em;
 	margin: 0 auto 16px;
 	padding-top: 12px;
+
 	a {
 		color: #726f6f;
 		font-weight: 300;
 	}
 }
+
 .blog-post {
 	min-height: 100vh;
 	display: grid;
 	grid-template-areas: ". toc header" ". toc content" "recs recs recs";
 	grid-template-columns: 1fr auto 768px;
 	grid-gap: 16px 60px;
-	
+
 	&__recommendations {
 		grid-area: recs;
 		border-top: 1px dotted $red-hex;
-		margin-top: 2em;
 		padding-top: 2em;
+		margin-top: 2em;
 	}
 
 	&--project {
@@ -1054,11 +1131,12 @@ blockquote {
 	&__header {
 		grid-area: header;
 		max-width: 720px;
+
 		h1 {
 			margin: 0;
 			margin-bottom: 5px;
-		    font-size: 28px;
-		    letter-spacing: -0.021em;
+			font-size: 28px;
+			letter-spacing: -0.021em;
 		}
 	}
 
@@ -1069,9 +1147,9 @@ blockquote {
 			position: sticky;
 			top: 40px;
 
-    		ul {
-    			padding-left: 20px;
-    		}
+			ul {
+				padding-left: 20px;
+			}
 		}
 	}
 
@@ -1091,11 +1169,12 @@ blockquote {
 	}
 
 	&__summary {}
+
 	&__date {
 		color: #3c3b3b;
-	    font-size: 15px;
-	    font-weight: 300;
-	    letter-spacing: -.009em;
+		font-size: 15px;
+		font-weight: 300;
+		letter-spacing: -.009em;
 	}
 
 	p {
@@ -1108,8 +1187,8 @@ blockquote {
 	padding-top: 4px;
 	background: white;
 	padding-bottom: 40px;
-	padding-left:  10px;
-	padding-right:  10px;
+	padding-left: 10px;
+	padding-right: 10px;
 
 	&__header {
 		font-size: 4rem;
@@ -1126,7 +1205,9 @@ blockquote {
 	&:empty::before {
 		content: '';
 	}
+
 	display: inline;
+
 	a {
 		color: $red-hex;
 		text-decoration: none;
@@ -1140,7 +1221,7 @@ blockquote {
 	grid-area: posts;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 90px 70px;
+	grid-gap: 90px 70px;
 
 	&__post {
 		display: flex;
@@ -1152,6 +1233,7 @@ blockquote {
 			font-size: 2.4rem;
 			line-height: 1.15;
 			letter-spacing: -0.019em;
+
 			a {
 				color: black;
 				font-weight: 700;
@@ -1159,15 +1241,15 @@ blockquote {
 		}
 
 		.blog-thumbnail {
-		    width: 100%;
-		    border-radius: 8px;
-		    height: auto;
-		    aspect-ratio: 450 / 295;
-		    object-fit: cover;
-		    background: #ededed;
-		    transition: all 0.2s ease;
+			width: 100%;
+			border-radius: 8px;
+			height: auto;
+			aspect-ratio: 450 / 295;
+			object-fit: cover;
+			background: #ededed;
+			transition: all 0.2s ease;
 
-		    @media (hover: hover) and (pointer: fine) {
+			@media (hover: hover) and (pointer: fine) {
 				&:hover {
 					opacity: 0.85;
 				}
@@ -1178,14 +1260,15 @@ blockquote {
 	&__date {
 		color: #3C3B3B;
 		font-size: 15px;
-		font-weight:  300;
+		font-weight: 300;
 		letter-spacing: -0.009em;
 	}
+
 	&__summary {
-		font-size:  16px;
+		font-size: 16px;
 		line-height: 1.56;
 		font-weight: 400;
-		margin:  0;
+		margin: 0;
 		margin-top: 4px;
 		letter-spacing: -0.011em;
 	}
@@ -1195,6 +1278,7 @@ blockquote {
 	grid-area: tags;
 	background: white;
 	margin: 60px 0;
+
 	h2 {
 		font-weight: 700;
 		font-size: 30px;
@@ -1204,6 +1288,7 @@ blockquote {
 		margin-bottom: 10px;
 	}
 }
+
 .blog-list-header {
 	font-weight: 700;
 	font-size: 40px;
@@ -1213,6 +1298,7 @@ blockquote {
 	margin-bottom: 25px;
 	letter-spacing: -0.022em;
 }
+
 .blog-list-summary {
 	margin: 0;
 	margin-bottom: 40px;
@@ -1220,6 +1306,7 @@ blockquote {
 	line-height: 1.56;
 	letter-spacing: -0.011em;
 }
+
 .github-code {
 	max-height: Min(600px, 60vh);
 	overflow: scroll;
@@ -1231,17 +1318,21 @@ blockquote {
 	}
 }
 
-.blog-post__content .highlight, 
+.blog-post__content .highlight,
 .blog-post__content pre {
 	max-height: 50vh;
-    overflow: auto;
-    max-width: calc(100vw - 50px);
-    margin: auto;
+	overflow: auto;
+	max-width: calc(100vw - 50px);
+	margin: auto;
 }
 
 code {
-	padding:  10px;
-	display:  block;
+	padding: 10px;
+	display: block;
+}
+
+.ml-embedded {
+	margin-top: 2em;
 }
 
 @import 'media.scss';
