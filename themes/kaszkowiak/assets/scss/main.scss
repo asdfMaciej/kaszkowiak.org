@@ -161,6 +161,10 @@ blockquote {
 	z-index: 100;
 	font-weight: 300;
 
+	body.blog.page & {
+		position: initial;
+	}
+
 	transition: background 200ms linear;
 
 	&--active {
@@ -259,7 +263,8 @@ blockquote {
 	min-height: 100vh;
 	padding-top: $top-padding;
 
-	body.oferta.list & {
+	body.oferta.list &,
+	body.blog.page & {
 		padding-top: 0;
 	}
 
@@ -1056,7 +1061,7 @@ blockquote {
 
 		&-wrapper {
 			position: sticky;
-			top: 100px;
+			top: 40px;
 
     		ul {
     			padding-left: 20px;
@@ -1231,15 +1236,6 @@ blockquote {
 code {
 	padding:  10px;
 	display:  block;
-}
-
-.blog-scroll-line {
-	height: 2px; 
-	margin-top: -2px; 
-}
-
-body.blog.page .blog-scroll-line {
-	background: $red-hex;
 }
 
 @import 'media.scss';
