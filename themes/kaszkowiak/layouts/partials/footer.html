@@ -13,7 +13,12 @@
 
 		</nav>
 		<nav class="footer__right">
-			<strong>{{ i18n "socialMedia" }}:</strong>
+			{{ with .Site.GetPage "/blog" }}
+			{{ with .OutputFormats.Get "rss" -}}
+			<a href="{{ .Permalink }}"><img src="/img/rss.svg" alt="RSS" class="rss"> RSS</a>
+			{{ end }}
+			{{ end }}
+			<br><strong>{{ i18n "socialMedia" }}:</strong>
 			<br><a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">Github</a>
 			<br><a href="https://www.facebook.com/kaszkowiak.maciej/" target="_blank" rel="noopener">Facebook</a>
 			<br><a href="https://www.last.fm/user/asdfMaciej" target="_blank" rel="noopener">last.fm</a>

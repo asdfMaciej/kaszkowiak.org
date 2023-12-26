@@ -76,6 +76,10 @@
 	other = "I've showcased some of my completed projects. Click on a project to learn more or"
 [projectsFrontCta]
 	other = 'view all projects'
+[rssFollow]
+	other = 'You can follow my blog with any'
+[rssReader]
+	other = 'RSS reader'
 
 [menuOffer]
 	other = 'Services'

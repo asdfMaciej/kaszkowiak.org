@@ -76,6 +76,10 @@
 	other = 'Zapoznaj się ze stworzonymi przeze mnie projektami. Naciśnij na projekt, aby poznać szczegóły, lub '
 [projectsFrontCta]
 	other = 'zobacz wszystkie projekty'
+[rssFollow]
+	other = 'Możesz śledzić mój blog za pomocą dowolnego'
+[rssReader]
+	other = 'czytnika RSS'
 
 [menuOffer]
 	other = 'Oferta'

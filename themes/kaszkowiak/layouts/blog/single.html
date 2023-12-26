@@ -37,6 +37,18 @@
 		{{- else -}}
 		<div class="ml-embedded" data-form="erTwuw"></div>
 		{{- end -}}
+
+		<p>
+			{{ i18n "rssFollow" }}
+			{{ with .Site.GetPage "/blog" }}
+			{{ with .OutputFormats.Get "rss" -}}
+			<a href="{{ .Permalink }}">
+				<img src="/img/rss.svg" alt="RSS" class="rss">
+				{{ i18n "rssReader" }}</a>!
+			{{ end }}
+			{{ end }}
+
+		</p>
 	</section>
 	<section class="blog-post__recommendations">
 		<p>{{ i18n "blogTheme" }} -
@@ -46,7 +58,7 @@
 				{{i18n "seePosts"}}</a>.
 		</p>
 		<section class="posts-list">
-			{{/* ".Params.tags" "intersect" .Params.tags) */}}
+			{{/* ".Params.tags" "intersect" .Params.tags */}}
 			{{ range ( where (where .Site.RegularPages "Type" "blog") "Permalink" "!=" .Permalink | first 3 ) }}
 			{{ partial "blog-tile.html" . }}
 			{{ end }}
