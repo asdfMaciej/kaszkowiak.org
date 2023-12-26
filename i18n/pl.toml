@@ -27,7 +27,7 @@
 [blogPosts]
 	other = 'Posty na blogu'
 [blogTheme]
-	other = 'Bloguję o projektach, technologii, sporcie i programowaniu'
+	other = 'Bloguję o projektach, sporcie i programowaniu'
 [seePosts]
 	other = 'zobacz wszystkie posty'
 [contactHeader]
@@ -69,7 +69,7 @@
 [allTagPosts]
 	other = "Wszystkie moje posty o"
 [blogTopics]
-	other = "Na blogu piszę również o projektach, technologii, sporcie i programowaniu"
+	other = "Na blogu piszę również o projektach, sporcie i programowaniu"
 [servicesCta]
 	other = 'Zapoznaj się z ofertą'
 [projectsFrontDesc]

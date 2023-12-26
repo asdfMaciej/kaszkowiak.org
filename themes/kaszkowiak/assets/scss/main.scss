@@ -1035,10 +1035,16 @@ blockquote {
 .blog-post {
 	min-height: 100vh;
 	display: grid;
-	grid-template-areas: ". toc header" ". toc content";
+	grid-template-areas: ". toc header" ". toc content" "recs recs recs";
 	grid-template-columns: 1fr auto 768px;
 	grid-gap: 16px 60px;
 	
+	&__recommendations {
+		grid-area: recs;
+		border-top: 1px dotted $red-hex;
+		margin-top: 2em;
+		padding-top: 2em;
+	}
 
 	&--project {
 		display: block;

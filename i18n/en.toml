@@ -27,7 +27,7 @@
 [blogPosts]
 	other = 'Blog posts'
 [blogTheme]
-	other = 'I write mostly about my projects, technology, and programming'
+	other = 'I write mostly about my projects, sports, and programming'
 [seePosts]
 	other = 'see all posts'
 [contactHeader]
@@ -69,7 +69,7 @@
 [allTagPosts]
 	other = "All of my posts about"
 [blogTopics]
-	other = "On my blog I write also about projects, technology, sports, and software development"
+	other = "On my blog I write also about projects, sports, and programming"
 [servicesCta]
 	other = 'View more details'
 [projectsFrontDesc]

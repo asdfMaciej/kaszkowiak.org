@@ -32,6 +32,21 @@
     <section class="blog-post__content">
 		{{ .Content }}
     </section>
+    <section class="blog-post__recommendations">
+    	<p>{{ i18n "blogTheme" }} - 
+              {{ with .Site.GetPage "/blog" }}
+              <a href="{{ .Permalink }}">
+              {{ end }}
+                {{i18n "seePosts"}}</a>.
+            </p>
+	    <section class="posts-list">
+    		{{/* ".Params.tags" "intersect" .Params.tags) */}}
+            {{ range ( where (where .Site.RegularPages "Type" "blog") "Permalink" "!=" .Permalink | first 3 ) }}
+                {{ partial "blog-tile.html" . }}
+            {{ end }}
+	    </section>
+    </section>
+                
 </article>
 
 {{ end }}
