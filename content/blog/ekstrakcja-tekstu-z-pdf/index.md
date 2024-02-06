@@ -9,18 +9,18 @@ tags: ["python", "rag", "ocr", "retrieval"]
 
 ## Czym jest i do czego służy OCR?
 
-OCR (Optical Character Recognition) to proces rozpoznawania tekstu w obrazie. OCR przydaje się, jeśli chcemy przetworzyć tekst z dowolnego obrazu:
+OCR (Optical Character Recognition) to proces rozpoznawania tekstu w obrazie. OCR przydaje się, jeśli chcemy przetworzyć tekst z obrazu w dowolny sposób:
 - skopiować treść zeskanowanej kartki;
-- przetłumaczyć napis w obcym języku;
+- przetłumaczyć napis ze zdjęcia;
 - zeskanować paragon...
 
-OCR okaże się także przydatne, gdy budujemy bazę dokumentów, które później chcielibyśmy móc przeszukać - na przykład przy [Retrieval Augmented Generation](/blog/retrieval-augmented-generation/) :)
+OCR okaże się także przydatne, gdy budujemy bazę zeskanowanych dokumentów, które później chcielibyśmy móc przeszukać - na przykład przy [Retrieval Augmented Generation](/blog/retrieval-augmented-generation/) :)
 
 ## Przegląd narzędzi
 
 ### Tesseract
 
-[Tesseract](https://github.com/tesseract-ocr/tesseract) jest jednym z najbardziej znanych narzędzi do OCR. W projekcie dostępne jest zarówno narzędzie CLI (tesseract) jak i sam silnik OCR (libtesseract).
+[Tesseract](https://github.com/tesseract-ocr/tesseract) to jedno z najbardziej znanych narzędzi do OCR. W projekcie dostępne jest zarówno narzędzie CLI (tesseract) jak i sam silnik OCR (libtesseract).
 
 Projekt wspiera ponad 100 języków oraz ma wsparcie dla UTF-8, przez co bez problemu poradzi sobie z językiem polskim.
 
@@ -32,7 +32,7 @@ Tesseract nie radzi sobie między innymi z odręcznym pismem:
 It's possible to train tesseract to recognize handwriting. [...] But don't expect very good results. Academics have typically gotten accuracy results topping out about 90%. Here are a couple references for words and numbers. So if your use case can deal with at least 1/10 errors, this might work for you.
 {{</quote>}}
 
-Input powinien być także możliwie pozbawiony zanieczyszczeń (które mogą wystąpić przy przykładowo skanowanych dokumentach), aby Tesseract uzyskał optymalne wyniki. Jako output nie otrzymamy ustrukturyzowanego tekstu - Tesseract nie wydobędzie nam struktury dokumentu, czyli chociażby nagłówków. 
+Input powinien być możliwie pozbawiony zanieczyszczeń (które mogą wystąpić przy przykładowo skanowanych dokumentach), aby Tesseract uzyskał optymalne wyniki. Jako output uzyskujemy plain text - Tesseract nie wydobędzie nam struktury dokumentu, czyli chociażby nagłówków. 
 
 Tesseract jest objęty licencją Apache 2.0, co umożliwia zarówno zastosowania komercyjne jak i hobbystyczne.
 
@@ -159,7 +159,7 @@ pip3 install torch torchvision torchaudio
 
 W przypadku problemów z paczkami lub poetry, warto usunąć cache oraz ponownie wygenerować lock file.
 
-Uwaga - usunie to istniejące środowiska Poetry! 
+Uwaga - usunie to wszystkie istniejące środowiska Poetry! 
 
 ```python
 rm -rf ~/.cache/pypoetry/
@@ -186,4 +186,4 @@ DEFAULT_LANG=Polish
 ENABLE_EDITOR_MODEL=true 
 ```
 
-Dzięki za przeczytanie artykułu! :)
+To wszystko na dzisiaj. Dzięki za przeczytanie artykułu! :)
