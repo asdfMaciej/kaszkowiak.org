@@ -1,6 +1,6 @@
 baseURL = "https://kaszkowiak.org/"
 
-theme = "kaszkowiak"
+theme = ["hugo-notice", "kaszkowiak"]
 title = "Maciej Kaszkowiak"
 defaultContentLanguage = "pl"
 timeout = "120s"
