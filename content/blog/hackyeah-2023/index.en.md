@@ -2,7 +2,7 @@
 title: "Victory at HackYeah 2023!"
 date: 2023-10-17T13:30:00+02:00
 lastmod: 2023-10-17T13:30:00+02:00
-summary: "On September 29-30, we took 1st place out of 37 teams in the Health & Well-being track at HackYeah 2023, the largest on-site hackathon in Europe! 🏆"
+summary: "On 30.09 - 01.10, we took 1st place out of 37 teams in the Health & Well-being track at HackYeah 2023, the largest on-site hackathon in Europe! 🏆"
 thumbnail: "wygrana.jpg"
 tags: ["hackathon", "go", "golang"]
 slug: "hackyeah-2023"
