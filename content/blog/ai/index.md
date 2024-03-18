@@ -160,6 +160,8 @@ Wynik: #6/27 oraz #11/27.
 
 W skrócie: **super wydarzenie**! Organizatorzy zrobili dobrą robotę i zapewnili zadania o ciekawej tematyce. Wydarzenie było bardzo emocjonujące, odbiegając od typowej hackathonowej konwencji tworzenia demka aplikacji. Wierzymy, że serwery na następnej edycji byłyby dokładniej przetestowane ;)
 
+Finalnie zajęliśmy 12 miejsce na 27 drużyn. Nie jest to spektakularny wynik, ale bardzo przewyższył nasze oczekiwania - spodziewaliśmy się ostatniego miejsca czy też DNF w niektórych taskach :) 
+
 {{< img src="plakat.jpg" alt="Proroczy rysunek z pierwszych godzin" >}} 
 
 ## Podziękowania
