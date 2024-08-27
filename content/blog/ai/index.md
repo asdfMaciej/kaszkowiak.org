@@ -95,7 +95,7 @@ Chcieliśmy wysłać na start cokolwiek. Stworzyliśmy lokalnie model klasyfikat
 - przedostatnia warstwa miała 512 neuronów (wymagana szerokość enkodera);
 - ostatnia warstwa miała 20 neuronów (liczba klas)
 
- Po wytrenowaniu modelu klasyfikatora na parach (obrazek, label), musieliśmy jakoś wydobyć przedostatnią warstwę, aby ona była końcowa przy wysyłce. Pomógł nam jeden z organizatorów, wielkie dzięki! Zamieniliśmy ostatnią warstwę na nn.Linear, która zwracała niezmieniony wektor z przedostatniej warstwy. Tym sposobem otrzymaliśmy model, który spełniał wymagania zadania. Wysłaliśmy go szybko po tym, jak API wstało, i... byliśmy pierwsi! XD
+ Po wytrenowaniu modelu klasyfikatora na parach (obrazek, label), musieliśmy jakoś wydobyć przedostatnią warstwę, aby ona była końcowa przy wysyłce. Pomógł nam jeden z organizatorów, wielkie dzięki! Zamieniliśmy ostatnią warstwę na nn.Identity, która zwracała niezmieniony wektor z przedostatniej warstwy. Tym sposobem otrzymaliśmy model, który spełniał wymagania zadania. Wysłaliśmy go szybko po tym, jak API wstało, i... byliśmy pierwsi! XD
 
 {{< img src="pierwsi.png" alt="Es?" >}} 
 
