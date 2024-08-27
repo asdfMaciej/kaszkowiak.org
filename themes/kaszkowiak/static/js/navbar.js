@@ -1,6 +1,7 @@
 // init lightbox for images
+let lightbox = null;
 if (typeof GLightbox !== 'undefined') {
-	const lightbox = GLightbox({});
+	lightbox = GLightbox({});
 }
 
 // change navbar class on scroll, when an element #navbar-transparent exists
@@ -93,3 +94,25 @@ if (document.querySelector(".offer__scroll")) {
 	document.addEventListener('scroll', checkOfferScrollCircles, {capture: true, passive: true});
 	checkOfferScrollCircles();
 }
+
+var newest_img = "";
+const images = document.querySelectorAll(".glightbox");
+for (let image of images) {
+	image.addEventListener("click", function() {
+		let img_hash = "#img_" + Math.random().toString(36);
+		newest_img = img_hash;
+		window.location.hash = img_hash;
+	})
+}
+
+var hash = window.location.hash;
+setInterval(function(){
+    if (window.location.hash != hash) {
+        hash = window.location.hash;
+        console.debug("User went back or forward to application state represented by " + hash);
+        if (hash != newest_img) {
+        	console.debug("close img");
+        	lightbox.close();
+        }
+    }
+}, 100);
