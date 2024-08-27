@@ -13,7 +13,7 @@ W ubiegłorocznej relacji z [podróży przez wschód Polski](/blog/wschod-polski
 
 ## O samym tripie słów kilka
 
-Słowami wstępu: trasa zajęła nam 7 dni i niespełna 800 km. Zamiast z Pozniania wystartowaliśmy ze Szczecina, aby skrócić nudną część trasy  - uznaliśmy, że lepiej jest dojechać dzień / dwa wcześniej do Amsterdamu, niż zwiedzać dobrze znane polskie drogi :)  
+Słowami wstępu: trasa zajęła nam 7 dni i niespełna 800 km. Zamiast z Poznania wystartowaliśmy ze Szczecina, aby skrócić nudną część trasy  - uznaliśmy, że lepiej jest dojechać dzień / dwa wcześniej do Amsterdamu, niż zwiedzać dobrze znane polskie drogi :)  
 
 Jechaliśmy w czwórkę:
 - Maciej, którego wpis właśnie czytasz;
