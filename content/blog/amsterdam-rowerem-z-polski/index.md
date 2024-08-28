@@ -2,7 +2,7 @@
 title: "Amsterdam: podróż z Polski do miasta rowerów"
 date: 2024-08-27T20:50:00+02:00
 lastmod: 2024-08-27T20:50:00+02:00
-summary: "800 km na czterech kółkach przez Niemcy i Niderlandy! Poznaj nasze wrażenia i opowieści z trasy: rozbite szkło, walka z pociągami i obozy na dziko :)"
+summary: "800 km na dwóch kółkach przez Niemcy i Niderlandy! Poznaj nasze wrażenia i opowieści z trasy: rozbite szkło, walka z pociągami i obozy na dziko :)"
 thumbnail: "rowerusy.jpg"
 tags: ["sport", "rower", "podróż", "amsterdam"]
 ---
