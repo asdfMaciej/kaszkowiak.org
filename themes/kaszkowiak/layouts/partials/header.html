@@ -17,12 +17,10 @@
 				{{- i18n "menuBlog" -}}
 			</a>
             {{- end -}}
-
-            {{ with .Site.GetPage "/kontakt/" }}      
-			<a href="{{- .Permalink -}}" title='{{- i18n "menuContact" -}}'>
+   
+			<a href="#footer" title='{{- i18n "menuContact" -}}'>
 				{{- i18n "menuContact" -}}
 			</a>
-            {{- end }}
       {{ if .IsTranslated }}
 		    {{- range .Translations -}}
 		      {{- if eq .Site.Language.Lang "en" -}}
