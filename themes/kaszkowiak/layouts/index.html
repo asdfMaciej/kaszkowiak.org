@@ -10,21 +10,6 @@
         </div> 
       </section>
 
-      <section class="about-me-front">
-          <div class="wrapper">
-            <h2>
-              {{ i18n "fewWords" }}
-            </h2>
-            <img src="/img/programming.svg" alt="" role="presentation" width="500" height="369">
-            {{ with .Site.GetPage "/o-mnie" }}
-              {{ .Summary }}
-              <a href="{{ .Permalink }}">{{ i18n "readAll" }}!</a>
-            {{ end }}
-            <div class="clear"></div>
-          </div>
-
-        </section>
-
         <section class="offer-front">
           <div class="wrapper">
             <h1 class="offer__header offer-front__header">
