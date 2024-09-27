@@ -6,8 +6,6 @@
 {{- $title = .Title -}}
 {{- else if (and (eq .Section "blog") (.IsPage)) -}}
 {{- $title = .Title -}}
-{{- else if (eq .Section "oferta") -}}
-{{- $title = .Title -}}
 {{- else if (and (eq .Section "tags") (eq .Kind "term")) -}}
 {{- $title = printf "Blog - #%s - Maciej Kaszkowiak" .Title -}}
 {{- else -}}
