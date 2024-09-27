@@ -163,7 +163,7 @@ Los w tym momencie uznał, że otrzymałem już wystarczająco kopniaków w dup�
 {{< img src="historia.jpg" alt="Historyczny most na trasie" >}}
 {{< galleryend >}}
 
-Świetnie! Mamy bilety na trasę Amsterdam > Berlin Hbf, więc powinno pójść już z górki. Zwinęliśmy obóz i wyjechaliśmy w dalszą trasę. Co okazało się na następnych dniach?
+Świetnie! Mamy bilety na trasę Amsterdam > Berlin Hbf, więc powinno pójść już z górki. Zwinęliśmy obóz i wyjechaliśmy w dalszą trasę. Co okazało się w następnych dniach?
 
 Chociażby to, że nie da się kupić biletów na bezpośredni pociąg Berlin > Poznań z rowerami. Strony DB ani PKP IC / Koleo nie pokazywały takiej możliwości. Maciej więc znalazł alternatywną trasę:
 - jedziemy S/U-Bahnem na Berlin Lichtenberg;
@@ -234,7 +234,7 @@ Czytelniku: jeśli wytrwałæś aż tutaj, zachęcam do przeczytania [moich pozo
 
 Poniżej zamieszczam linki do poszczególnych etapów:
 
-| Dzień | Trasa    | Link do Stravy | Dystans i elewacja |
+| Dzień | Trasa    | Link do Stravy | Dystans i przewyższenia |
 |-------|----------|----------------|--------------------|
 | 1 | Szczecin > Lychen | [Strava](https://www.strava.com/activities/11938431052) | 103,03 km, 599 m  |
 | 2 | Lychen > Karstädt | [Strava](https://www.strava.com/activities/11947153839) | 125,41 km, 542 m |

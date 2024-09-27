@@ -209,7 +209,7 @@ Jeśli wytrwałæś aż tutaj, zachęcam do przeczytania [moich pozostałych pos
 
 Poniżej zamieszczam linki do poszczególnych etapów:
 
-| Dzień | Trasa    | Link do Stravy | Dystans i elewacja |
+| Dzień | Trasa    | Link do Stravy | Dystans i przewyższenia |
 |-------|----------|----------------|--------------------|
 | 1 | Olsztyn > Szczytno | [Strava](https://www.strava.com/activities/9687735113) | 63,01 km, 312 m |
 | 2 | Szczytno > Łomża | [Strava](https://www.strava.com/activities/9687738051) | 124,21 km, 361 m |
