@@ -31,25 +31,6 @@
           </div>
         </section>
 
-        <section class="projects-front">
-          <div class="wrapper">
-            <h2 class="projects-front__header">
-              {{ i18n "selectedProjects" }}
-            </h2>
-            <p>
-              {{ i18n "projectsFrontDesc" }} <a href="{{ with .Site.GetPage "/projekty/" }}{{.RelPermalink}}{{end}}">{{ i18n "projectsFrontCta" }}</a>.
-            </p>
-            <div class="projects-front__list">
-              {{ range ( where .Site.RegularPages "Type" "projekty") }}
-                
-                  <a href="{{.RelPermalink}}"class="projects-front__list-item {{ if (not (isset .Params "github"))}}highlight{{ end }}">
-                    {{ .Title }}
-                  </a>
-              {{ end }}
-            </div>
-          </div>
-        </section>
-
         <section class="front-blog">
           <div class="wrapper">
             <h2 class="front-blog__header">{{ i18n "recentBlogPosts" }}</h2>

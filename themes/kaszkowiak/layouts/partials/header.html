@@ -24,12 +24,6 @@
 			</a>
             {{- end -}}
 
-            {{ with .Site.GetPage "/projekty/" }}      
-			<a href="{{- .Permalink -}}" title='{{- i18n "menuProjects" -}}'>
-				{{- i18n "menuProjects" -}}
-			</a>
-            {{- end -}}
-
             {{ with .Site.GetPage "/kontakt/" }}      
 			<a href="{{- .Permalink -}}" title='{{- i18n "menuContact" -}}'>
 				{{- i18n "menuContact" -}}
