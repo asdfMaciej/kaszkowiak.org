@@ -305,7 +305,8 @@ blockquote {
 
 		background-image: url("/img/maciej kaszkowiak.webp");
 		background-size: cover;
-		background-position: 65%;
+		background-position-y: 70%;
+		background-position-x: 60%;
 		background-repeat: no-repeat;
 		content: '';
 
@@ -1340,18 +1341,18 @@ code {
 }
 
 .notice {
-    --root-color: #444 !important;
-    --root-background: #eff !important;
-    --title-color: #fff !important;
-    --title-background: #7bd !important;
-    --warning-title: #c33 !important;
-    --warning-content: #fee !important;
-    --info-title: #fb7 !important;
-    --info-content: #fec !important;
-    --note-title: #6be !important;
-    --note-content: #e7f2fa !important;
-    --tip-title: #5a5 !important;
-    --tip-content: #efe !important;
+	--root-color: #444 !important;
+	--root-background: #eff !important;
+	--title-color: #fff !important;
+	--title-background: #7bd !important;
+	--warning-title: #c33 !important;
+	--warning-content: #fee !important;
+	--info-title: #fb7 !important;
+	--info-content: #fec !important;
+	--note-title: #6be !important;
+	--note-content: #e7f2fa !important;
+	--tip-title: #5a5 !important;
+	--tip-content: #efe !important;
 }
 
 .notice .notice-title {

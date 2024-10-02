@@ -1,59 +1,59 @@
 {{ define "main" }}
-    
-      <section class="landing" id="navbar-transparent">
-        <div class="landing__container">
-          <div class="landing__content">
-            <h2>{{ i18n "frontHi" }}!</h2>
-            <h3>{{ i18n "myNameIs" }} Maciej Kaszkowiak.</h3>
-            <p>{{ i18n "wwwAndApps" }}.</p>
-          </div>
-        </div> 
-      </section>
-      
-      {{/*
-      
-        <section class="offer-front">
-          <div class="wrapper">
-            <h1 class="offer__header offer-front__header">
-              {{ i18n "myOffer" }}
-            </h1>
-            <div class="offer-front__box offer-front__box--1">TODO</div>
-            <div class="offer-front__box offer-front__box--2">TODO</div>
-            <div class="offer-front__box offer-front__box--3">TODO</div> 
-          </div>
-        </section>
-        */}}
 
-        <section class="front-blog">
-          <div class="wrapper">
-            <h2 class="front-blog__header">{{ i18n "recentBlogPosts" }}</h2>
-            <p>{{ i18n "blogTheme" }} - 
-              {{ with .Site.GetPage "/blog" }}
-              <a href="{{ .Permalink }}">
-              {{ end }}
-                {{i18n "seePosts"}}</a>.
-            </p>
-            <div class="posts-list">
-              {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
-                {{ partial "blog-tile.html" . }}
-            {{ end }}
-            </div>
-            
-          </div>
-        </section>
+<section class="landing" id="navbar-transparent">
+  <div class="landing__container">
+    <div class="landing__content">
+      <h2>{{ i18n "frontHi" }}!</h2>
+      <h3>{{ i18n "myNameIs" }} Maciej Kaszkowiak.</h3>
+      <p>{{ i18n "wwwAndApps" }}</p>
+    </div>
+  </div>
+</section>
 
-        <section class="contact-front">
-          <div class="wrapper">
-            <h2>{{ i18n "contactHeader" }}</h2>
-            <p>
-              {{ i18n "header1" }}<br>{{ i18n "header2" }}
-               <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">{{ i18n "githubD" }}</a>
-              {{ i18n "andOn" }}
-              <a href="https://www.facebook.com/kaszkowiak.maciej/" target="_blank" rel="noopener">{{ i18n "facebookD" }}</a>.
-              {{ i18n "header3" }}
-            </p> 
-          </div>
-          
-        </section>
-      
+{{/*
+
+<section class="offer-front">
+  <div class="wrapper">
+    <h1 class="offer__header offer-front__header">
+      {{ i18n "myOffer" }}
+    </h1>
+    <div class="offer-front__box offer-front__box--1">TODO</div>
+    <div class="offer-front__box offer-front__box--2">TODO</div>
+    <div class="offer-front__box offer-front__box--3">TODO</div>
+  </div>
+</section>
+*/}}
+
+<section class="front-blog">
+  <div class="wrapper">
+    <h2 class="front-blog__header">{{ i18n "recentBlogPosts" }}</h2>
+    <p>{{ i18n "blogTheme" }} -
+      {{ with .Site.GetPage "/blog" }}
+      <a href="{{ .Permalink }}">
+        {{ end }}
+        {{i18n "seePosts"}}</a>.
+    </p>
+    <div class="posts-list">
+      {{ range ( where .Site.RegularPages "Type" "blog" | first 3 ) }}
+      {{ partial "blog-tile.html" . }}
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-front">
+  <div class="wrapper">
+    <h2>{{ i18n "contactHeader" }}</h2>
+    <p>
+      {{ i18n "header1" }}<br>{{ i18n "header2" }}
+      <a href="https://github.com/asdfMaciej/" target="_blank" rel="noopener">{{ i18n "githubD" }}</a>
+      {{ i18n "andOn" }}
+      <a href="https://www.facebook.com/kaszkowiak.maciej/" target="_blank" rel="noopener">{{ i18n "facebookD" }}</a>.
+      {{ i18n "header3" }}
+    </p>
+  </div>
+
+</section>
+
 {{ end }}
