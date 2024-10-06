@@ -1,4 +1,4 @@
 ---
 title: "Blog"
-summary: "Na moim blogu piszę o stworzonych przeze mnie projektach, programowaniu i sporcie. Zapraszam do lektury!"
+summary: "Piszę o rzeczach, które uważam za interesujące, m.in. o sztucznej inteligencji, projektach, programowaniu i podróżach. Zapraszam do lektury!"
 ---

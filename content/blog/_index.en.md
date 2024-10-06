@@ -1,4 +1,4 @@
 ---
 title: "Blog"
-summary: "On my blog I write about my projects, programming, and sports. Enjoy reading!"
+summary: "I try to write about interesting things, such as artificial intelligence, created projects, programming, and travel. Enjoy!"
 ---
