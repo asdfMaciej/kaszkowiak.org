@@ -4,7 +4,7 @@ date: 2023-12-21T08:00:00+02:00
 lastmod: 2023-12-21T08:00:00+02:00
 summary: "Czym są embeddingi, z których prawdopodobnie korzystasz na codzień? Dowiedz się w artykule - wiele buzzwordów przestanie być czarną magią 🧙"
 thumbnail: "embeddings.png"
-tags: ["ai", "ml", "python", "rag"]
+tags: ["ulepsz swoje AI", "ai", "ml", "nlp", "python", "rag"]
 ---
 
 Przyjmijmy, że chcemy, aby nasz komputer przetworzył jakiś tekst.

@@ -4,7 +4,7 @@ date: 2024-02-06T14:00:00+02:00
 lastmod: 2024-02-06T14:00:00+02:00
 summary: "Przegląd narzędzi do efektywnego OCR na plikach PDF. Artykuł pozwoli Ci polepszyć jakość wydobywanego tekstu ze swoich dokumentów! 📄"
 thumbnail: "pdf extraction.png"
-tags: ["python", "rag", "ocr", "retrieval"]
+tags: ["ulepsz swoje AI", "python", "rag", "ocr", "retrieval"]
 ---
 
 ## Czym jest i do czego służy OCR?

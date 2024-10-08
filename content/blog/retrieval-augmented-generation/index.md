@@ -4,7 +4,7 @@ date: 2023-12-20T15:00:00+02:00
 lastmod: 2023-12-20T15:00:00+02:00
 summary: "Odkryj, jak Retrieval Augmented Generation umożliwia udzielanie trafnych odpowiedzi z wiedzy specjalistycznej przez duże modele językowe (LLM)."
 thumbnail: "rag.png"
-tags: ["ai", "ml", "rag", "chatbot", "llm"]
+tags: ["ulepsz swoje AI", "ai", "ml", "rag", "chatbot", "llm"]
 ---
 
 ## Co to Retrieval Augmented Generation?
