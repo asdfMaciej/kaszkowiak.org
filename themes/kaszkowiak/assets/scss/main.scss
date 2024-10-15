@@ -1328,8 +1328,13 @@ blockquote {
 }
 
 code {
-	padding: 10px;
+	padding: 0px;
 	display: inline-block;
+}
+
+pre>code {
+	/* Code blocks instead of inline */
+	padding: 10px;
 }
 
 .ml-embedded {
