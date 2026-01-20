@@ -1,11 +1,19 @@
 ---
 title: "OCR - ekstrakcja tekstu z PDF"
 date: 2024-02-06T14:00:00+02:00
-lastmod: 2024-02-06T14:00:00+02:00
+lastmod: 2026-01-19T14:00:00+02:00
 summary: "Przegląd narzędzi do efektywnego OCR na plikach PDF. Artykuł pozwoli Ci polepszyć jakość wydobywanego tekstu ze swoich dokumentów! 📄"
 thumbnail: "pdf extraction.png"
 tags: ["ulepsz swoje AI", "python", "rag", "ocr", "retrieval"]
 ---
+
+{{< notice-feather-icons info >}}
+
+Aktualizacja z stycznia 2026: poniższy artykuł zdążył się zestarzeć :)
+
+Powstało wiele benchmarków do OCR - nie wymieniam z nazw, bo jeszcze pojawią się lepsze ;) Z aktualnych modelów polecam zainteresować się **PaddleOCR-VL**.
+
+{{< /notice-feather-icons >}}
 
 ## Czym jest i do czego służy OCR?
 

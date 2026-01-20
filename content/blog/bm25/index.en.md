@@ -1,7 +1,7 @@
 ---
 title: "BM25: keyword search"
 date: 2024-10-16T00:00:00+02:00
-lastmod: 2024-10-16T00:00:00+02:00
+lastmod: 2026-01-19T00:00:00+02:00
 summary: "Improve search in your application! Implement BM25: discover how it works, learn about potential issues, and get practical advice 🚀"
 thumbnail: "thumbnail.png"
 tags: ["nlp", "rag", "retrieval", "improve your AI", "ai", "python"]
